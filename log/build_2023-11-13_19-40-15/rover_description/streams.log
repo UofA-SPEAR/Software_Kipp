@@ -1,0 +1,21 @@
+[0.834s] Invoking command in '/home/indy/Desktop/Software_Kipp/rover_description': PYTHONPATH=/home/indy/Desktop/Software_Kipp/build/rover_description/prefix_override:/home/indy/Desktop/Software_Kipp/install/rover_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/rover_description build --build-base /home/indy/Desktop/Software_Kipp/build/rover_description/build install --record /home/indy/Desktop/Software_Kipp/build/rover_description/install.log --single-version-externally-managed
+[1.026s] running egg_info
+[1.027s] writing ../build/rover_description/rover_description.egg-info/PKG-INFO
+[1.027s] writing dependency_links to ../build/rover_description/rover_description.egg-info/dependency_links.txt
+[1.027s] writing entry points to ../build/rover_description/rover_description.egg-info/entry_points.txt
+[1.027s] writing requirements to ../build/rover_description/rover_description.egg-info/requires.txt
+[1.027s] writing top-level names to ../build/rover_description/rover_description.egg-info/top_level.txt
+[1.031s] reading manifest file '../build/rover_description/rover_description.egg-info/SOURCES.txt'
+[1.031s] writing manifest file '../build/rover_description/rover_description.egg-info/SOURCES.txt'
+[1.031s] running build
+[1.031s] running build_py
+[1.031s] running install
+[1.031s] running install_lib
+[1.031s] running install_data
+[1.031s] copying launch/visualize.launch.py -> /home/indy/Desktop/Software_Kipp/install/rover_description/share/rover_description
+[1.031s] running install_egg_info
+[1.032s] removing '/home/indy/Desktop/Software_Kipp/install/rover_description/lib/python3.10/site-packages/rover_description-1.0.0-py3.10.egg-info' (and everything under it)
+[1.032s] Copying ../build/rover_description/rover_description.egg-info to /home/indy/Desktop/Software_Kipp/install/rover_description/lib/python3.10/site-packages/rover_description-1.0.0-py3.10.egg-info
+[1.032s] running install_scripts
+[1.046s] writing list of installed files to '/home/indy/Desktop/Software_Kipp/build/rover_description/install.log'
+[1.075s] Invoked command in '/home/indy/Desktop/Software_Kipp/rover_description' returned '0': PYTHONPATH=/home/indy/Desktop/Software_Kipp/build/rover_description/prefix_override:/home/indy/Desktop/Software_Kipp/install/rover_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/rover_description build --build-base /home/indy/Desktop/Software_Kipp/build/rover_description/build install --record /home/indy/Desktop/Software_Kipp/build/rover_description/install.log --single-version-externally-managed

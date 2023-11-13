@@ -1,0 +1,34 @@
+[0.985s] Invoking command in '/home/indy/Desktop/Software_Kipp/rover_Description': PYTHONPATH=/home/indy/Desktop/Software_Kipp/build/rover_Description/prefix_override:/home/indy/Desktop/Software_Kipp/install/rover_Description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/rover_Description build --build-base /home/indy/Desktop/Software_Kipp/build/rover_Description/build install --record /home/indy/Desktop/Software_Kipp/build/rover_Description/install.log --single-version-externally-managed
+[1.248s] running egg_info
+[1.249s] creating ../build/rover_Description/rover_Description.egg-info
+[1.250s] writing ../build/rover_Description/rover_Description.egg-info/PKG-INFO
+[1.250s] writing dependency_links to ../build/rover_Description/rover_Description.egg-info/dependency_links.txt
+[1.250s] writing entry points to ../build/rover_Description/rover_Description.egg-info/entry_points.txt
+[1.250s] writing requirements to ../build/rover_Description/rover_Description.egg-info/requires.txt
+[1.251s] writing top-level names to ../build/rover_Description/rover_Description.egg-info/top_level.txt
+[1.251s] writing manifest file '../build/rover_Description/rover_Description.egg-info/SOURCES.txt'
+[1.252s] reading manifest file '../build/rover_Description/rover_Description.egg-info/SOURCES.txt'
+[1.253s] writing manifest file '../build/rover_Description/rover_Description.egg-info/SOURCES.txt'
+[1.253s] running build
+[1.253s] running build_py
+[1.254s] creating /home/indy/Desktop/Software_Kipp/build/rover_Description/build
+[1.254s] creating /home/indy/Desktop/Software_Kipp/build/rover_Description/build/lib
+[1.254s] creating /home/indy/Desktop/Software_Kipp/build/rover_Description/build/lib/rover_Description
+[1.254s] copying rover_Description/__init__.py -> /home/indy/Desktop/Software_Kipp/build/rover_Description/build/lib/rover_Description
+[1.254s] running install
+[1.254s] running install_lib
+[1.255s] creating /home/indy/Desktop/Software_Kipp/install/rover_Description/lib/python3.10/site-packages/rover_Description
+[1.255s] copying /home/indy/Desktop/Software_Kipp/build/rover_Description/build/lib/rover_Description/__init__.py -> /home/indy/Desktop/Software_Kipp/install/rover_Description/lib/python3.10/site-packages/rover_Description
+[1.255s] byte-compiling /home/indy/Desktop/Software_Kipp/install/rover_Description/lib/python3.10/site-packages/rover_Description/__init__.py to __init__.cpython-310.pyc
+[1.256s] running install_data
+[1.256s] creating /home/indy/Desktop/Software_Kipp/install/rover_Description/share
+[1.256s] creating /home/indy/Desktop/Software_Kipp/install/rover_Description/share/ament_index
+[1.256s] creating /home/indy/Desktop/Software_Kipp/install/rover_Description/share/ament_index/resource_index
+[1.256s] creating /home/indy/Desktop/Software_Kipp/install/rover_Description/share/ament_index/resource_index/packages
+[1.257s] copying resource/rover_Description -> /home/indy/Desktop/Software_Kipp/install/rover_Description/share/ament_index/resource_index/packages
+[1.257s] creating /home/indy/Desktop/Software_Kipp/install/rover_Description/share/rover_Description
+[1.257s] copying package.xml -> /home/indy/Desktop/Software_Kipp/install/rover_Description/share/rover_Description
+[1.257s] creating /home/indy/Desktop/Software_Kipp/install/rover_Description/share/rover_Description/URDF
+[1.257s] creating /home/indy/Desktop/Software_Kipp/install/rover_Description/share/rover_Description/URDF/Components
+[1.257s] error: can't copy '/URDF/Components/wheel.xacro.urdf': doesn't exist or not a regular file
+[1.272s] Invoked command in '/home/indy/Desktop/Software_Kipp/rover_Description' returned '1': PYTHONPATH=/home/indy/Desktop/Software_Kipp/build/rover_Description/prefix_override:/home/indy/Desktop/Software_Kipp/install/rover_Description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/rover_Description build --build-base /home/indy/Desktop/Software_Kipp/build/rover_Description/build install --record /home/indy/Desktop/Software_Kipp/build/rover_Description/install.log --single-version-externally-managed

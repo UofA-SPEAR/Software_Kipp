@@ -1,0 +1,164 @@
+[0.342s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.342s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=5, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xffffa8f277f0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffa8f27160>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffa8f27160>>, mixin_verb=('build',))
+[0.369s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.369s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.369s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.369s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.369s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.369s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.369s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/indy/Desktop/Software_Kipp'
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.370s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.370s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.370s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.370s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.379s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.379s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.379s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.379s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.379s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.379s] Level 1:colcon.colcon_core.package_identification:_identify(Rover_Teleoperation) by extensions ['ignore', 'ignore_ament_install']
+[0.379s] Level 1:colcon.colcon_core.package_identification:_identify(Rover_Teleoperation) by extension 'ignore'
+[0.379s] Level 1:colcon.colcon_core.package_identification:_identify(Rover_Teleoperation) by extension 'ignore_ament_install'
+[0.379s] Level 1:colcon.colcon_core.package_identification:_identify(Rover_Teleoperation) by extensions ['colcon_pkg']
+[0.379s] Level 1:colcon.colcon_core.package_identification:_identify(Rover_Teleoperation) by extension 'colcon_pkg'
+[0.379s] Level 1:colcon.colcon_core.package_identification:_identify(Rover_Teleoperation) by extensions ['colcon_meta']
+[0.379s] Level 1:colcon.colcon_core.package_identification:_identify(Rover_Teleoperation) by extension 'colcon_meta'
+[0.379s] Level 1:colcon.colcon_core.package_identification:_identify(Rover_Teleoperation) by extensions ['ros']
+[0.379s] Level 1:colcon.colcon_core.package_identification:_identify(Rover_Teleoperation) by extension 'ros'
+[0.381s] DEBUG:colcon.colcon_core.package_identification:Package 'Rover_Teleoperation' with type 'ros.ament_python' and name 'Rover_Teleoperation'
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(rover_description) by extensions ['ignore', 'ignore_ament_install']
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(rover_description) by extension 'ignore'
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(rover_description) by extension 'ignore_ament_install'
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(rover_description) by extensions ['colcon_pkg']
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(rover_description) by extension 'colcon_pkg'
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(rover_description) by extensions ['colcon_meta']
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(rover_description) by extension 'colcon_meta'
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(rover_description) by extensions ['ros']
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(rover_description) by extension 'ros'
+[0.382s] DEBUG:colcon.colcon_core.package_identification:Package 'rover_description' with type 'ros.ament_python' and name 'rover_description'
+[0.382s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.382s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.382s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.382s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.382s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.405s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.405s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.408s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/indy/Desktop/Software_Kipp/install
+[0.409s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 4 installed packages in /home/indy/Desktop/Software_2023/install
+[0.411s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 362 installed packages in /opt/ros/humble
+[0.412s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.470s] Level 5:colcon.colcon_core.verb:set package 'Rover_Teleoperation' build argument 'cmake_args' from command line to 'None'
+[0.471s] Level 5:colcon.colcon_core.verb:set package 'Rover_Teleoperation' build argument 'cmake_target' from command line to 'None'
+[0.471s] Level 5:colcon.colcon_core.verb:set package 'Rover_Teleoperation' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.471s] Level 5:colcon.colcon_core.verb:set package 'Rover_Teleoperation' build argument 'cmake_clean_cache' from command line to 'False'
+[0.471s] Level 5:colcon.colcon_core.verb:set package 'Rover_Teleoperation' build argument 'cmake_clean_first' from command line to 'False'
+[0.471s] Level 5:colcon.colcon_core.verb:set package 'Rover_Teleoperation' build argument 'cmake_force_configure' from command line to 'False'
+[0.471s] Level 5:colcon.colcon_core.verb:set package 'Rover_Teleoperation' build argument 'ament_cmake_args' from command line to 'None'
+[0.471s] Level 5:colcon.colcon_core.verb:set package 'Rover_Teleoperation' build argument 'catkin_cmake_args' from command line to 'None'
+[0.471s] Level 5:colcon.colcon_core.verb:set package 'Rover_Teleoperation' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.471s] DEBUG:colcon.colcon_core.verb:Building package 'Rover_Teleoperation' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/indy/Desktop/Software_Kipp/build/Rover_Teleoperation', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/indy/Desktop/Software_Kipp/install/Rover_Teleoperation', 'merge_install': False, 'path': '/home/indy/Desktop/Software_Kipp/Rover_Teleoperation', 'symlink_install': False, 'test_result_base': None}
+[0.472s] Level 5:colcon.colcon_core.verb:set package 'rover_description' build argument 'cmake_args' from command line to 'None'
+[0.472s] Level 5:colcon.colcon_core.verb:set package 'rover_description' build argument 'cmake_target' from command line to 'None'
+[0.472s] Level 5:colcon.colcon_core.verb:set package 'rover_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.472s] Level 5:colcon.colcon_core.verb:set package 'rover_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.472s] Level 5:colcon.colcon_core.verb:set package 'rover_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.472s] Level 5:colcon.colcon_core.verb:set package 'rover_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.472s] Level 5:colcon.colcon_core.verb:set package 'rover_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.472s] Level 5:colcon.colcon_core.verb:set package 'rover_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.472s] Level 5:colcon.colcon_core.verb:set package 'rover_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.472s] DEBUG:colcon.colcon_core.verb:Building package 'rover_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/indy/Desktop/Software_Kipp/build/rover_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/indy/Desktop/Software_Kipp/install/rover_description', 'merge_install': False, 'path': '/home/indy/Desktop/Software_Kipp/rover_description', 'symlink_install': False, 'test_result_base': None}
+[0.473s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.477s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.477s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/indy/Desktop/Software_Kipp/Rover_Teleoperation' with build type 'ament_python'
+[0.477s] Level 1:colcon.colcon_core.shell:create_environment_hook('Rover_Teleoperation', 'ament_prefix_path')
+[0.482s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.482s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/indy/Desktop/Software_Kipp/install/Rover_Teleoperation/share/Rover_Teleoperation/hook/ament_prefix_path.ps1'
+[0.482s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/indy/Desktop/Software_Kipp/install/Rover_Teleoperation/share/Rover_Teleoperation/hook/ament_prefix_path.dsv'
+[0.482s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/indy/Desktop/Software_Kipp/install/Rover_Teleoperation/share/Rover_Teleoperation/hook/ament_prefix_path.sh'
+[0.484s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.484s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.491s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/indy/Desktop/Software_Kipp/rover_description' with build type 'ament_python'
+[0.491s] Level 1:colcon.colcon_core.shell:create_environment_hook('rover_description', 'ament_prefix_path')
+[0.493s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/indy/Desktop/Software_Kipp/install/rover_description/share/rover_description/hook/ament_prefix_path.ps1'
+[0.494s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/indy/Desktop/Software_Kipp/install/rover_description/share/rover_description/hook/ament_prefix_path.dsv'
+[0.494s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/indy/Desktop/Software_Kipp/install/rover_description/share/rover_description/hook/ament_prefix_path.sh'
+[0.496s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.496s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.752s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/indy/Desktop/Software_Kipp/Rover_Teleoperation'
+[0.754s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.754s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.047s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/indy/Desktop/Software_Kipp/rover_description'
+[1.050s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.050s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.453s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/indy/Desktop/Software_Kipp/rover_description': PYTHONPATH=/home/indy/Desktop/Software_Kipp/build/rover_description/prefix_override:/home/indy/Desktop/Software_Kipp/install/rover_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/rover_description build --build-base /home/indy/Desktop/Software_Kipp/build/rover_description/build install --record /home/indy/Desktop/Software_Kipp/build/rover_description/install.log --single-version-externally-managed
+[1.468s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/indy/Desktop/Software_Kipp/Rover_Teleoperation': PYTHONPATH=/home/indy/Desktop/Software_Kipp/build/Rover_Teleoperation/prefix_override:/home/indy/Desktop/Software_Kipp/install/Rover_Teleoperation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/Rover_Teleoperation build --build-base /home/indy/Desktop/Software_Kipp/build/Rover_Teleoperation/build install --record /home/indy/Desktop/Software_Kipp/build/Rover_Teleoperation/install.log --single-version-externally-managed
+[1.698s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/indy/Desktop/Software_Kipp/rover_description' returned '0': PYTHONPATH=/home/indy/Desktop/Software_Kipp/build/rover_description/prefix_override:/home/indy/Desktop/Software_Kipp/install/rover_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/rover_description build --build-base /home/indy/Desktop/Software_Kipp/build/rover_description/build install --record /home/indy/Desktop/Software_Kipp/build/rover_description/install.log --single-version-externally-managed
+[1.702s] Level 1:colcon.colcon_core.environment:checking '/home/indy/Desktop/Software_Kipp/install/rover_description' for CMake module files
+[1.703s] Level 1:colcon.colcon_core.environment:checking '/home/indy/Desktop/Software_Kipp/install/rover_description' for CMake config files
+[1.703s] Level 1:colcon.colcon_core.environment:checking '/home/indy/Desktop/Software_Kipp/install/rover_description/lib'
+[1.703s] Level 1:colcon.colcon_core.environment:checking '/home/indy/Desktop/Software_Kipp/install/rover_description/bin'
+[1.704s] Level 1:colcon.colcon_core.environment:checking '/home/indy/Desktop/Software_Kipp/install/rover_description/lib/pkgconfig/rover_description.pc'
+[1.704s] Level 1:colcon.colcon_core.environment:checking '/home/indy/Desktop/Software_Kipp/install/rover_description/lib/python3.10/site-packages'
+[1.704s] Level 1:colcon.colcon_core.shell:create_environment_hook('rover_description', 'pythonpath')
+[1.706s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/indy/Desktop/Software_Kipp/install/rover_description/share/rover_description/hook/pythonpath.ps1'
+[1.706s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/indy/Desktop/Software_Kipp/install/rover_description/share/rover_description/hook/pythonpath.dsv'
+[1.706s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/indy/Desktop/Software_Kipp/install/rover_description/share/rover_description/hook/pythonpath.sh'
+[1.707s] Level 1:colcon.colcon_core.environment:checking '/home/indy/Desktop/Software_Kipp/install/rover_description/bin'
+[1.707s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rover_description)
+[1.708s] INFO:colcon.colcon_core.shell:Creating package script '/home/indy/Desktop/Software_Kipp/install/rover_description/share/rover_description/package.ps1'
+[1.709s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/indy/Desktop/Software_Kipp/install/rover_description/share/rover_description/package.dsv'
+[1.709s] INFO:colcon.colcon_core.shell:Creating package script '/home/indy/Desktop/Software_Kipp/install/rover_description/share/rover_description/package.sh'
+[1.710s] INFO:colcon.colcon_core.shell:Creating package script '/home/indy/Desktop/Software_Kipp/install/rover_description/share/rover_description/package.bash'
+[1.710s] INFO:colcon.colcon_core.shell:Creating package script '/home/indy/Desktop/Software_Kipp/install/rover_description/share/rover_description/package.zsh'
+[1.711s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/indy/Desktop/Software_Kipp/install/rover_description/share/colcon-core/packages/rover_description)
+[1.714s] Level 1:colcon.colcon_core.environment:checking '/home/indy/Desktop/Software_Kipp/install/Rover_Teleoperation' for CMake module files
+[1.715s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/indy/Desktop/Software_Kipp/Rover_Teleoperation' returned '0': PYTHONPATH=/home/indy/Desktop/Software_Kipp/build/Rover_Teleoperation/prefix_override:/home/indy/Desktop/Software_Kipp/install/Rover_Teleoperation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/Rover_Teleoperation build --build-base /home/indy/Desktop/Software_Kipp/build/Rover_Teleoperation/build install --record /home/indy/Desktop/Software_Kipp/build/Rover_Teleoperation/install.log --single-version-externally-managed
+[1.715s] Level 1:colcon.colcon_core.environment:checking '/home/indy/Desktop/Software_Kipp/install/Rover_Teleoperation' for CMake config files
+[1.715s] Level 1:colcon.colcon_core.environment:checking '/home/indy/Desktop/Software_Kipp/install/Rover_Teleoperation/lib'
+[1.715s] Level 1:colcon.colcon_core.environment:checking '/home/indy/Desktop/Software_Kipp/install/Rover_Teleoperation/bin'
+[1.715s] Level 1:colcon.colcon_core.environment:checking '/home/indy/Desktop/Software_Kipp/install/Rover_Teleoperation/lib/pkgconfig/Rover_Teleoperation.pc'
+[1.716s] Level 1:colcon.colcon_core.environment:checking '/home/indy/Desktop/Software_Kipp/install/Rover_Teleoperation/lib/python3.10/site-packages'
+[1.716s] Level 1:colcon.colcon_core.shell:create_environment_hook('Rover_Teleoperation', 'pythonpath')
+[1.717s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/indy/Desktop/Software_Kipp/install/Rover_Teleoperation/share/Rover_Teleoperation/hook/pythonpath.ps1'
+[1.717s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/indy/Desktop/Software_Kipp/install/Rover_Teleoperation/share/Rover_Teleoperation/hook/pythonpath.dsv'
+[1.718s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/indy/Desktop/Software_Kipp/install/Rover_Teleoperation/share/Rover_Teleoperation/hook/pythonpath.sh'
+[1.718s] Level 1:colcon.colcon_core.environment:checking '/home/indy/Desktop/Software_Kipp/install/Rover_Teleoperation/bin'
+[1.718s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(Rover_Teleoperation)
+[1.724s] INFO:colcon.colcon_core.shell:Creating package script '/home/indy/Desktop/Software_Kipp/install/Rover_Teleoperation/share/Rover_Teleoperation/package.ps1'
+[1.724s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/indy/Desktop/Software_Kipp/install/Rover_Teleoperation/share/Rover_Teleoperation/package.dsv'
+[1.724s] INFO:colcon.colcon_core.shell:Creating package script '/home/indy/Desktop/Software_Kipp/install/Rover_Teleoperation/share/Rover_Teleoperation/package.sh'
+[1.725s] INFO:colcon.colcon_core.shell:Creating package script '/home/indy/Desktop/Software_Kipp/install/Rover_Teleoperation/share/Rover_Teleoperation/package.bash'
+[1.725s] INFO:colcon.colcon_core.shell:Creating package script '/home/indy/Desktop/Software_Kipp/install/Rover_Teleoperation/share/Rover_Teleoperation/package.zsh'
+[1.725s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/indy/Desktop/Software_Kipp/install/Rover_Teleoperation/share/colcon-core/packages/Rover_Teleoperation)
+[1.725s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.726s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.726s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1.726s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.730s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.730s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.730s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.744s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.745s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/indy/Desktop/Software_Kipp/install/local_setup.ps1'
+[1.746s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/indy/Desktop/Software_Kipp/install/_local_setup_util_ps1.py'
+[1.749s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/indy/Desktop/Software_Kipp/install/setup.ps1'
+[1.754s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/indy/Desktop/Software_Kipp/install/local_setup.sh'
+[1.755s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/indy/Desktop/Software_Kipp/install/_local_setup_util_sh.py'
+[1.755s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/indy/Desktop/Software_Kipp/install/setup.sh'
+[1.756s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/indy/Desktop/Software_Kipp/install/local_setup.bash'
+[1.756s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/indy/Desktop/Software_Kipp/install/setup.bash'
+[1.758s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/indy/Desktop/Software_Kipp/install/local_setup.zsh'
+[1.758s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/indy/Desktop/Software_Kipp/install/setup.zsh'
