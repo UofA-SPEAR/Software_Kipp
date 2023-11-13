@@ -1,1 +1,15 @@
 <!--Wheel URDF-->
+
+<xacro:macro name="wheel" params="parent_joint_name wheel_name">
+
+<!--Link Definition-->
+
+<link name="${wheel_name}_link">
+
+    <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="1.0"/>
+        
+    </visual>
+    
+</link>
