@@ -1,5 +1,5 @@
 <!--Rocker URDF-->
-<?xml version="1.0">
+<?xml version="1.0"?>
 
 <robot name="rocker_bogie_rocker" xmlns:xacro="https://www.ros.org/wiki/xacro">
 
@@ -13,28 +13,31 @@
     <xacro:property name="wheel_arm_height" value="50"/>
     <xacro:property name="wheel_arm_angle" value="-pi/4"/>
 
-    <link name="bogie_arm">
-        <visual>
-            <origin xyz="${-bogie_arm_length*cos(bogie_arm_angle)} 0 ${bogie_arm_length*sin(pi/4)}" rpy="0 ${bogie_arm_angle} 0" />
-            <geometry>
-                <box size="${bogie_arm_length} ${bogie_arm_width} ${bogie_arm_height}" />
-            </geometry>
-        </visual>
-    </link>
+    <xacro:macro name="rocker">
+        <link name="bogie_arm">
+            <visual>
+                <origin xyz="${-bogie_arm_length*cos(bogie_arm_angle)} 0 ${bogie_arm_length*sin(pi/4)}" rpy="0 ${bogie_arm_angle} 0" />
+                <geometry>
+                    <box size="${bogie_arm_length} ${bogie_arm_width} ${bogie_arm_height}" />
+                </geometry>
+            </visual>
+        </link>
 
-    <link name="wheel_arm">
-        <visual>
-            <origin xyz="${wheel_arm_length*cos(-wheel_arm_angle)} 0 ${wheel_arm_length*sin(-wheel_arm_angle)}" rpy="0 ${wheel_arm_angle} 0" />
-            <geometry>
-                <box size="${wheel_arm_length} ${wheel_arm_width} ${wheel_arm_height}" />
-            </geometry>
-        </visual>
-    </link>
+        <link name="wheel_arm">
+            <visual>
+                <origin xyz="${wheel_arm_length*cos(-wheel_arm_angle)} 0 ${wheel_arm_length*sin(-wheel_arm_angle)}" rpy="0 ${wheel_arm_angle} 0" />
+                <geometry>
+                    <box size="${wheel_arm_length} ${wheel_arm_width} ${wheel_arm_height}" />
+                </geometry>
+            </visual>
+        </link>
 
-    <joint name="rocker_arms" type="fixed">
-        <origin />
-        <parent link="bogie_arm">
-        <child link="wheel_arm">
-    </joint>
+        <joint name="rocker_arms" type="fixed">
+            <origin />
+            <parent link="bogie_arm">
+            <child link="wheel_arm">
+        </joint>
+
+    </xacro:macro>
 
 </robot>
