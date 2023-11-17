@@ -1,6 +1,0 @@
-source;share/Rover_Teleoperation/hook/pythonpath.ps1
-source;share/Rover_Teleoperation/hook/pythonpath.dsv
-source;share/Rover_Teleoperation/hook/pythonpath.sh
-source;share/Rover_Teleoperation/hook/ament_prefix_path.ps1
-source;share/Rover_Teleoperation/hook/ament_prefix_path.dsv
-source;share/Rover_Teleoperation/hook/ament_prefix_path.sh
