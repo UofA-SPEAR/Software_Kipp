@@ -52,6 +52,8 @@ class DriveControl(Node):
     #Calculate the wheel speed based on the throttle, steering data.
     #You can add additional functions to help build this function up.
     #Note create a global variable for the width of the base for now and any other value for deminsiosns 
+    #float throttle. Value between 0-1 
+    #float sterring. Value between the max wheel angle and min wheel angle. 
     def calculateWheelSpeed(self, throttle, steering):
         
 
