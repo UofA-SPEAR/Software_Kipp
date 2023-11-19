@@ -250,21 +250,14 @@
   </link>
   <joint
     name="Elbow Roll"
-    type="revolute">
+    type="fixed">
     <origin
-      xyz="0 0.09 0"
+      xyz="0 0.0782 0"
       rpy="0 0 0" />
     <parent
       link="link_2" />
     <child
       link="link_3" />
-    <axis
-      xyz="1 0 0" />
-    <limit
-      lower="-3.1416"
-      upper="3.1416"
-      effort="0"
-      velocity="0" />
   </joint>
   <link
     name="link_4">
