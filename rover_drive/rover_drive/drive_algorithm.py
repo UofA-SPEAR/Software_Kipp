@@ -10,10 +10,15 @@ import numpy as np
 from rclpy.time import Time
 import sys
 from interfaces.msg import RoverCommand
+import math
 
 roverCommandTopic = "rover_controls"
 steering_upper_limit = 0
 steering_lower_limit = 0
+
+baseLength = 30  # length between front and back wheels
+baseWidth = 20  # width between wheels
+maxSpeed = 15
 
 class DriveControl(Node):
    
@@ -36,7 +41,7 @@ class DriveControl(Node):
 
     def rover_Command_Msg (self, msg):
 
-        self.throttle = msg.throtle 
+        self.throttle = msg.throttle 
         self.steering = self.steering_conversion(msg.steering)
         self.turn = msg.turn
         
@@ -55,10 +60,21 @@ class DriveControl(Node):
     #float throttle. Value between 0-1 
     #float sterring. Value between the max wheel angle and min wheel angle. 
     def calculateWheelSpeed(self, throttle, steering):
+
+       if throttle < 0 or throttle > 1:
+            raise ValueError("Throttle value must be between 0 and 1")
         
+        # Wheel speed using Ackerman Steering Geometry (assuming wheel_speeds[0-2] = left, wheel_speeds[3-6] = right)
+        for x in range(6):
 
+            if (x < 3 and steering < 0) or (x >= 3 and steering > 0): # inner wheel (based on turn direction)
+                self.wheel_speeds[x] = (baseLength - baseWidth/2 * math.tan(steering)) * (throttle*maxSpeed) / baseLength
+            
+            elif (x < 3 and steering > 0) or (x >= 3 and steering < 0): # outer wheel
+                self.wheel_speeds[x] = (baseLength + baseWidth/2 * math.tan(steering)) * (throttle*maxSpeed) / baseLength
 
-        pass
+            else: # steering = 0
+                self.wheel_speeds[x] = throttle * maxSpeed
     
     #Function for rotating in place.
     #Ensure wheels have been fully rotated 
