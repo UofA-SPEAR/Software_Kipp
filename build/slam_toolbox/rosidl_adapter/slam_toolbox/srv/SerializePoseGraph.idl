@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from slam_toolbox/srvs/SerializePoseGraph.srv
+// generated code does not contain a copyright notice
+
+
+module slam_toolbox {
+  module srv {
+    struct SerializePoseGraph_Request {
+      string filename;
+    };
+    module SerializePoseGraph_Response_Constants {
+      const uint8 RESULT_SUCCESS = 0;
+      const uint8 RESULT_FAILED_TO_WRITE_FILE = 255;
+    };
+    @verbatim (language="comment", text=
+      "Result code defintions")
+    struct SerializePoseGraph_Response {
+      uint8 result;
+    };
+  };
+};

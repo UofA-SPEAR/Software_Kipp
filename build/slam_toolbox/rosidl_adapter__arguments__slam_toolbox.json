@@ -1,0 +1,15 @@
+{
+  "package_name": "slam_toolbox",
+  "non_idl_tuples": [
+    "/home/floks/ros2_ws/src/slam_toolbox:srvs/Pause.srv",
+    "/home/floks/ros2_ws/src/slam_toolbox:srvs/ClearQueue.srv",
+    "/home/floks/ros2_ws/src/slam_toolbox:srvs/ToggleInteractive.srv",
+    "/home/floks/ros2_ws/src/slam_toolbox:srvs/Clear.srv",
+    "/home/floks/ros2_ws/src/slam_toolbox:srvs/SaveMap.srv",
+    "/home/floks/ros2_ws/src/slam_toolbox:srvs/LoopClosure.srv",
+    "/home/floks/ros2_ws/src/slam_toolbox:srvs/MergeMaps.srv",
+    "/home/floks/ros2_ws/src/slam_toolbox:srvs/AddSubmap.srv",
+    "/home/floks/ros2_ws/src/slam_toolbox:srvs/DeserializePoseGraph.srv",
+    "/home/floks/ros2_ws/src/slam_toolbox:srvs/SerializePoseGraph.srv"
+  ]
+}

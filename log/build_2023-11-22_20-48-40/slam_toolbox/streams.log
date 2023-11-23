@@ -1,0 +1,113 @@
+[0.093s] Invoking command in '/home/floks/ros2_ws/build/slam_toolbox': CMAKE_PREFIX_PATH=/home/floks/ros2_ws/install/my_robot_controller:/opt/ros/humble /usr/bin/cmake /home/floks/ros2_ws/src/slam_toolbox -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/floks/ros2_ws/install/slam_toolbox
+[0.218s] -- The C compiler identification is GNU 11.4.0
+[0.322s] -- The CXX compiler identification is GNU 11.4.0
+[0.334s] -- Detecting C compiler ABI info
+[0.431s] -- Detecting C compiler ABI info - done
+[0.441s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.442s] -- Detecting C compile features
+[0.442s] -- Detecting C compile features - done
+[0.446s] -- Detecting CXX compiler ABI info
+[0.550s] -- Detecting CXX compiler ABI info - done
+[0.561s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.561s] -- Detecting CXX compile features
+[0.562s] -- Detecting CXX compile features - done
+[0.572s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.807s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[0.899s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.943s] -- Found message_filters: 4.3.3 (/opt/ros/humble/share/message_filters/cmake)
+[1.012s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.019s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.031s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.051s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.077s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.168s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.171s] -- Found rmw_fastrtps_cpp: 6.2.4 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.297s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.336s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.402s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.413s] -- Looking for pthread.h
+[1.513s] -- Looking for pthread.h - found
+[1.514s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.611s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.613s] -- Found Threads: TRUE  
+[1.838s] -- Found nav_msgs: 4.2.3 (/opt/ros/humble/share/nav_msgs/cmake)
+[2.014s] -- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)
+[2.138s] -- Found tf2: 0.25.4 (/opt/ros/humble/share/tf2/cmake)
+[2.156s] -- Found tf2_ros: 0.25.4 (/opt/ros/humble/share/tf2_ros/cmake)
+[2.622s] -- Found visualization_msgs: 4.2.3 (/opt/ros/humble/share/visualization_msgs/cmake)
+[2.782s] -- Found pluginlib: 5.1.0 (/opt/ros/humble/share/pluginlib/cmake)
+[2.802s] -- Found tf2_geometry_msgs: 0.25.4 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[2.821s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[2.823s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[2.823s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[2.836s] -- Found tf2_sensor_msgs: 0.25.4 (/opt/ros/humble/share/tf2_sensor_msgs/cmake)
+[2.866s] -- Found std_srvs: 4.2.3 (/opt/ros/humble/share/std_srvs/cmake)
+[2.892s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[2.904s] -- Found rviz_common: 11.2.8 (/opt/ros/humble/share/rviz_common/cmake)
+[2.938s] -- Setting OGRE_DIR to: '/opt/ros/humble/share/rviz_ogre_vendor/cmake/../../../opt/rviz_ogre_vendor/lib/OGRE/cmake'
+[2.940s] -- Found OGRE
+[2.940s] --   static     : OFF
+[2.940s] --   components : HLMS;MeshLodGenerator;Overlay;Paging;Property;RTShaderSystem;Terrain;Volume
+[2.940s] --   plugins    : Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[2.940s] --   media      : /opt/ros/humble/opt/rviz_ogre_vendor/share/OGRE/Media
+[2.940s] -- OGRE_LIBRARIES: OgreHLMS;OgreMeshLodGenerator;OgreOverlay;OgrePaging;OgreProperty;OgreRTShaderSystem;OgreTerrain;OgreVolume;OgreMain
+[2.941s] -- OGRE_LIBRARY_DIRS: /opt/ros/humble/opt/rviz_ogre_vendor/lib
+[2.941s] -- OGRE_PLUGINS: Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[2.941s] -- OGRE_PLUGIN_DIR: /opt/ros/humble/opt/rviz_ogre_vendor/lib/OGRE
+[2.941s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[2.941s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[2.941s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[2.941s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[2.942s] -- Could not find freeimage library
+[2.961s] -- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11") 
+[2.967s] -- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so   
+[3.073s] -- Found X11: /usr/include   
+[3.074s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so
+[3.165s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found
+[3.165s] -- Looking for gethostbyname
+[3.252s] -- Looking for gethostbyname - found
+[3.252s] -- Looking for connect
+[3.338s] -- Looking for connect - found
+[3.338s] -- Looking for remove
+[3.425s] -- Looking for remove - found
+[3.425s] -- Looking for shmat
+[3.513s] -- Looking for shmat - found
+[3.514s] -- Looking for IceConnectionNumber in ICE
+[3.606s] -- Looking for IceConnectionNumber in ICE - found
+[3.609s] -- rviz_ogre_vendor::RenderSystem_GL for IMPORTED_LOCATION_RELEASE: _render_system_gl_static_library_abs-NOTFOUND
+[3.609s] -- rviz_ogre_vendor::RenderSystem_GL for IMPORTED_LOCATION_DEBUG: _render_system_gl_static_library_abs-NOTFOUND
+[3.719s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[3.814s] -- Found rviz_default_plugins: 11.2.8 (/opt/ros/humble/share/rviz_default_plugins/cmake)
+[4.238s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system serialization filesystem thread 
+[4.248s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[4.256s] -- Found CHOLMOD: /usr/include/suitesparse  
+[4.259s] -- Found CSparse: /usr/include/suitesparse  
+[4.298s] -- Looking for sgemm_
+[4.384s] -- Looking for sgemm_ - not found
+[4.426s] -- Looking for sgemm_
+[4.517s] -- Looking for sgemm_ - found
+[4.517s] -- Found BLAS: /usr/lib/x86_64-linux-gnu/libblas.so  
+[4.520s] -- Looking for cheev_
+[4.611s] -- Looking for cheev_ - not found
+[4.623s] -- Looking for cheev_
+[4.697s] -- Looking for cheev_ - not found
+[4.698s] -- Looking for cheev_
+[4.806s] -- Looking for cheev_ - found
+[4.806s] -- Found LAPACK: /usr/lib/x86_64-linux-gnu/liblapack.so;/usr/lib/x86_64-linux-gnu/libblas.so  
+[4.812s] -- Found required Ceres dependency: Eigen version 3.4.0 in /usr/include/eigen3
+[4.817s] -- Found required Ceres dependency: glog
+[4.818s] -- Found required Ceres dependency: gflags
+[4.819s] -- Found Ceres version: 2.0.0 installed in: /usr with components: [EigenSparse, SparseLinearAlgebraLibrary, LAPACK, SuiteSparse, CXSparse, SchurSpecializations, Multithreading]
+[5.300s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[5.921s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[6.163s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[6.194s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[6.195s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[6.226s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[6.226s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[6.226s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[6.227s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[6.253s] -- Found PythonExtra: .so  
+[6.516s] -- Configuring done
+[6.890s] -- Generating done
+[6.896s] -- Build files have been written to: /home/floks/ros2_ws/build/slam_toolbox

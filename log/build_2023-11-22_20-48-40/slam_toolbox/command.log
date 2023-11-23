@@ -1,0 +1,1 @@
+Invoking command in '/home/floks/ros2_ws/build/slam_toolbox': CMAKE_PREFIX_PATH=/home/floks/ros2_ws/install/my_robot_controller:/opt/ros/humble /usr/bin/cmake /home/floks/ros2_ws/src/slam_toolbox -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/floks/ros2_ws/install/slam_toolbox

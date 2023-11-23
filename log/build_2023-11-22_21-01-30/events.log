@@ -1,0 +1,831 @@
+[0.000000] (-) TimerEvent: {}
+[0.000127] (robot_localization) JobQueued: {'identifier': 'robot_localization', 'dependencies': OrderedDict()}
+[0.000160] (slam_toolbox) JobQueued: {'identifier': 'slam_toolbox', 'dependencies': OrderedDict()}
+[0.000182] (zed_interfaces) JobQueued: {'identifier': 'zed_interfaces', 'dependencies': OrderedDict()}
+[0.000201] (zed_components) JobQueued: {'identifier': 'zed_components', 'dependencies': OrderedDict([('robot_localization', '/home/floks/ros2_ws/install/robot_localization'), ('zed_interfaces', '/home/floks/ros2_ws/install/zed_interfaces')])}
+[0.000223] (zed_wrapper) JobQueued: {'identifier': 'zed_wrapper', 'dependencies': OrderedDict([('robot_localization', '/home/floks/ros2_ws/install/robot_localization'), ('zed_interfaces', '/home/floks/ros2_ws/install/zed_interfaces'), ('zed_components', '/home/floks/ros2_ws/install/zed_components')])}
+[0.000249] (zed_ros2) JobQueued: {'identifier': 'zed_ros2', 'dependencies': OrderedDict([('robot_localization', '/home/floks/ros2_ws/install/robot_localization'), ('zed_interfaces', '/home/floks/ros2_ws/install/zed_interfaces'), ('zed_components', '/home/floks/ros2_ws/install/zed_components'), ('zed_wrapper', '/home/floks/ros2_ws/install/zed_wrapper')])}
+[0.000282] (robot_localization) JobStarted: {'identifier': 'robot_localization'}
+[0.099176] (-) TimerEvent: {}
+[0.101759] (zed_interfaces) JobStarted: {'identifier': 'zed_interfaces'}
+[0.193632] (slam_toolbox) JobStarted: {'identifier': 'slam_toolbox'}
+[0.199463] (-) TimerEvent: {}
+[0.280186] (robot_localization) JobProgress: {'identifier': 'robot_localization', 'progress': 'cmake'}
+[0.281210] (robot_localization) Command: {'cmd': ['/usr/bin/cmake', '/home/floks/ros2_ws/src/robot_localization', '-DCMAKE_BUILD_TYPE=Release', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/floks/ros2_ws/install/robot_localization'], 'cwd': '/home/floks/ros2_ws/build/robot_localization', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_CA:en'), ('USER', 'floks'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/floks'), ('OLDPWD', '/home/floks/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1512'), ('SYSTEMD_EXEC_PID', '1667'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '103596'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/floks/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'floks'), ('JOURNAL_STREAM', '8:33328'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'floks'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/floks-HP-ProBook-650-G4:@/tmp/.ICE-unix/1648,unix/floks-HP-ProBook-650-G4:/tmp/.ICE-unix/1648'), ('INVOCATION_ID', 'ec0ee13553b841fabe9a079bb455a9a7'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.E0OOD2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/floks/ros2_ws/install/my_robot_controller:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:c8f645fd-fce6-4a72-84fb-3a24520389e3'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/floks/ros2_ws/build/robot_localization'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/floks/ros2_ws/build/my_robot_controller:/home/floks/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/floks/ros2_ws/install/my_robot_controller:/opt/ros/humble')]), 'shell': False}
+[0.284197] (zed_interfaces) JobProgress: {'identifier': 'zed_interfaces', 'progress': 'cmake'}
+[0.286555] (zed_interfaces) JobProgress: {'identifier': 'zed_interfaces', 'progress': 'build'}
+[0.287379] (zed_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/floks/ros2_ws/build/zed_interfaces', '--', '-j8', '-l8'], 'cwd': '/home/floks/ros2_ws/build/zed_interfaces', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_CA:en'), ('USER', 'floks'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/floks'), ('OLDPWD', '/home/floks/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1512'), ('SYSTEMD_EXEC_PID', '1667'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '103596'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/floks/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'floks'), ('JOURNAL_STREAM', '8:33328'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'floks'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/floks-HP-ProBook-650-G4:@/tmp/.ICE-unix/1648,unix/floks-HP-ProBook-650-G4:/tmp/.ICE-unix/1648'), ('INVOCATION_ID', 'ec0ee13553b841fabe9a079bb455a9a7'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.E0OOD2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/floks/ros2_ws/install/my_robot_controller:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:c8f645fd-fce6-4a72-84fb-3a24520389e3'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/floks/ros2_ws/build/zed_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/floks/ros2_ws/build/my_robot_controller:/home/floks/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/floks/ros2_ws/install/my_robot_controller:/opt/ros/humble')]), 'shell': False}
+[0.290428] (slam_toolbox) JobProgress: {'identifier': 'slam_toolbox', 'progress': 'cmake'}
+[0.292324] (slam_toolbox) JobProgress: {'identifier': 'slam_toolbox', 'progress': 'build'}
+[0.292965] (slam_toolbox) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/floks/ros2_ws/build/slam_toolbox', '--', '-j8', '-l8'], 'cwd': '/home/floks/ros2_ws/build/slam_toolbox', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_CA:en'), ('USER', 'floks'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/floks'), ('OLDPWD', '/home/floks/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1512'), ('SYSTEMD_EXEC_PID', '1667'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '103596'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/floks/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'floks'), ('JOURNAL_STREAM', '8:33328'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'floks'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/floks-HP-ProBook-650-G4:@/tmp/.ICE-unix/1648,unix/floks-HP-ProBook-650-G4:/tmp/.ICE-unix/1648'), ('INVOCATION_ID', 'ec0ee13553b841fabe9a079bb455a9a7'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.E0OOD2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/floks/ros2_ws/install/my_robot_controller:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:c8f645fd-fce6-4a72-84fb-3a24520389e3'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/floks/ros2_ws/build/slam_toolbox'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/floks/ros2_ws/build/my_robot_controller:/home/floks/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/floks/ros2_ws/install/my_robot_controller:/opt/ros/humble')]), 'shell': False}
+[0.299592] (-) TimerEvent: {}
+[0.315244] (robot_localization) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.377412] (zed_interfaces) StdoutLine: {'line': b'[  0%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[0.389077] (zed_interfaces) StdoutLine: {'line': b'[  0%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[0.397193] (zed_interfaces) StdoutLine: {'line': b'[  0%] Built target ament_cmake_python_symlink_zed_interfaces\n'}
+[0.399706] (-) TimerEvent: {}
+[0.402433] (slam_toolbox) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[0.413146] (slam_toolbox) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[0.414844] (slam_toolbox) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding CXX object lib/karto_sdk/CMakeFiles/kartoSlamToolbox.dir/src/Karto.cpp.o\x1b[0m\n'}
+[0.418610] (slam_toolbox) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding CXX object lib/karto_sdk/CMakeFiles/kartoSlamToolbox.dir/src/Mapper.cpp.o\x1b[0m\n'}
+[0.427907] (slam_toolbox) StdoutLine: {'line': b'[  3%] Built target ament_cmake_python_symlink_slam_toolbox\n'}
+[0.499822] (-) TimerEvent: {}
+[0.600257] (-) TimerEvent: {}
+[0.626585] (robot_localization) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.654457] (robot_localization) StdoutLine: {'line': b'-- Found angles: 1.15.0 (/opt/ros/humble/share/angles/cmake)\n'}
+[0.664037] (robot_localization) StdoutLine: {'line': b'-- Found rclcpp: 16.0.7 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.700358] (-) TimerEvent: {}
+[0.776192] (robot_localization) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.782599] (robot_localization) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.800462] (-) TimerEvent: {}
+[0.813845] (robot_localization) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.869875] (robot_localization) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.900558] (-) TimerEvent: {}
+[0.921989] (robot_localization) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.000654] (-) TimerEvent: {}
+[1.053296] (zed_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[1.054973] (zed_interfaces) StdoutLine: {'line': b'creating zed_interfaces.egg-info\n'}
+[1.055522] (zed_interfaces) StdoutLine: {'line': b'writing zed_interfaces.egg-info/PKG-INFO\n'}
+[1.056082] (zed_interfaces) StdoutLine: {'line': b'writing dependency_links to zed_interfaces.egg-info/dependency_links.txt\n'}
+[1.056477] (zed_interfaces) StdoutLine: {'line': b'writing top-level names to zed_interfaces.egg-info/top_level.txt\n'}
+[1.057994] (zed_interfaces) StdoutLine: {'line': b"writing manifest file 'zed_interfaces.egg-info/SOURCES.txt'\n"}
+[1.062523] (slam_toolbox) StdoutLine: {'line': b'running egg_info\n'}
+[1.063569] (slam_toolbox) StdoutLine: {'line': b'creating slam_toolbox.egg-info\n'}
+[1.063781] (zed_interfaces) StdoutLine: {'line': b"reading manifest file 'zed_interfaces.egg-info/SOURCES.txt'\n"}
+[1.064350] (slam_toolbox) StdoutLine: {'line': b'writing slam_toolbox.egg-info/PKG-INFO\n'}
+[1.064604] (zed_interfaces) StdoutLine: {'line': b"writing manifest file 'zed_interfaces.egg-info/SOURCES.txt'\n"}
+[1.065117] (slam_toolbox) StdoutLine: {'line': b'writing dependency_links to slam_toolbox.egg-info/dependency_links.txt\n'}
+[1.065672] (slam_toolbox) StdoutLine: {'line': b'writing top-level names to slam_toolbox.egg-info/top_level.txt\n'}
+[1.066459] (slam_toolbox) StdoutLine: {'line': b"writing manifest file 'slam_toolbox.egg-info/SOURCES.txt'\n"}
+[1.071041] (slam_toolbox) StdoutLine: {'line': b"reading manifest file 'slam_toolbox.egg-info/SOURCES.txt'\n"}
+[1.072597] (slam_toolbox) StdoutLine: {'line': b"writing manifest file 'slam_toolbox.egg-info/SOURCES.txt'\n"}
+[1.100781] (-) TimerEvent: {}
+[1.127592] (zed_interfaces) StdoutLine: {'line': b'[  0%] Built target ament_cmake_python_build_zed_interfaces_egg\n'}
+[1.135815] (slam_toolbox) StdoutLine: {'line': b'[  3%] Built target ament_cmake_python_build_slam_toolbox_egg\n'}
+[1.144542] (robot_localization) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.148624] (robot_localization) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.5 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.200894] (-) TimerEvent: {}
+[1.301362] (-) TimerEvent: {}
+[1.397999] (robot_localization) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.401456] (-) TimerEvent: {}
+[1.501785] (-) TimerEvent: {}
+[1.602082] (-) TimerEvent: {}
+[1.702400] (-) TimerEvent: {}
+[1.734612] (robot_localization) StdoutLine: {'line': b'-- Found diagnostic_msgs: 4.2.3 (/opt/ros/humble/share/diagnostic_msgs/cmake)\n'}
+[1.802502] (-) TimerEvent: {}
+[1.838769] (robot_localization) StdoutLine: {'line': b'-- Found diagnostic_updater: 3.1.2 (/opt/ros/humble/share/diagnostic_updater/cmake)\n'}
+[1.882028] (robot_localization) StdoutLine: {'line': b'-- Found geographic_msgs: 1.0.5 (/opt/ros/humble/share/geographic_msgs/cmake)\n'}
+[1.902606] (-) TimerEvent: {}
+[2.002922] (-) TimerEvent: {}
+[2.103224] (-) TimerEvent: {}
+[2.203529] (-) TimerEvent: {}
+[2.275777] (robot_localization) StdoutLine: {'line': b'-- Found message_filters: 4.3.3 (/opt/ros/humble/share/message_filters/cmake)\n'}
+[2.290600] (robot_localization) StdoutLine: {'line': b'-- Found nav_msgs: 4.2.3 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[2.303648] (-) TimerEvent: {}
+[2.404164] (-) TimerEvent: {}
+[2.505034] (-) TimerEvent: {}
+[2.565463] (robot_localization) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[2.605135] (-) TimerEvent: {}
+[2.607171] (robot_localization) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[2.705237] (-) TimerEvent: {}
+[2.805753] (-) TimerEvent: {}
+[2.873866] (slam_toolbox) StdoutLine: {'line': b'[  3%] Built target slam_toolbox__cpp\n'}
+[2.888473] (robot_localization) StdoutLine: {'line': b'-- Found std_srvs: 4.2.3 (/opt/ros/humble/share/std_srvs/cmake)\n'}
+[2.898623] (slam_toolbox) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.905853] (-) TimerEvent: {}
+[2.918747] (slam_toolbox) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.934794] (slam_toolbox) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[2.958081] (robot_localization) StdoutLine: {'line': b'-- Found tf2: 0.25.5 (/opt/ros/humble/share/tf2/cmake)\n'}
+[3.002390] (robot_localization) StdoutLine: {'line': b'-- Found tf2_eigen: 0.25.5 (/opt/ros/humble/share/tf2_eigen/cmake)\n'}
+[3.005957] (-) TimerEvent: {}
+[3.083131] (slam_toolbox) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__rosidl_generator_c.dir/rosidl_generator_c/slam_toolbox/srv/detail/pause__functions.c.o\x1b[0m\n'}
+[3.090010] (slam_toolbox) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__rosidl_generator_c.dir/rosidl_generator_c/slam_toolbox/srv/detail/clear_queue__functions.c.o\x1b[0m\n'}
+[3.106091] (-) TimerEvent: {}
+[3.127299] (slam_toolbox) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__rosidl_generator_c.dir/rosidl_generator_c/slam_toolbox/srv/detail/toggle_interactive__functions.c.o\x1b[0m\n'}
+[3.206192] (-) TimerEvent: {}
+[3.306561] (-) TimerEvent: {}
+[3.407019] (-) TimerEvent: {}
+[3.507529] (-) TimerEvent: {}
+[3.570232] (slam_toolbox) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__rosidl_generator_c.dir/rosidl_generator_c/slam_toolbox/srv/detail/clear__functions.c.o\x1b[0m\n'}
+[3.607635] (-) TimerEvent: {}
+[3.613506] (slam_toolbox) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__rosidl_generator_c.dir/rosidl_generator_c/slam_toolbox/srv/detail/save_map__functions.c.o\x1b[0m\n'}
+[3.617756] (slam_toolbox) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__rosidl_generator_c.dir/rosidl_generator_c/slam_toolbox/srv/detail/loop_closure__functions.c.o\x1b[0m\n'}
+[3.708897] (-) TimerEvent: {}
+[3.809357] (-) TimerEvent: {}
+[3.909865] (-) TimerEvent: {}
+[4.010287] (-) TimerEvent: {}
+[4.048535] (slam_toolbox) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__rosidl_generator_c.dir/rosidl_generator_c/slam_toolbox/srv/detail/merge_maps__functions.c.o\x1b[0m\n'}
+[4.110398] (-) TimerEvent: {}
+[4.160682] (slam_toolbox) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__rosidl_generator_c.dir/rosidl_generator_c/slam_toolbox/srv/detail/add_submap__functions.c.o\x1b[0m\n'}
+[4.210500] (-) TimerEvent: {}
+[4.232963] (slam_toolbox) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__rosidl_generator_c.dir/rosidl_generator_c/slam_toolbox/srv/detail/deserialize_pose_graph__functions.c.o\x1b[0m\n'}
+[4.294312] (robot_localization) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.5 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[4.310608] (-) TimerEvent: {}
+[4.325130] (robot_localization) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[4.340358] (robot_localization) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[4.341475] (robot_localization) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[4.407474] (robot_localization) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0")  \n'}
+[4.410718] (-) TimerEvent: {}
+[4.418796] (robot_localization) StdoutLine: {'line': b'-- Found yaml_cpp_vendor: 8.0.2 (/opt/ros/humble/share/yaml_cpp_vendor/cmake)\n'}
+[4.435428] (robot_localization) StdoutLine: {'line': b'-- Found GeographicLib: /usr/lib/x86_64-linux-gnu  \n'}
+[4.436459] (slam_toolbox) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__rosidl_generator_c.dir/rosidl_generator_c/slam_toolbox/srv/detail/serialize_pose_graph__functions.c.o\x1b[0m\n'}
+[4.510830] (-) TimerEvent: {}
+[4.611263] (-) TimerEvent: {}
+[4.711698] (-) TimerEvent: {}
+[4.784586] (slam_toolbox) StdoutLine: {'line': b'[ 13%] \x1b[32m\x1b[1mLinking C shared library libslam_toolbox__rosidl_generator_c.so\x1b[0m\n'}
+[4.811817] (-) TimerEvent: {}
+[4.912296] (-) TimerEvent: {}
+[4.993704] (slam_toolbox) StdoutLine: {'line': b'[ 13%] Built target slam_toolbox__rosidl_generator_c\n'}
+[5.008774] (slam_toolbox) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/slam_toolbox/srv/clear_queue__type_support.cpp.o\x1b[0m\n'}
+[5.012419] (-) TimerEvent: {}
+[5.013780] (slam_toolbox) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/slam_toolbox/srv/pause__type_support.cpp.o\x1b[0m\n'}
+[5.031095] (slam_toolbox) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/slam_toolbox/srv/toggle_interactive__type_support.cpp.o\x1b[0m\n'}
+[5.105301] (slam_toolbox) StdoutLine: {'line': b'[ 17%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[5.112543] (-) TimerEvent: {}
+[5.213100] (-) TimerEvent: {}
+[5.313653] (-) TimerEvent: {}
+[5.414122] (-) TimerEvent: {}
+[5.514580] (-) TimerEvent: {}
+[5.615006] (-) TimerEvent: {}
+[5.715422] (-) TimerEvent: {}
+[5.815851] (-) TimerEvent: {}
+[5.916288] (-) TimerEvent: {}
+[5.945425] (robot_localization) StdoutLine: {'line': b'-- Found ament_cmake_cppcheck: 0.12.9 (/opt/ros/humble/share/ament_cmake_cppcheck/cmake)\n'}
+[5.963440] (robot_localization) StdoutLine: {'line': b'-- Found ament_cmake_cpplint: 0.12.9 (/opt/ros/humble/share/ament_cmake_cpplint/cmake)\n'}
+[5.978258] (robot_localization) StdoutLine: {'line': b'-- Found ament_cmake_uncrustify: 0.12.9 (/opt/ros/humble/share/ament_cmake_uncrustify/cmake)\n'}
+[5.986785] (robot_localization) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[6.016401] (-) TimerEvent: {}
+[6.057452] (slam_toolbox) StdoutLine: {'line': b'[ 18%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[6.097257] (slam_toolbox) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/slam_toolbox/srv/detail/pause__type_support.cpp.o\x1b[0m\n'}
+[6.104545] (slam_toolbox) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/slam_toolbox/srv/detail/clear_queue__type_support.cpp.o\x1b[0m\n'}
+[6.116514] (-) TimerEvent: {}
+[6.188485] (zed_interfaces) StdoutLine: {'line': b'[  0%] Built target zed_interfaces__cpp\n'}
+[6.216637] (-) TimerEvent: {}
+[6.256765] (zed_interfaces) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[6.260478] (zed_interfaces) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[6.263819] (zed_interfaces) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[6.316748] (-) TimerEvent: {}
+[6.350021] (slam_toolbox) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/slam_toolbox/srv/clear__type_support.cpp.o\x1b[0m\n'}
+[6.416869] (-) TimerEvent: {}
+[6.517308] (-) TimerEvent: {}
+[6.617680] (-) TimerEvent: {}
+[6.677156] (zed_interfaces) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_c.dir/rosidl_generator_c/zed_interfaces/msg/detail/keypoint2_df__functions.c.o\x1b[0m\n'}
+[6.683347] (zed_interfaces) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_c.dir/rosidl_generator_c/zed_interfaces/msg/detail/keypoint2_di__functions.c.o\x1b[0m\n'}
+[6.693922] (zed_interfaces) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_c.dir/rosidl_generator_c/zed_interfaces/msg/detail/object__functions.c.o\x1b[0m\n'}
+[6.708750] (zed_interfaces) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_c.dir/rosidl_generator_c/zed_interfaces/msg/detail/objects_stamped__functions.c.o\x1b[0m\n'}
+[6.717788] (-) TimerEvent: {}
+[6.745292] (zed_interfaces) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_c.dir/rosidl_generator_c/zed_interfaces/msg/detail/keypoint3_d__functions.c.o\x1b[0m\n'}
+[6.817919] (-) TimerEvent: {}
+[6.918302] (-) TimerEvent: {}
+[6.954722] (zed_interfaces) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_c.dir/rosidl_generator_c/zed_interfaces/msg/detail/bounding_box2_di__functions.c.o\x1b[0m\n'}
+[7.018424] (-) TimerEvent: {}
+[7.119064] (-) TimerEvent: {}
+[7.166520] (zed_interfaces) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_c.dir/rosidl_generator_c/zed_interfaces/msg/detail/bounding_box2_df__functions.c.o\x1b[0m\n'}
+[7.186357] (zed_interfaces) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_c.dir/rosidl_generator_c/zed_interfaces/msg/detail/bounding_box3_d__functions.c.o\x1b[0m\n'}
+[7.219164] (-) TimerEvent: {}
+[7.226042] (zed_interfaces) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_c.dir/rosidl_generator_c/zed_interfaces/msg/detail/skeleton2_d__functions.c.o\x1b[0m\n'}
+[7.319284] (-) TimerEvent: {}
+[7.327467] (slam_toolbox) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/slam_toolbox/srv/detail/dds_fastrtps/pause__type_support.cpp.o\x1b[0m\n'}
+[7.366281] (zed_interfaces) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_c.dir/rosidl_generator_c/zed_interfaces/msg/detail/skeleton3_d__functions.c.o\x1b[0m\n'}
+[7.419449] (-) TimerEvent: {}
+[7.428066] (zed_interfaces) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_c.dir/rosidl_generator_c/zed_interfaces/msg/detail/depth_info_stamped__functions.c.o\x1b[0m\n'}
+[7.475220] (zed_interfaces) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_c.dir/rosidl_generator_c/zed_interfaces/msg/detail/plane_stamped__functions.c.o\x1b[0m\n'}
+[7.519561] (-) TimerEvent: {}
+[7.619995] (-) TimerEvent: {}
+[7.715293] (zed_interfaces) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_c.dir/rosidl_generator_c/zed_interfaces/msg/detail/pos_track_status__functions.c.o\x1b[0m\n'}
+[7.720102] (-) TimerEvent: {}
+[7.731204] (slam_toolbox) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/slam_toolbox/srv/detail/toggle_interactive__type_support.cpp.o\x1b[0m\n'}
+[7.759614] (zed_interfaces) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_c.dir/rosidl_generator_c/zed_interfaces/msg/detail/heartbeat__functions.c.o\x1b[0m\n'}
+[7.795116] (zed_interfaces) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_c.dir/rosidl_generator_c/zed_interfaces/srv/detail/set_pose__functions.c.o\x1b[0m\n'}
+[7.820214] (-) TimerEvent: {}
+[7.920622] (-) TimerEvent: {}
+[7.935536] (slam_toolbox) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/slam_toolbox/srv/save_map__type_support.cpp.o\x1b[0m\n'}
+[8.020746] (-) TimerEvent: {}
+[8.039498] (zed_interfaces) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_c.dir/rosidl_generator_c/zed_interfaces/srv/detail/start_svo_rec__functions.c.o\x1b[0m\n'}
+[8.098407] (zed_interfaces) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding C object CMakeFiles/zed_interfaces__rosidl_generator_c.dir/rosidl_generator_c/zed_interfaces/srv/detail/set_roi__functions.c.o\x1b[0m\n'}
+[8.121027] (slam_toolbox) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/slam_toolbox/srv/detail/clear__type_support.cpp.o\x1b[0m\n'}
+[8.121381] (-) TimerEvent: {}
+[8.221763] (-) TimerEvent: {}
+[8.311111] (robot_localization) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[8.321873] (-) TimerEvent: {}
+[8.422265] (-) TimerEvent: {}
+[8.522785] (-) TimerEvent: {}
+[8.623290] (-) TimerEvent: {}
+[8.723704] (-) TimerEvent: {}
+[8.816170] (slam_toolbox) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/slam_toolbox/srv/loop_closure__type_support.cpp.o\x1b[0m\n'}
+[8.823815] (-) TimerEvent: {}
+[8.836955] (zed_interfaces) StdoutLine: {'line': b'[ 14%] \x1b[32m\x1b[1mLinking C shared library libzed_interfaces__rosidl_generator_c.so\x1b[0m\n'}
+[8.923936] (-) TimerEvent: {}
+[9.024322] (-) TimerEvent: {}
+[9.057627] (zed_interfaces) StdoutLine: {'line': b'[ 14%] Built target zed_interfaces__rosidl_generator_c\n'}
+[9.124417] (-) TimerEvent: {}
+[9.183142] (zed_interfaces) StdoutLine: {'line': b'[ 15%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[9.192034] (zed_interfaces) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[9.224567] (-) TimerEvent: {}
+[9.238430] (zed_interfaces) StdoutLine: {'line': b'[ 17%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[9.324690] (-) TimerEvent: {}
+[9.335754] (robot_localization) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[9.412585] (slam_toolbox) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/slam_toolbox/srv/merge_maps__type_support.cpp.o\x1b[0m\n'}
+[9.424796] (-) TimerEvent: {}
+[9.451108] (robot_localization) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[9.455736] (robot_localization) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[9.486508] (slam_toolbox) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/slam_toolbox/srv/detail/dds_fastrtps/clear_queue__type_support.cpp.o\x1b[0m\n'}
+[9.525040] (-) TimerEvent: {}
+[9.625493] (-) TimerEvent: {}
+[9.630864] (robot_localization) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[9.631243] (robot_localization) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[9.631401] (robot_localization) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[9.631536] (robot_localization) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[9.725595] (-) TimerEvent: {}
+[9.737150] (robot_localization) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[9.825704] (-) TimerEvent: {}
+[9.857046] (slam_toolbox) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/slam_toolbox/srv/detail/save_map__type_support.cpp.o\x1b[0m\n'}
+[9.925816] (-) TimerEvent: {}
+[10.026227] (-) TimerEvent: {}
+[10.107186] (robot_localization) StdoutLine: {'line': b'-- Found ament_cmake_flake8: 0.12.9 (/opt/ros/humble/share/ament_cmake_flake8/cmake)\n'}
+[10.113553] (robot_localization) StdoutLine: {'line': b'-- Found ament_cmake_pep257: 0.12.9 (/opt/ros/humble/share/ament_cmake_pep257/cmake)\n'}
+[10.126336] (-) TimerEvent: {}
+[10.140546] (slam_toolbox) StdoutLine: {'line': b'[ 24%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[10.188430] (robot_localization) StdoutLine: {'line': b'-- Found ament_cmake_lint_cmake: 0.12.9 (/opt/ros/humble/share/ament_cmake_lint_cmake/cmake)\n'}
+[10.201113] (robot_localization) StdoutLine: {'line': b'-- Found launch_testing_ament_cmake: 1.0.4 (/opt/ros/humble/share/launch_testing_ament_cmake/cmake)\n'}
+[10.226437] (-) TimerEvent: {}
+[10.314949] (slam_toolbox) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/slam_toolbox/srv/detail/pause__type_support_c.cpp.o\x1b[0m\n'}
+[10.326566] (-) TimerEvent: {}
+[10.332176] (robot_localization) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[10.332579] (robot_localization) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[10.332894] (robot_localization) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[10.347093] (robot_localization) StdoutLine: {'line': b"-- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built\n"}
+[10.426680] (-) TimerEvent: {}
+[10.515109] (robot_localization) StdoutLine: {'line': b'-- Configuring done\n'}
+[10.526788] (-) TimerEvent: {}
+[10.627180] (-) TimerEvent: {}
+[10.710144] (slam_toolbox) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/slam_toolbox/srv/add_submap__type_support.cpp.o\x1b[0m\n'}
+[10.727312] (-) TimerEvent: {}
+[10.827693] (-) TimerEvent: {}
+[10.928049] (-) TimerEvent: {}
+[11.028435] (-) TimerEvent: {}
+[11.056808] (slam_toolbox) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/slam_toolbox/srv/detail/pause__type_support.c.o\x1b[0m\n'}
+[11.128549] (-) TimerEvent: {}
+[11.228975] (-) TimerEvent: {}
+[11.329361] (-) TimerEvent: {}
+[11.364418] (robot_localization) StdoutLine: {'line': b'-- Generating done\n'}
+[11.379097] (robot_localization) StdoutLine: {'line': b'-- Build files have been written to: /home/floks/ros2_ws/build/robot_localization\n'}
+[11.413033] (slam_toolbox) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/slam_toolbox/srv/detail/clear_queue__type_support.c.o\x1b[0m\n'}
+[11.429479] (-) TimerEvent: {}
+[11.465789] (robot_localization) CommandEnded: {'returncode': 0}
+[11.466838] (robot_localization) JobProgress: {'identifier': 'robot_localization', 'progress': 'build'}
+[11.466915] (robot_localization) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/floks/ros2_ws/build/robot_localization', '--', '-j8', '-l8'], 'cwd': '/home/floks/ros2_ws/build/robot_localization', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_CA:en'), ('USER', 'floks'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/floks'), ('OLDPWD', '/home/floks/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1512'), ('SYSTEMD_EXEC_PID', '1667'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '103596'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/floks/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'floks'), ('JOURNAL_STREAM', '8:33328'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'floks'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/floks-HP-ProBook-650-G4:@/tmp/.ICE-unix/1648,unix/floks-HP-ProBook-650-G4:/tmp/.ICE-unix/1648'), ('INVOCATION_ID', 'ec0ee13553b841fabe9a079bb455a9a7'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.E0OOD2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/floks/ros2_ws/install/my_robot_controller:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:c8f645fd-fce6-4a72-84fb-3a24520389e3'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/floks/ros2_ws/build/robot_localization'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/floks/ros2_ws/build/my_robot_controller:/home/floks/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/floks/ros2_ws/install/my_robot_controller:/opt/ros/humble')]), 'shell': False}
+[11.529588] (-) TimerEvent: {}
+[11.620374] (slam_toolbox) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/slam_toolbox/srv/detail/clear_queue__type_support_c.cpp.o\x1b[0m\n'}
+[11.629697] (-) TimerEvent: {}
+[11.665447] (slam_toolbox) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/slam_toolbox/srv/detail/dds_fastrtps/toggle_interactive__type_support.cpp.o\x1b[0m\n'}
+[11.729811] (-) TimerEvent: {}
+[11.730570] (slam_toolbox) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/slam_toolbox/srv/detail/toggle_interactive__type_support.c.o\x1b[0m\n'}
+[11.736743] (robot_localization) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[11.794017] (robot_localization) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[11.829909] (-) TimerEvent: {}
+[11.843741] (robot_localization) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o\x1b[0m\n'}
+[11.878808] (robot_localization) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o\x1b[0m\n'}
+[11.890620] (robot_localization) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_symlink_robot_localization\n'}
+[11.926943] (slam_toolbox) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/slam_toolbox/srv/detail/loop_closure__type_support.cpp.o\x1b[0m\n'}
+[11.930018] (-) TimerEvent: {}
+[12.030439] (-) TimerEvent: {}
+[12.073126] (slam_toolbox) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/slam_toolbox/srv/detail/clear__type_support.c.o\x1b[0m\n'}
+[12.130549] (-) TimerEvent: {}
+[12.231007] (-) TimerEvent: {}
+[12.301817] (slam_toolbox) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/slam_toolbox/srv/detail/save_map__type_support.c.o\x1b[0m\n'}
+[12.331112] (-) TimerEvent: {}
+[12.431469] (-) TimerEvent: {}
+[12.531853] (-) TimerEvent: {}
+[12.536990] (slam_toolbox) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/slam_toolbox/srv/deserialize_pose_graph__type_support.cpp.o\x1b[0m\n'}
+[12.631958] (-) TimerEvent: {}
+[12.727599] (slam_toolbox) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/slam_toolbox/srv/detail/loop_closure__type_support.c.o\x1b[0m\n'}
+[12.732066] (-) TimerEvent: {}
+[12.832552] (-) TimerEvent: {}
+[12.933107] (-) TimerEvent: {}
+[13.033669] (-) TimerEvent: {}
+[13.134125] (-) TimerEvent: {}
+[13.141817] (slam_toolbox) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/slam_toolbox/srv/detail/merge_maps__type_support.c.o\x1b[0m\n'}
+[13.234237] (-) TimerEvent: {}
+[13.334637] (-) TimerEvent: {}
+[13.435036] (-) TimerEvent: {}
+[13.540303] (-) TimerEvent: {}
+[13.549589] (slam_toolbox) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/slam_toolbox/srv/detail/add_submap__type_support.c.o\x1b[0m\n'}
+[13.571364] (slam_toolbox) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_c.dir/rosidl_typesupport_c/slam_toolbox/srv/pause__type_support.cpp.o\x1b[0m\n'}
+[13.640985] (-) TimerEvent: {}
+[13.641345] (slam_toolbox) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/slam_toolbox/srv/detail/dds_fastrtps/clear__type_support.cpp.o\x1b[0m\n'}
+[13.741185] (-) TimerEvent: {}
+[13.761791] (slam_toolbox) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/slam_toolbox/srv/detail/toggle_interactive__type_support_c.cpp.o\x1b[0m\n'}
+[13.790225] (slam_toolbox) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/slam_toolbox/srv/serialize_pose_graph__type_support.cpp.o\x1b[0m\n'}
+[13.821522] (slam_toolbox) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_c.dir/rosidl_typesupport_c/slam_toolbox/srv/clear_queue__type_support.cpp.o\x1b[0m\n'}
+[13.821848] (zed_interfaces) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/zed_interfaces/msg/detail/objects_stamped__type_support.cpp.o\x1b[0m\n'}
+[13.822135] (zed_interfaces) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/zed_interfaces/msg/detail/object__type_support.cpp.o\x1b[0m\n'}
+[13.831520] (zed_interfaces) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/zed_interfaces/msg/detail/keypoint2_di__type_support.cpp.o\x1b[0m\n'}
+[13.841285] (-) TimerEvent: {}
+[13.905887] (zed_interfaces) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/zed_interfaces/msg/object__type_support.cpp.o\x1b[0m\n'}
+[13.929178] (slam_toolbox) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/slam_toolbox/srv/detail/deserialize_pose_graph__type_support.c.o\x1b[0m\n'}
+[13.941392] (-) TimerEvent: {}
+[14.041750] (-) TimerEvent: {}
+[14.085652] (slam_toolbox) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_c.dir/rosidl_typesupport_c/slam_toolbox/srv/toggle_interactive__type_support.cpp.o\x1b[0m\n'}
+[14.141852] (-) TimerEvent: {}
+[14.242245] (-) TimerEvent: {}
+[14.242740] (slam_toolbox) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_c.dir/rosidl_typesupport_c/slam_toolbox/srv/clear__type_support.cpp.o\x1b[0m\n'}
+[14.271465] (robot_localization) StdoutLine: {'line': b'running egg_info\n'}
+[14.297519] (robot_localization) StdoutLine: {'line': b'creating robot_localization.egg-info\n'}
+[14.298590] (robot_localization) StdoutLine: {'line': b'writing robot_localization.egg-info/PKG-INFO\n'}
+[14.298961] (robot_localization) StdoutLine: {'line': b'writing dependency_links to robot_localization.egg-info/dependency_links.txt\n'}
+[14.299292] (robot_localization) StdoutLine: {'line': b'writing top-level names to robot_localization.egg-info/top_level.txt\n'}
+[14.300221] (robot_localization) StdoutLine: {'line': b"writing manifest file 'robot_localization.egg-info/SOURCES.txt'\n"}
+[14.325855] (robot_localization) StdoutLine: {'line': b"reading manifest file 'robot_localization.egg-info/SOURCES.txt'\n"}
+[14.327371] (robot_localization) StdoutLine: {'line': b"writing manifest file 'robot_localization.egg-info/SOURCES.txt'\n"}
+[14.342368] (-) TimerEvent: {}
+[14.389061] (slam_toolbox) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding C object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/slam_toolbox/srv/detail/serialize_pose_graph__type_support.c.o\x1b[0m\n'}
+[14.442500] (-) TimerEvent: {}
+[14.533351] (slam_toolbox) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_c.dir/rosidl_typesupport_c/slam_toolbox/srv/save_map__type_support.cpp.o\x1b[0m\n'}
+[14.542608] (-) TimerEvent: {}
+[14.607773] (robot_localization) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_build_robot_localization_egg\n'}
+[14.643845] (-) TimerEvent: {}
+[14.654476] (slam_toolbox) StdoutLine: {'line': b'[ 43%] \x1b[32m\x1b[1mLinking C shared library libslam_toolbox__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[14.717427] (slam_toolbox) StdoutLine: {'line': b'[ 43%] \x1b[32m\x1b[1mLinking CXX shared library libslam_toolbox__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[14.743955] (-) TimerEvent: {}
+[14.755235] (slam_toolbox) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_c.dir/rosidl_typesupport_c/slam_toolbox/srv/loop_closure__type_support.cpp.o\x1b[0m\n'}
+[14.844083] (-) TimerEvent: {}
+[14.927802] (slam_toolbox) StdoutLine: {'line': b'[ 44%] Built target slam_toolbox__rosidl_typesupport_cpp\n'}
+[14.944217] (-) TimerEvent: {}
+[14.960681] (slam_toolbox) StdoutLine: {'line': b'[ 44%] Built target slam_toolbox__rosidl_typesupport_introspection_c\n'}
+[15.038445] (slam_toolbox) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/slam_toolbox/srv/detail/merge_maps__type_support.cpp.o\x1b[0m\n'}
+[15.044334] (-) TimerEvent: {}
+[15.144991] (-) TimerEvent: {}
+[15.151022] (slam_toolbox) StdoutLine: {'line': b'[ 45%] \x1b[34m\x1b[1mGenerating rviz_plugin/moc_slam_toolbox_rviz_plugin.cpp\x1b[0m\n'}
+[15.205727] (slam_toolbox) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_c.dir/rosidl_typesupport_c/slam_toolbox/srv/merge_maps__type_support.cpp.o\x1b[0m\n'}
+[15.245100] (-) TimerEvent: {}
+[15.279198] (slam_toolbox) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/slam_toolbox/srv/detail/clear__type_support_c.cpp.o\x1b[0m\n'}
+[15.345213] (-) TimerEvent: {}
+[15.350240] (slam_toolbox) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/SlamToolboxPlugin.dir/rviz_plugin/slam_toolbox_rviz_plugin.cpp.o\x1b[0m\n'}
+[15.421032] (slam_toolbox) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_c.dir/rosidl_typesupport_c/slam_toolbox/srv/add_submap__type_support.cpp.o\x1b[0m\n'}
+[15.443148] (slam_toolbox) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_c.dir/rosidl_typesupport_c/slam_toolbox/srv/deserialize_pose_graph__type_support.cpp.o\x1b[0m\n'}
+[15.445360] (-) TimerEvent: {}
+[15.545872] (-) TimerEvent: {}
+[15.618691] (slam_toolbox) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/slam_toolbox/srv/detail/save_map__type_support_c.cpp.o\x1b[0m\n'}
+[15.646195] (-) TimerEvent: {}
+[15.724567] (zed_interfaces) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/zed_interfaces/msg/object__type_support.cpp.o\x1b[0m\n'}
+[15.746304] (-) TimerEvent: {}
+[15.776724] (slam_toolbox) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_c.dir/rosidl_typesupport_c/slam_toolbox/srv/serialize_pose_graph__type_support.cpp.o\x1b[0m\n'}
+[15.846433] (-) TimerEvent: {}
+[15.946941] (-) TimerEvent: {}
+[16.047444] (-) TimerEvent: {}
+[16.116720] (zed_interfaces) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/zed_interfaces/msg/objects_stamped__type_support.cpp.o\x1b[0m\n'}
+[16.127562] (slam_toolbox) StdoutLine: {'line': b'[ 51%] \x1b[32m\x1b[1mLinking CXX shared library libslam_toolbox__rosidl_typesupport_c.so\x1b[0m\n'}
+[16.147573] (-) TimerEvent: {}
+[16.248069] (-) TimerEvent: {}
+[16.327927] (zed_interfaces) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/zed_interfaces/msg/detail/keypoint2_df__type_support.cpp.o\x1b[0m\n'}
+[16.348207] (-) TimerEvent: {}
+[16.436589] (zed_interfaces) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/zed_interfaces/msg/keypoint2_di__type_support.cpp.o\x1b[0m\n'}
+[16.448311] (-) TimerEvent: {}
+[16.537010] (slam_toolbox) StdoutLine: {'line': b'[ 51%] Built target slam_toolbox__rosidl_typesupport_c\n'}
+[16.548443] (-) TimerEvent: {}
+[16.606304] (slam_toolbox) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/slam_toolbox/srv/detail/loop_closure__type_support_c.cpp.o\x1b[0m\n'}
+[16.648549] (-) TimerEvent: {}
+[16.653897] (zed_interfaces) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/zed_interfaces/msg/objects_stamped__type_support.cpp.o\x1b[0m\n'}
+[16.682410] (zed_interfaces) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/zed_interfaces/msg/keypoint2_df__type_support.cpp.o\x1b[0m\n'}
+[16.723661] (robot_localization) StdoutLine: {'line': b'[  4%] Built target robot_localization__cpp\n'}
+[16.735819] (zed_interfaces) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/zed_interfaces/msg/detail/keypoint3_d__type_support.cpp.o\x1b[0m\n'}
+[16.743980] (zed_interfaces) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/zed_interfaces/msg/keypoint3_d__type_support.cpp.o\x1b[0m\n'}
+[16.748657] (-) TimerEvent: {}
+[16.845083] (robot_localization) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[16.848771] (-) TimerEvent: {}
+[16.877678] (slam_toolbox) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/slam_toolbox/srv/detail/merge_maps__type_support_c.cpp.o\x1b[0m\n'}
+[16.907776] (robot_localization) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[16.908468] (robot_localization) StdoutLine: {'line': b'[  7%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[16.947410] (zed_interfaces) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/zed_interfaces/msg/bounding_box2_di__type_support.cpp.o\x1b[0m\n'}
+[16.948910] (-) TimerEvent: {}
+[17.007391] (zed_interfaces) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/zed_interfaces/msg/keypoint2_di__type_support.cpp.o\x1b[0m\n'}
+[17.049732] (-) TimerEvent: {}
+[17.085457] (slam_toolbox) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/slam_toolbox/srv/detail/dds_fastrtps/save_map__type_support.cpp.o\x1b[0m\n'}
+[17.149858] (-) TimerEvent: {}
+[17.171813] (zed_interfaces) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/zed_interfaces/msg/detail/dds_fastrtps/object__type_support.cpp.o\x1b[0m\n'}
+[17.249965] (-) TimerEvent: {}
+[17.253284] (zed_interfaces) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/zed_interfaces/msg/bounding_box2_df__type_support.cpp.o\x1b[0m\n'}
+[17.350073] (-) TimerEvent: {}
+[17.450779] (-) TimerEvent: {}
+[17.551159] (-) TimerEvent: {}
+[17.563826] (zed_interfaces) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/zed_interfaces/msg/bounding_box3_d__type_support.cpp.o\x1b[0m\n'}
+[17.651275] (-) TimerEvent: {}
+[17.751719] (-) TimerEvent: {}
+[17.845318] (zed_interfaces) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/zed_interfaces/msg/skeleton2_d__type_support.cpp.o\x1b[0m\n'}
+[17.851833] (-) TimerEvent: {}
+[17.961225] (-) TimerEvent: {}
+[18.061757] (-) TimerEvent: {}
+[18.172922] (-) TimerEvent: {}
+[18.276969] (-) TimerEvent: {}
+[18.377555] (-) TimerEvent: {}
+[18.377979] (zed_interfaces) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/zed_interfaces/msg/skeleton3_d__type_support.cpp.o\x1b[0m\n'}
+[18.445181] (slam_toolbox) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/slam_toolbox/srv/detail/add_submap__type_support.cpp.o\x1b[0m\n'}
+[18.477664] (-) TimerEvent: {}
+[18.479104] (slam_toolbox) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/SlamToolboxPlugin.dir/rviz_plugin/moc_slam_toolbox_rviz_plugin.cpp.o\x1b[0m\n'}
+[18.577797] (-) TimerEvent: {}
+[18.637016] (zed_interfaces) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/zed_interfaces/msg/depth_info_stamped__type_support.cpp.o\x1b[0m\n'}
+[18.677917] (-) TimerEvent: {}
+[18.778381] (-) TimerEvent: {}
+[18.878898] (-) TimerEvent: {}
+[18.969988] (zed_interfaces) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/zed_interfaces/msg/plane_stamped__type_support.cpp.o\x1b[0m\n'}
+[18.979012] (-) TimerEvent: {}
+[19.064154] (robot_localization) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/robot_localization__rosidl_generator_c.dir/rosidl_generator_c/robot_localization/srv/detail/from_ll__functions.c.o\x1b[0m\n'}
+[19.079131] (-) TimerEvent: {}
+[19.114275] (robot_localization) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/robot_localization__rosidl_generator_c.dir/rosidl_generator_c/robot_localization/srv/detail/get_state__functions.c.o\x1b[0m\n'}
+[19.151712] (robot_localization) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/robot_localization__rosidl_generator_c.dir/rosidl_generator_c/robot_localization/srv/detail/set_datum__functions.c.o\x1b[0m\n'}
+[19.179238] (-) TimerEvent: {}
+[19.279689] (-) TimerEvent: {}
+[19.373563] (zed_interfaces) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/zed_interfaces/msg/keypoint2_df__type_support.cpp.o\x1b[0m\n'}
+[19.379779] (-) TimerEvent: {}
+[19.380228] (zed_interfaces) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/zed_interfaces/msg/pos_track_status__type_support.cpp.o\x1b[0m\n'}
+[19.485021] (-) TimerEvent: {}
+[19.490374] (slam_toolbox) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/slam_toolbox/srv/detail/add_submap__type_support_c.cpp.o\x1b[0m\n'}
+[19.495469] (zed_interfaces) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/zed_interfaces/msg/keypoint3_d__type_support.cpp.o\x1b[0m\n'}
+[19.587374] (-) TimerEvent: {}
+[19.687797] (-) TimerEvent: {}
+[19.745462] (zed_interfaces) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/zed_interfaces/msg/heartbeat__type_support.cpp.o\x1b[0m\n'}
+[19.787947] (-) TimerEvent: {}
+[19.857272] (zed_interfaces) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/zed_interfaces/msg/detail/bounding_box2_di__type_support.cpp.o\x1b[0m\n'}
+[19.879905] (robot_localization) StdoutLine: {'line': b'[ 11%] \x1b[32m\x1b[1mLinking CXX static library libgtest_main.a\x1b[0m\n'}
+[19.888059] (-) TimerEvent: {}
+[19.899234] (slam_toolbox) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/slam_toolbox/srv/detail/deserialize_pose_graph__type_support_c.cpp.o\x1b[0m\n'}
+[19.988203] (-) TimerEvent: {}
+[20.088648] (-) TimerEvent: {}
+[20.116651] (zed_interfaces) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/zed_interfaces/srv/set_pose__type_support.cpp.o\x1b[0m\n'}
+[20.196755] (-) TimerEvent: {}
+[20.259170] (zed_interfaces) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/zed_interfaces/msg/detail/object__type_support_c.cpp.o\x1b[0m\n'}
+[20.286690] (robot_localization) StdoutLine: {'line': b'[ 11%] Built target gtest_main\n'}
+[20.296898] (-) TimerEvent: {}
+[20.301523] (slam_toolbox) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/slam_toolbox/srv/detail/dds_fastrtps/loop_closure__type_support.cpp.o\x1b[0m\n'}
+[20.335261] (robot_localization) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/robot_localization__rosidl_generator_c.dir/rosidl_generator_c/robot_localization/srv/detail/set_pose__functions.c.o\x1b[0m\n'}
+[20.394113] (robot_localization) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/robot_localization__rosidl_generator_c.dir/rosidl_generator_c/robot_localization/srv/detail/toggle_filter_processing__functions.c.o\x1b[0m\n'}
+[20.396994] (-) TimerEvent: {}
+[20.434307] (robot_localization) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding C object CMakeFiles/robot_localization__rosidl_generator_c.dir/rosidl_generator_c/robot_localization/srv/detail/to_ll__functions.c.o\x1b[0m\n'}
+[20.497122] (-) TimerEvent: {}
+[20.517005] (zed_interfaces) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/zed_interfaces/srv/start_svo_rec__type_support.cpp.o\x1b[0m\n'}
+[20.597241] (-) TimerEvent: {}
+[20.649459] (zed_interfaces) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/zed_interfaces/msg/detail/objects_stamped__type_support_c.cpp.o\x1b[0m\n'}
+[20.697411] (-) TimerEvent: {}
+[20.797858] (-) TimerEvent: {}
+[20.895153] (zed_interfaces) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/zed_interfaces/srv/set_roi__type_support.cpp.o\x1b[0m\n'}
+[20.897974] (-) TimerEvent: {}
+[20.998509] (-) TimerEvent: {}
+[21.099108] (-) TimerEvent: {}
+[21.111823] (zed_interfaces) StdoutLine: {'line': b'[ 37%] \x1b[32m\x1b[1mLinking CXX shared library libzed_interfaces__rosidl_typesupport_c.so\x1b[0m\n'}
+[21.165651] (robot_localization) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object CMakeFiles/robot_localization__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robot_localization/srv/detail/get_state__type_support.cpp.o\x1b[0m\n'}
+[21.199234] (-) TimerEvent: {}
+[21.223580] (robot_localization) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding CXX object CMakeFiles/robot_localization__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_localization/srv/from_ll__type_support.cpp.o\x1b[0m\n'}
+[21.260201] (robot_localization) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/robot_localization__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robot_localization/srv/detail/from_ll__type_support.cpp.o\x1b[0m\n'}
+[21.299371] (-) TimerEvent: {}
+[21.301740] (robot_localization) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/robot_localization__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_localization/srv/get_state__type_support.cpp.o\x1b[0m\n'}
+[21.318017] (robot_localization) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/robot_localization__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robot_localization/srv/detail/set_datum__type_support.cpp.o\x1b[0m\n'}
+[21.399500] (-) TimerEvent: {}
+[21.438960] (zed_interfaces) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/zed_interfaces/msg/detail/dds_fastrtps/objects_stamped__type_support.cpp.o\x1b[0m\n'}
+[21.475155] (robot_localization) StdoutLine: {'line': b'[ 18%] \x1b[32m\x1b[1mLinking C shared library librobot_localization__rosidl_generator_c.so\x1b[0m\n'}
+[21.499621] (-) TimerEvent: {}
+[21.506386] (zed_interfaces) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/zed_interfaces/msg/detail/dds_fastrtps/keypoint2_di__type_support.cpp.o\x1b[0m\n'}
+[21.579102] (zed_interfaces) StdoutLine: {'line': b'[ 38%] Built target zed_interfaces__rosidl_typesupport_c\n'}
+[21.599742] (-) TimerEvent: {}
+[21.663267] (zed_interfaces) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/zed_interfaces/msg/bounding_box2_di__type_support.cpp.o\x1b[0m\n'}
+[21.699859] (-) TimerEvent: {}
+[21.762028] (zed_interfaces) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/zed_interfaces/msg/detail/dds_fastrtps/keypoint2_df__type_support.cpp.o\x1b[0m\n'}
+[21.799976] (-) TimerEvent: {}
+[21.889279] (robot_localization) StdoutLine: {'line': b'[ 18%] Built target robot_localization__rosidl_generator_c\n'}
+[21.900088] (-) TimerEvent: {}
+[22.000557] (-) TimerEvent: {}
+[22.038339] (robot_localization) StdoutLine: {'line': b'[ 19%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[22.100671] (-) TimerEvent: {}
+[22.165375] (slam_toolbox) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/slam_toolbox/srv/detail/deserialize_pose_graph__type_support.cpp.o\x1b[0m\n'}
+[22.200792] (-) TimerEvent: {}
+[22.301320] (-) TimerEvent: {}
+[22.401968] (-) TimerEvent: {}
+[22.502451] (-) TimerEvent: {}
+[22.602888] (-) TimerEvent: {}
+[22.705921] (-) TimerEvent: {}
+[22.810034] (-) TimerEvent: {}
+[22.911292] (-) TimerEvent: {}
+[23.013314] (-) TimerEvent: {}
+[23.114062] (-) TimerEvent: {}
+[23.215493] (-) TimerEvent: {}
+[23.321087] (-) TimerEvent: {}
+[23.428587] (-) TimerEvent: {}
+[23.612385] (-) TimerEvent: {}
+[29.211481] (-) TimerEvent: {}
+[73.318442] (-) TimerEvent: {}
+[73.429288] (-) TimerEvent: {}
+[73.449250] (zed_interfaces) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/zed_interfaces/msg/detail/bounding_box2_df__type_support.cpp.o\x1b[0m\n'}
+[73.529424] (-) TimerEvent: {}
+[73.630109] (-) TimerEvent: {}
+[73.730662] (-) TimerEvent: {}
+[73.831519] (-) TimerEvent: {}
+[73.932004] (-) TimerEvent: {}
+[74.032464] (-) TimerEvent: {}
+[74.133783] (-) TimerEvent: {}
+[74.178135] (slam_toolbox) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/slam_toolbox/srv/detail/serialize_pose_graph__type_support_c.cpp.o\x1b[0m\n'}
+[74.233871] (-) TimerEvent: {}
+[74.334288] (-) TimerEvent: {}
+[74.434778] (-) TimerEvent: {}
+[74.450361] (zed_interfaces) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/zed_interfaces/msg/bounding_box2_df__type_support.cpp.o\x1b[0m\n'}
+[74.534913] (-) TimerEvent: {}
+[74.606725] (slam_toolbox) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/slam_toolbox/srv/detail/dds_fastrtps/merge_maps__type_support.cpp.o\x1b[0m\n'}
+[74.633325] (robot_localization) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/robot_localization__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_localization/srv/detail/dds_fastrtps/from_ll__type_support.cpp.o\x1b[0m\n'}
+[74.635031] (-) TimerEvent: {}
+[74.669507] (zed_interfaces) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding C object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/zed_interfaces/msg/detail/object__type_support.c.o\x1b[0m\n'}
+[74.711289] (zed_interfaces) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/zed_interfaces/msg/detail/keypoint2_di__type_support_c.cpp.o\x1b[0m\n'}
+[74.735151] (-) TimerEvent: {}
+[74.835797] (-) TimerEvent: {}
+[74.936760] (-) TimerEvent: {}
+[75.032089] (robot_localization) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/robot_localization__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_localization/srv/set_datum__type_support.cpp.o\x1b[0m\n'}
+[75.036897] (-) TimerEvent: {}
+[75.137383] (-) TimerEvent: {}
+[75.237880] (-) TimerEvent: {}
+[75.338373] (-) TimerEvent: {}
+[75.438812] (-) TimerEvent: {}
+[75.539349] (-) TimerEvent: {}
+[75.557033] (slam_toolbox) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/slam_toolbox/srv/detail/serialize_pose_graph__type_support.cpp.o\x1b[0m\n'}
+[75.620506] (robot_localization) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/robot_localization__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robot_localization/srv/detail/set_pose__type_support.cpp.o\x1b[0m\n'}
+[75.651765] (-) TimerEvent: {}
+[75.752270] (-) TimerEvent: {}
+[75.828510] (zed_interfaces) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding C object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/zed_interfaces/msg/detail/objects_stamped__type_support.c.o\x1b[0m\n'}
+[75.852418] (-) TimerEvent: {}
+[75.953049] (-) TimerEvent: {}
+[76.053494] (-) TimerEvent: {}
+[76.153962] (-) TimerEvent: {}
+[76.243503] (zed_interfaces) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding C object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/zed_interfaces/msg/detail/keypoint2_di__type_support.c.o\x1b[0m\n'}
+[76.254082] (-) TimerEvent: {}
+[76.354590] (-) TimerEvent: {}
+[76.455083] (-) TimerEvent: {}
+[76.555541] (-) TimerEvent: {}
+[76.641433] (zed_interfaces) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding C object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/zed_interfaces/msg/detail/keypoint2_df__type_support.c.o\x1b[0m\n'}
+[76.655653] (-) TimerEvent: {}
+[76.759849] (-) TimerEvent: {}
+[76.862843] (-) TimerEvent: {}
+[76.963286] (-) TimerEvent: {}
+[77.055825] (zed_interfaces) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/zed_interfaces/msg/detail/bounding_box3_d__type_support.cpp.o\x1b[0m\n'}
+[77.063425] (-) TimerEvent: {}
+[77.081258] (slam_toolbox) StdoutLine: {'line': b'[ 60%] \x1b[32m\x1b[1mLinking CXX shared library libslam_toolbox__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[77.162322] (zed_interfaces) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding C object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/zed_interfaces/msg/detail/keypoint3_d__type_support.c.o\x1b[0m\n'}
+[77.163541] (-) TimerEvent: {}
+[77.265328] (-) TimerEvent: {}
+[77.371131] (-) TimerEvent: {}
+[77.384389] (zed_interfaces) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/zed_interfaces/msg/bounding_box3_d__type_support.cpp.o\x1b[0m\n'}
+[77.432021] (robot_localization) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/robot_localization__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_localization/srv/toggle_filter_processing__type_support.cpp.o\x1b[0m\n'}
+[77.471230] (-) TimerEvent: {}
+[77.529750] (zed_interfaces) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding C object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/zed_interfaces/msg/detail/bounding_box2_di__type_support.c.o\x1b[0m\n'}
+[77.571373] (-) TimerEvent: {}
+[77.671959] (-) TimerEvent: {}
+[77.772350] (-) TimerEvent: {}
+[77.877742] (slam_toolbox) StdoutLine: {'line': b'[ 60%] Built target slam_toolbox__rosidl_typesupport_fastrtps_c\n'}
+[77.884223] (-) TimerEvent: {}
+[77.899889] (zed_interfaces) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding C object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/zed_interfaces/msg/detail/bounding_box2_df__type_support.c.o\x1b[0m\n'}
+[77.984350] (-) TimerEvent: {}
+[78.084846] (-) TimerEvent: {}
+[78.185532] (-) TimerEvent: {}
+[78.193321] (robot_localization) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/robot_localization__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_localization/srv/detail/dds_fastrtps/get_state__type_support.cpp.o\x1b[0m\n'}
+[78.253922] (slam_toolbox) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/slam_toolbox/srv/detail/dds_fastrtps/deserialize_pose_graph__type_support.cpp.o\x1b[0m\n'}
+[78.285554] (-) TimerEvent: {}
+[78.304147] (zed_interfaces) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/zed_interfaces/msg/detail/dds_fastrtps/bounding_box2_di__type_support.cpp.o\x1b[0m\n'}
+[78.333725] (zed_interfaces) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding C object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/zed_interfaces/msg/detail/bounding_box3_d__type_support.c.o\x1b[0m\n'}
+[78.385671] (-) TimerEvent: {}
+[78.409179] (zed_interfaces) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/zed_interfaces/msg/detail/keypoint2_df__type_support_c.cpp.o\x1b[0m\n'}
+[78.503793] (-) TimerEvent: {}
+[78.614481] (-) TimerEvent: {}
+[78.641301] (zed_interfaces) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding C object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/zed_interfaces/msg/detail/skeleton2_d__type_support.c.o\x1b[0m\n'}
+[78.686764] (robot_localization) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding CXX object CMakeFiles/robot_localization__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robot_localization/srv/detail/toggle_filter_processing__type_support.cpp.o\x1b[0m\n'}
+[78.714596] (-) TimerEvent: {}
+[78.800777] (slam_toolbox) StdoutLine: {'line': b'[ 60%] \x1b[32m\x1b[1mLinking CXX shared library libslam_toolbox__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[78.816174] (-) TimerEvent: {}
+[78.916931] (-) TimerEvent: {}
+[78.918319] (robot_localization) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/robot_localization__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_localization/srv/detail/from_ll__type_support_c.cpp.o\x1b[0m\n'}
+[79.017069] (-) TimerEvent: {}
+[79.105229] (zed_interfaces) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding C object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/zed_interfaces/msg/detail/skeleton3_d__type_support.c.o\x1b[0m\n'}
+[79.117186] (-) TimerEvent: {}
+[79.217760] (-) TimerEvent: {}
+[79.318242] (-) TimerEvent: {}
+[79.321187] (zed_interfaces) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/zed_interfaces/msg/skeleton2_d__type_support.cpp.o\x1b[0m\n'}
+[79.418366] (-) TimerEvent: {}
+[79.472435] (slam_toolbox) StdoutLine: {'line': b'[ 60%] Built target slam_toolbox__rosidl_typesupport_introspection_cpp\n'}
+[79.497538] (zed_interfaces) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding C object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/zed_interfaces/msg/detail/depth_info_stamped__type_support.c.o\x1b[0m\n'}
+[79.518488] (-) TimerEvent: {}
+[79.522327] (robot_localization) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/robot_localization__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_localization/srv/set_pose__type_support.cpp.o\x1b[0m\n'}
+[79.618646] (-) TimerEvent: {}
+[79.719125] (-) TimerEvent: {}
+[79.781107] (zed_interfaces) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/zed_interfaces/msg/detail/skeleton2_d__type_support.cpp.o\x1b[0m\n'}
+[79.782758] (zed_interfaces) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding C object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/zed_interfaces/msg/detail/plane_stamped__type_support.c.o\x1b[0m\n'}
+[79.819259] (-) TimerEvent: {}
+[79.919729] (-) TimerEvent: {}
+[80.020237] (-) TimerEvent: {}
+[80.120710] (-) TimerEvent: {}
+[80.221207] (-) TimerEvent: {}
+[80.243242] (zed_interfaces) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/zed_interfaces/msg/detail/keypoint3_d__type_support_c.cpp.o\x1b[0m\n'}
+[80.284951] (zed_interfaces) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding C object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/zed_interfaces/msg/detail/pos_track_status__type_support.c.o\x1b[0m\n'}
+[80.321323] (-) TimerEvent: {}
+[80.421908] (-) TimerEvent: {}
+[80.522416] (-) TimerEvent: {}
+[80.598247] (zed_interfaces) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding C object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/zed_interfaces/msg/detail/heartbeat__type_support.c.o\x1b[0m\n'}
+[80.634795] (robot_localization) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/robot_localization__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_localization/srv/to_ll__type_support.cpp.o\x1b[0m\n'}
+[80.635424] (-) TimerEvent: {}
+[80.735868] (-) TimerEvent: {}
+[80.811128] (zed_interfaces) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/zed_interfaces/msg/skeleton3_d__type_support.cpp.o\x1b[0m\n'}
+[80.816229] (zed_interfaces) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/zed_interfaces/msg/detail/dds_fastrtps/bounding_box2_df__type_support.cpp.o\x1b[0m\n'}
+[80.819652] (zed_interfaces) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding C object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/zed_interfaces/srv/detail/set_pose__type_support.c.o\x1b[0m\n'}
+[80.835409] (slam_toolbox) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/slam_toolbox/srv/detail/dds_fastrtps/serialize_pose_graph__type_support.cpp.o\x1b[0m\n'}
+[80.835999] (-) TimerEvent: {}
+[80.936395] (-) TimerEvent: {}
+[81.014260] (robot_localization) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/robot_localization__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_localization/srv/detail/dds_fastrtps/set_datum__type_support.cpp.o\x1b[0m\n'}
+[81.036510] (-) TimerEvent: {}
+[81.137097] (-) TimerEvent: {}
+[81.148485] (zed_interfaces) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding C object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/zed_interfaces/srv/detail/start_svo_rec__type_support.c.o\x1b[0m\n'}
+[81.237250] (-) TimerEvent: {}
+[81.279057] (robot_localization) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/robot_localization__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_localization/srv/detail/get_state__type_support_c.cpp.o\x1b[0m\n'}
+[81.337352] (-) TimerEvent: {}
+[81.433954] (zed_interfaces) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding C object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/zed_interfaces/srv/detail/set_roi__type_support.c.o\x1b[0m\n'}
+[81.437484] (-) TimerEvent: {}
+[81.537949] (-) TimerEvent: {}
+[81.639157] (-) TimerEvent: {}
+[81.748921] (-) TimerEvent: {}
+[81.814204] (robot_localization) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/robot_localization__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robot_localization/srv/detail/to_ll__type_support.cpp.o\x1b[0m\n'}
+[81.825178] (zed_interfaces) StdoutLine: {'line': b'[ 58%] \x1b[32m\x1b[1mLinking C shared library libzed_interfaces__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[81.849049] (-) TimerEvent: {}
+[81.949800] (-) TimerEvent: {}
+[82.050420] (-) TimerEvent: {}
+[82.150932] (-) TimerEvent: {}
+[82.251440] (-) TimerEvent: {}
+[82.337495] (zed_interfaces) StdoutLine: {'line': b'[ 58%] Built target zed_interfaces__rosidl_typesupport_introspection_c\n'}
+[82.351587] (-) TimerEvent: {}
+[82.453565] (-) TimerEvent: {}
+[82.559619] (-) TimerEvent: {}
+[82.691749] (-) TimerEvent: {}
+[82.827489] (-) TimerEvent: {}
+[82.954377] (-) TimerEvent: {}
+[83.077471] (-) TimerEvent: {}
+[83.224607] (-) TimerEvent: {}
+[83.259790] (zed_interfaces) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/zed_interfaces/msg/detail/depth_info_stamped__type_support.cpp.o\x1b[0m\n'}
+[83.331284] (-) TimerEvent: {}
+[83.433689] (-) TimerEvent: {}
+[83.536037] (-) TimerEvent: {}
+[83.645852] (-) TimerEvent: {}
+[83.754755] (zed_interfaces) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/zed_interfaces/msg/depth_info_stamped__type_support.cpp.o\x1b[0m\n'}
+[83.761118] (-) TimerEvent: {}
+[83.762035] (robot_localization) StdoutLine: {'line': b'[ 31%] \x1b[32m\x1b[1mLinking CXX shared library librobot_localization__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[83.871911] (-) TimerEvent: {}
+[83.961453] (zed_interfaces) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/zed_interfaces/msg/detail/bounding_box2_di__type_support_c.cpp.o\x1b[0m\n'}
+[83.977160] (-) TimerEvent: {}
+[84.078185] (-) TimerEvent: {}
+[84.185750] (-) TimerEvent: {}
+[84.298171] (-) TimerEvent: {}
+[84.411653] (-) TimerEvent: {}
+[84.543219] (-) TimerEvent: {}
+[84.672979] (-) TimerEvent: {}
+[84.776827] (-) TimerEvent: {}
+[84.877808] (-) TimerEvent: {}
+[85.001583] (-) TimerEvent: {}
+[85.108132] (-) TimerEvent: {}
+[85.208609] (-) TimerEvent: {}
+[85.316558] (-) TimerEvent: {}
+[85.379179] (slam_toolbox) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/slam_toolbox/srv/detail/dds_fastrtps/add_submap__type_support.cpp.o\x1b[0m\n'}
+[85.389705] (robot_localization) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/robot_localization__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_localization/srv/detail/dds_fastrtps/set_pose__type_support.cpp.o\x1b[0m\n'}
+[85.390518] (robot_localization) StdoutLine: {'line': b'[ 31%] Built target robot_localization__rosidl_typesupport_cpp\n'}
+[85.416691] (-) TimerEvent: {}
+[85.477372] (zed_interfaces) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/zed_interfaces/msg/detail/dds_fastrtps/bounding_box3_d__type_support.cpp.o\x1b[0m\n'}
+[85.516853] (-) TimerEvent: {}
+[85.618685] (-) TimerEvent: {}
+[85.728939] (-) TimerEvent: {}
+[85.829452] (-) TimerEvent: {}
+[85.932915] (-) TimerEvent: {}
+[86.035195] (-) TimerEvent: {}
+[86.136090] (-) TimerEvent: {}
+[86.238176] (-) TimerEvent: {}
+[86.344809] (-) TimerEvent: {}
+[86.445546] (-) TimerEvent: {}
+[86.546135] (-) TimerEvent: {}
+[86.646611] (-) TimerEvent: {}
+[86.712808] (robot_localization) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/robot_localization__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_localization/srv/detail/set_datum__type_support_c.cpp.o\x1b[0m\n'}
+[86.746825] (-) TimerEvent: {}
+[86.851766] (-) TimerEvent: {}
+[86.953261] (-) TimerEvent: {}
+[87.053776] (-) TimerEvent: {}
+[87.154786] (-) TimerEvent: {}
+[87.256378] (-) TimerEvent: {}
+[87.390109] (-) TimerEvent: {}
+[87.411093] (zed_interfaces) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/zed_interfaces/msg/pos_track_status__type_support.cpp.o\x1b[0m\n'}
+[87.490031] (-) TimerEvent: {}
+[87.636995] (-) TimerEvent: {}
+[87.823710] (-) TimerEvent: {}
+[88.325986] (-) TimerEvent: {}
+[88.448761] (-) TimerEvent: {}
+[88.595806] (-) TimerEvent: {}
+[88.832038] (-) TimerEvent: {}
+[89.204792] (-) TimerEvent: {}
+[89.836582] (-) TimerEvent: {}
+[94.965520] (-) TimerEvent: {}
+[100.359543] (-) TimerEvent: {}
+[117.105603] (-) TimerEvent: {}
+[135.314423] (-) TimerEvent: {}
+[149.370407] (-) TimerEvent: {}
+[159.720034] (-) TimerEvent: {}
+[188.965731] (-) TimerEvent: {}
+[205.111192] (-) TimerEvent: {}
+[214.771471] (-) TimerEvent: {}
+[228.869090] (-) TimerEvent: {}
+[260.358788] (-) TimerEvent: {}
+[274.404569] (-) TimerEvent: {}
+[290.958418] (-) TimerEvent: {}
+[317.463255] (-) TimerEvent: {}
+[325.698521] (-) TimerEvent: {}
+[325.817699] (-) TimerEvent: {}
+[325.929210] (-) TimerEvent: {}
+[325.959262] (robot_localization) StdoutLine: {'line': b'[ 33%] \x1b[32m\x1b[1mLinking CXX shared library librobot_localization__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[325.969137] (zed_interfaces) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/zed_interfaces/msg/detail/bounding_box2_df__type_support_c.cpp.o\x1b[0m\n'}
+[325.970514] (zed_interfaces) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/zed_interfaces/msg/detail/plane_stamped__type_support.cpp.o\x1b[0m\n'}
+[326.029350] (-) TimerEvent: {}
+[326.134529] (-) TimerEvent: {}
+[326.236160] (-) TimerEvent: {}
+[326.357546] (-) TimerEvent: {}
+[326.458181] (-) TimerEvent: {}
+[326.560606] (-) TimerEvent: {}
+[326.665525] (-) TimerEvent: {}
+[326.776870] (-) TimerEvent: {}
+[326.877347] (-) TimerEvent: {}
+[326.977812] (-) TimerEvent: {}
+[327.095870] (-) TimerEvent: {}
+[327.196419] (-) TimerEvent: {}
+[327.296907] (-) TimerEvent: {}
+[327.398838] (-) TimerEvent: {}
+[327.510805] (-) TimerEvent: {}
+[327.611231] (-) TimerEvent: {}
+[327.711719] (-) TimerEvent: {}
+[327.812145] (-) TimerEvent: {}
+[327.916937] (-) TimerEvent: {}
+[328.022590] (-) TimerEvent: {}
+[328.044741] (zed_interfaces) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/zed_interfaces/msg/detail/dds_fastrtps/keypoint3_d__type_support.cpp.o\x1b[0m\n'}
+[328.052276] (robot_localization) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/robot_localization__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_localization/srv/detail/dds_fastrtps/to_ll__type_support.cpp.o\x1b[0m\n'}
+[328.124936] (-) TimerEvent: {}
+[328.197720] (robot_localization) StdoutLine: {'line': b'[ 34%] Built target robot_localization__rosidl_typesupport_introspection_cpp\n'}
+[328.225707] (-) TimerEvent: {}
+[328.328913] (-) TimerEvent: {}
+[328.342191] (zed_interfaces) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/zed_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/zed_interfaces/msg/heartbeat__type_support.cpp.o\x1b[0m\n'}
+[328.429142] (-) TimerEvent: {}
+[328.529594] (-) TimerEvent: {}
+[328.630873] (-) TimerEvent: {}
+[328.668271] (slam_toolbox) StdoutLine: {'line': b'[ 63%] \x1b[32m\x1b[1mLinking CXX shared library libslam_toolbox__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[328.744981] (-) TimerEvent: {}
+[328.852948] (-) TimerEvent: {}
+[328.932933] (robot_localization) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/robot_localization__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_localization/srv/detail/set_pose__type_support_c.cpp.o\x1b[0m\n'}
+[328.968833] (-) TimerEvent: {}
+[329.069461] (-) TimerEvent: {}
+[329.169965] (-) TimerEvent: {}
+[329.272597] (-) TimerEvent: {}
+[329.379651] (-) TimerEvent: {}
+[329.483546] (-) TimerEvent: {}
+[329.608728] (-) TimerEvent: {}
+[329.732214] (-) TimerEvent: {}
+[329.855930] (-) TimerEvent: {}
+[329.975831] (-) TimerEvent: {}
+[330.081534] (-) TimerEvent: {}
+[330.190724] (-) TimerEvent: {}
+[330.313568] (-) TimerEvent: {}
+[330.414063] (-) TimerEvent: {}
+[330.515748] (-) TimerEvent: {}
+[330.622538] (-) TimerEvent: {}
+[330.729918] (-) TimerEvent: {}
+[330.830524] (-) TimerEvent: {}
+[330.943123] (-) TimerEvent: {}
+[331.095962] (-) TimerEvent: {}
+[331.354531] (-) TimerEvent: {}
+[337.840747] (-) TimerEvent: {}
+[351.685409] (-) TimerEvent: {}
+[368.955549] (-) TimerEvent: {}
+[383.040704] (-) TimerEvent: {}
+[412.506860] (-) TimerEvent: {}
+[432.147782] (slam_toolbox) StdoutLine: {'line': b'[ 63%] Built target slam_toolbox__rosidl_typesupport_fastrtps_cpp\n'}
+[435.419136] (-) TimerEvent: {}
+[443.402998] (-) TimerEvent: {}
+[452.252295] (-) TimerEvent: {}
+[471.974704] (-) TimerEvent: {}
+[490.743600] (-) TimerEvent: {}
+[498.790742] (-) TimerEvent: {}
+[507.300805] (-) TimerEvent: {}
+[531.198851] (-) TimerEvent: {}
+[557.293375] (-) TimerEvent: {}
+[579.833723] (-) TimerEvent: {}
+[605.221192] (-) TimerEvent: {}
+[605.393721] (-) TimerEvent: {}
+[609.259145] (-) TimerEvent: {}
+[616.523608] (-) TimerEvent: {}
+[624.327517] (-) TimerEvent: {}
+[633.262066] (-) TimerEvent: {}
+[652.737846] (-) TimerEvent: {}
+[660.061633] (-) TimerEvent: {}
+[668.184759] (-) TimerEvent: {}
+[677.420679] (-) TimerEvent: {}
+[695.280711] (-) TimerEvent: {}
+[735.664304] (-) TimerEvent: {}
+[800.966070] (-) TimerEvent: {}
+[825.696738] (-) TimerEvent: {}
+[845.348597] (-) TimerEvent: {}
+[920.139520] (-) TimerEvent: {}
+[999.000998] (-) TimerEvent: {}
+[1069.317626] (-) TimerEvent: {}
+[1090.268716] (-) TimerEvent: {}

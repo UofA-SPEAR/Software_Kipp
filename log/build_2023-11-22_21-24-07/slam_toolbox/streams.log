@@ -1,0 +1,99 @@
+[0.105s] Invoking command in '/home/floks/ros2_ws/build/slam_toolbox': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/floks/ros2_ws/build/slam_toolbox -- -j8 -l8
+[0.213s] [35m[1mConsolidate compiler generated dependencies of target slam_toolbox__rosidl_generator_c[0m
+[0.235s] [  1%] Built target slam_toolbox__cpp
+[0.247s] [  2%] [32mBuilding CXX object lib/karto_sdk/CMakeFiles/kartoSlamToolbox.dir/src/Mapper.cpp.o[0m
+[0.247s] [  2%] [32mBuilding CXX object lib/karto_sdk/CMakeFiles/kartoSlamToolbox.dir/src/Karto.cpp.o[0m
+[0.248s] [  2%] Built target ament_cmake_python_symlink_slam_toolbox
+[0.272s] [ 11%] Built target slam_toolbox__rosidl_generator_c
+[0.283s] [35m[1mConsolidate compiler generated dependencies of target slam_toolbox__rosidl_typesupport_cpp[0m
+[0.288s] [35m[1mConsolidate compiler generated dependencies of target slam_toolbox__rosidl_typesupport_introspection_cpp[0m
+[0.335s] [35m[1mConsolidate compiler generated dependencies of target slam_toolbox__rosidl_typesupport_fastrtps_cpp[0m
+[0.343s] [35m[1mConsolidate compiler generated dependencies of target slam_toolbox__rosidl_typesupport_introspection_c[0m
+[0.344s] [35m[1mConsolidate compiler generated dependencies of target slam_toolbox__rosidl_typesupport_fastrtps_c[0m
+[0.364s] [ 19%] Built target slam_toolbox__rosidl_typesupport_introspection_cpp
+[0.384s] [ 27%] Built target slam_toolbox__rosidl_typesupport_cpp
+[0.482s] [ 36%] Built target slam_toolbox__rosidl_typesupport_fastrtps_cpp
+[0.483s] [35m[1mConsolidate compiler generated dependencies of target slam_toolbox__rosidl_typesupport_c[0m
+[0.494s] [ 45%] Built target slam_toolbox__rosidl_typesupport_fastrtps_c
+[0.518s] [ 53%] Built target slam_toolbox__rosidl_typesupport_introspection_c
+[0.584s] [ 61%] Built target slam_toolbox__rosidl_typesupport_c
+[0.619s] [ 62%] [32mBuilding CXX object CMakeFiles/SlamToolboxPlugin.dir/rviz_plugin/slam_toolbox_rviz_plugin.cpp.o[0m
+[0.641s] [ 63%] [32mBuilding CXX object CMakeFiles/SlamToolboxPlugin.dir/rviz_plugin/moc_slam_toolbox_rviz_plugin.cpp.o[0m
+[0.841s] [ 63%] Built target slam_toolbox
+[1.067s] [ 63%] [34m[1mGenerating Python code for ROS interfaces[0m
+[1.701s] running egg_info
+[1.705s] writing slam_toolbox.egg-info/PKG-INFO
+[1.706s] writing dependency_links to slam_toolbox.egg-info/dependency_links.txt
+[1.706s] writing top-level names to slam_toolbox.egg-info/top_level.txt
+[1.733s] reading manifest file 'slam_toolbox.egg-info/SOURCES.txt'
+[1.735s] writing manifest file 'slam_toolbox.egg-info/SOURCES.txt'
+[1.875s] [ 63%] Built target ament_cmake_python_build_slam_toolbox_egg
+[13.764s] [ 63%] Built target slam_toolbox__py
+[14.020s] [ 64%] [32mBuilding C object CMakeFiles/slam_toolbox__rosidl_generator_py.dir/rosidl_generator_py/slam_toolbox/srv/_pause_s.c.o[0m
+[14.039s] [ 64%] [32mBuilding C object CMakeFiles/slam_toolbox__rosidl_generator_py.dir/rosidl_generator_py/slam_toolbox/srv/_clear_queue_s.c.o[0m
+[14.080s] [ 65%] [32mBuilding C object CMakeFiles/slam_toolbox__rosidl_generator_py.dir/rosidl_generator_py/slam_toolbox/srv/_toggle_interactive_s.c.o[0m
+[14.107s] [ 66%] [32mBuilding C object CMakeFiles/slam_toolbox__rosidl_generator_py.dir/rosidl_generator_py/slam_toolbox/srv/_clear_s.c.o[0m
+[14.794s] [ 66%] [32mBuilding C object CMakeFiles/slam_toolbox__rosidl_generator_py.dir/rosidl_generator_py/slam_toolbox/srv/_save_map_s.c.o[0m
+[14.811s] [ 67%] [32mBuilding C object CMakeFiles/slam_toolbox__rosidl_generator_py.dir/rosidl_generator_py/slam_toolbox/srv/_loop_closure_s.c.o[0m
+[14.906s] [ 68%] [32mBuilding C object CMakeFiles/slam_toolbox__rosidl_generator_py.dir/rosidl_generator_py/slam_toolbox/srv/_merge_maps_s.c.o[0m
+[14.918s] [ 69%] [32mBuilding C object CMakeFiles/slam_toolbox__rosidl_generator_py.dir/rosidl_generator_py/slam_toolbox/srv/_add_submap_s.c.o[0m
+[15.623s] [ 69%] [32mBuilding C object CMakeFiles/slam_toolbox__rosidl_generator_py.dir/rosidl_generator_py/slam_toolbox/srv/_deserialize_pose_graph_s.c.o[0m
+[15.723s] [ 70%] [32mBuilding C object CMakeFiles/slam_toolbox__rosidl_generator_py.dir/rosidl_generator_py/slam_toolbox/srv/_serialize_pose_graph_s.c.o[0m
+[16.527s] [ 71%] [32m[1mLinking C shared library rosidl_generator_py/slam_toolbox/libslam_toolbox__rosidl_generator_py.so[0m
+[16.860s] [ 71%] Built target slam_toolbox__rosidl_generator_py
+[17.085s] [ 72%] [32mBuilding C object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/slam_toolbox/_slam_toolbox_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[17.147s] [ 73%] [32mBuilding C object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/slam_toolbox/_slam_toolbox_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[17.166s] [ 74%] [32mBuilding C object CMakeFiles/slam_toolbox__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/slam_toolbox/_slam_toolbox_s.ep.rosidl_typesupport_c.c.o[0m
+[19.115s] [ 75%] [32m[1mLinking C shared library rosidl_generator_py/slam_toolbox/slam_toolbox_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[19.190s] [ 75%] [32m[1mLinking C shared library rosidl_generator_py/slam_toolbox/slam_toolbox_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[19.448s] [ 75%] Built target slam_toolbox__rosidl_typesupport_introspection_c__pyext
+[19.519s] [ 75%] Built target slam_toolbox__rosidl_typesupport_fastrtps_c__pyext
+[19.714s] [ 76%] [32m[1mLinking C shared library rosidl_generator_py/slam_toolbox/slam_toolbox_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[20.048s] [ 76%] Built target slam_toolbox__rosidl_typesupport_c__pyext
+[60.916s] [ 77%] [32m[1mLinking CXX shared library libkartoSlamToolbox.so[0m
+[61.935s] [ 77%] Built target kartoSlamToolbox
+[61.989s] [ 78%] [32mBuilding CXX object CMakeFiles/toolbox_common.dir/src/slam_toolbox_common.cpp.o[0m
+[61.992s] [ 78%] [32mBuilding CXX object CMakeFiles/toolbox_common.dir/src/loop_closure_assistant.cpp.o[0m
+[61.992s] [ 79%] [32mBuilding CXX object CMakeFiles/toolbox_common.dir/src/map_saver.cpp.o[0m
+[61.997s] [ 80%] [32mBuilding CXX object CMakeFiles/ceres_solver_plugin.dir/solvers/ceres_solver.cpp.o[0m
+[62.006s] [ 81%] [32mBuilding CXX object CMakeFiles/toolbox_common.dir/src/laser_utils.cpp.o[0m
+[74.017s] [ 81%] [32m[1mLinking CXX shared library libSlamToolboxPlugin.so[0m
+[78.894s] [ 81%] Built target SlamToolboxPlugin
+[90.354s] [ 82%] [32mBuilding CXX object CMakeFiles/toolbox_common.dir/src/slam_mapper.cpp.o[0m
+[98.509s] [ 83%] [32m[1mLinking CXX shared library libceres_solver_plugin.so[0m
+[99.604s] [ 83%] Built target ceres_solver_plugin
+[133.596s] [ 84%] [32m[1mLinking CXX shared library libtoolbox_common.so[0m
+[136.170s] [ 84%] Built target toolbox_common
+[136.271s] [ 85%] [32mBuilding CXX object CMakeFiles/async_slam_toolbox.dir/src/slam_toolbox_async.cpp.o[0m
+[136.291s] [ 86%] [32mBuilding CXX object CMakeFiles/merge_maps_kinematic.dir/src/merge_maps_kinematic.cpp.o[0m
+[136.324s] [ 87%] [32mBuilding CXX object CMakeFiles/sync_slam_toolbox.dir/src/slam_toolbox_sync.cpp.o[0m
+[136.325s] [ 88%] [32mBuilding CXX object CMakeFiles/lifelong_slam_toolbox.dir/src/experimental/slam_toolbox_lifelong.cpp.o[0m
+[136.383s] [ 88%] [32mBuilding CXX object CMakeFiles/localization_slam_toolbox.dir/src/slam_toolbox_localization.cpp.o[0m
+[176.658s] [ 89%] [32m[1mLinking CXX shared library libasync_slam_toolbox.so[0m
+[177.653s] [ 90%] [32m[1mLinking CXX shared library libsync_slam_toolbox.so[0m
+[178.801s] [ 90%] Built target async_slam_toolbox
+[179.418s] [ 90%] Built target sync_slam_toolbox
+[179.522s] [ 90%] [32m[1mLinking CXX shared library liblifelong_slam_toolbox.so[0m
+[181.028s] [ 90%] Built target lifelong_slam_toolbox
+[187.234s] [ 91%] [32m[1mLinking CXX executable merge_maps_kinematic[0m
+[188.146s] [ 91%] Built target merge_maps_kinematic
+[192.585s] [ 92%] [32m[1mLinking CXX shared library liblocalization_slam_toolbox.so[0m
+[193.273s] [ 92%] Built target localization_slam_toolbox
+[193.305s] [ 95%] [32mBuilding CXX object CMakeFiles/sync_slam_toolbox_node.dir/src/slam_toolbox_sync_node.cpp.o[0m
+[193.305s] [ 95%] [32mBuilding CXX object CMakeFiles/async_slam_toolbox_node.dir/src/slam_toolbox_async_node.cpp.o[0m
+[193.305s] [ 95%] [32mBuilding CXX object CMakeFiles/lifelong_slam_toolbox_node.dir/src/experimental/slam_toolbox_lifelong_node.cpp.o[0m
+[211.469s] [ 96%] [32m[1mLinking CXX executable lifelong_slam_toolbox_node[0m
+[211.678s] [ 96%] [32m[1mLinking CXX executable async_slam_toolbox_node[0m
+[211.899s] [ 96%] [32m[1mLinking CXX executable sync_slam_toolbox_node[0m
+[212.139s] [ 96%] Built target lifelong_slam_toolbox_node
+[212.176s] [ 97%] [32mBuilding CXX object CMakeFiles/localization_slam_toolbox_node.dir/src/slam_toolbox_localization_node.cpp.o[0m
+[212.176s] [ 97%] [32mBuilding CXX object CMakeFiles/map_and_localization_slam_toolbox.dir/src/experimental/slam_toolbox_map_and_localization.cpp.o[0m
+[212.410s] [ 97%] Built target async_slam_toolbox_node
+[212.586s] [ 97%] Built target sync_slam_toolbox_node
+[229.625s] [ 98%] [32m[1mLinking CXX executable localization_slam_toolbox_node[0m
+[230.195s] [ 98%] Built target localization_slam_toolbox_node
+[239.116s] [ 99%] [32m[1mLinking CXX shared library libmap_and_localization_slam_toolbox.so[0m
+[239.801s] [ 99%] Built target map_and_localization_slam_toolbox
+[239.846s] [100%] [32mBuilding CXX object CMakeFiles/map_and_localization_slam_toolbox_node.dir/src/experimental/slam_toolbox_map_and_localization_node.cpp.o[0m
+[255.828s] [100%] [32m[1mLinking CXX executable map_and_localization_slam_toolbox_node[0m
+[256.347s] [100%] Built target map_and_localization_slam_toolbox_node

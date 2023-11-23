@@ -1,0 +1,26 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/floks/ros2_ws/install/zed_components/include/**",
+        "/home/floks/ros2_ws/install/zed_interfaces/include/**",
+        "/home/floks/ros2_ws/install/slam_toolbox/include/**",
+        "/home/floks/ros2_ws/install/robot_localization/include/**",
+        "/opt/ros/humble/include/**",
+        "/home/floks/ros2_ws/src/robot_localization/include/**",
+        "/home/floks/ros2_ws/src/slam_toolbox/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

@@ -1,0 +1,396 @@
+[0.186s] Invoking command in '/home/floks/ros2_ws/build/zed_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/floks/ros2_ws/build/zed_interfaces -- -j8 -l8
+[0.291s] [  0%] Built target zed_interfaces__cpp
+[0.301s] [  0%] Built target ament_cmake_python_symlink_zed_interfaces
+[0.306s] [ 12%] Built target zed_interfaces__rosidl_generator_c
+[0.343s] [35m[1mConsolidate compiler generated dependencies of target zed_interfaces__rosidl_typesupport_cpp[0m
+[0.365s] [35m[1mConsolidate compiler generated dependencies of target zed_interfaces__rosidl_typesupport_fastrtps_cpp[0m
+[0.374s] [35m[1mConsolidate compiler generated dependencies of target zed_interfaces__rosidl_typesupport_introspection_cpp[0m
+[0.426s] [ 24%] Built target zed_interfaces__rosidl_typesupport_cpp
+[0.482s] [ 37%] Built target zed_interfaces__rosidl_typesupport_introspection_cpp
+[0.494s] [ 48%] Built target zed_interfaces__rosidl_typesupport_fastrtps_cpp
+[0.508s] [35m[1mConsolidate compiler generated dependencies of target zed_interfaces__rosidl_typesupport_fastrtps_c[0m
+[0.537s] [ 60%] Built target zed_interfaces__rosidl_typesupport_introspection_c
+[0.570s] [ 72%] Built target zed_interfaces__rosidl_typesupport_c
+[0.586s] [ 84%] Built target zed_interfaces__rosidl_typesupport_fastrtps_c
+[0.642s] [ 84%] Built target zed_interfaces
+[0.721s] [ 85%] Built target zed_interfaces__py
+[0.801s] [35m[1mConsolidate compiler generated dependencies of target zed_interfaces__rosidl_generator_py[0m
+[0.882s] [ 96%] Built target zed_interfaces__rosidl_generator_py
+[0.953s] [35m[1mConsolidate compiler generated dependencies of target zed_interfaces__rosidl_typesupport_fastrtps_c__pyext[0m
+[0.953s] [35m[1mConsolidate compiler generated dependencies of target zed_interfaces__rosidl_typesupport_c__pyext[0m
+[0.963s] [35m[1mConsolidate compiler generated dependencies of target zed_interfaces__rosidl_typesupport_introspection_c__pyext[0m
+[1.001s] [ 97%] Built target zed_interfaces__rosidl_typesupport_c__pyext
+[1.012s] [ 98%] Built target zed_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[1.045s] [100%] Built target zed_interfaces__rosidl_typesupport_introspection_c__pyext
+[1.100s] running egg_info
+[1.101s] writing zed_interfaces.egg-info/PKG-INFO
+[1.102s] writing dependency_links to zed_interfaces.egg-info/dependency_links.txt
+[1.102s] writing top-level names to zed_interfaces.egg-info/top_level.txt
+[1.109s] reading manifest file 'zed_interfaces.egg-info/SOURCES.txt'
+[1.113s] writing manifest file 'zed_interfaces.egg-info/SOURCES.txt'
+[1.187s] [100%] Built target ament_cmake_python_build_zed_interfaces_egg
+[1.206s] Invoked command in '/home/floks/ros2_ws/build/zed_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/floks/ros2_ws/build/zed_interfaces -- -j8 -l8
+[1.736s] Invoking command in '/home/floks/ros2_ws/build/zed_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/floks/ros2_ws/build/zed_interfaces
+[1.748s] -- Install configuration: "Release"
+[1.748s] -- Execute custom install script
+[1.749s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/share/ament_index/resource_index/rosidl_interfaces/zed_interfaces
+[1.751s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/bounding_box2_df.h
+[1.751s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/bounding_box2_di.h
+[1.751s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/bounding_box3_d.h
+[1.751s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/depth_info_stamped.h
+[1.752s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box2_df__functions.h
+[1.752s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box2_df__struct.h
+[1.752s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box2_df__type_support.h
+[1.753s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box2_di__functions.h
+[1.753s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box2_di__struct.h
+[1.753s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box2_di__type_support.h
+[1.754s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box3_d__functions.h
+[1.754s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box3_d__struct.h
+[1.755s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box3_d__type_support.h
+[1.755s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/depth_info_stamped__functions.h
+[1.755s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/depth_info_stamped__struct.h
+[1.755s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/depth_info_stamped__type_support.h
+[1.756s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/heartbeat__functions.h
+[1.757s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/heartbeat__struct.h
+[1.757s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/heartbeat__type_support.h
+[1.757s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint2_df__functions.h
+[1.758s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint2_df__struct.h
+[1.758s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint2_df__type_support.h
+[1.758s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint2_di__functions.h
+[1.758s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint2_di__struct.h
+[1.759s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint2_di__type_support.h
+[1.759s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint3_d__functions.h
+[1.759s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint3_d__struct.h
+[1.759s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint3_d__type_support.h
+[1.759s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/object__functions.h
+[1.760s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/object__struct.h
+[1.760s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/object__type_support.h
+[1.760s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/objects_stamped__functions.h
+[1.761s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/objects_stamped__struct.h
+[1.761s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/objects_stamped__type_support.h
+[1.761s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/plane_stamped__functions.h
+[1.761s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/plane_stamped__struct.h
+[1.761s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/plane_stamped__type_support.h
+[1.762s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/pos_track_status__functions.h
+[1.762s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/pos_track_status__struct.h
+[1.762s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/pos_track_status__type_support.h
+[1.762s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/skeleton2_d__functions.h
+[1.763s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/skeleton2_d__struct.h
+[1.763s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/skeleton2_d__type_support.h
+[1.763s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/skeleton3_d__functions.h
+[1.763s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/skeleton3_d__struct.h
+[1.764s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/skeleton3_d__type_support.h
+[1.764s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/heartbeat.h
+[1.764s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/keypoint2_df.h
+[1.764s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/keypoint2_di.h
+[1.765s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/keypoint3_d.h
+[1.765s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/object.h
+[1.765s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/objects_stamped.h
+[1.765s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/plane_stamped.h
+[1.766s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/pos_track_status.h
+[1.766s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/rosidl_generator_c__visibility_control.h
+[1.766s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/skeleton2_d.h
+[1.766s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/skeleton3_d.h
+[1.767s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/set_pose__functions.h
+[1.767s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/set_pose__struct.h
+[1.767s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/set_pose__type_support.h
+[1.767s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/set_roi__functions.h
+[1.768s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/set_roi__struct.h
+[1.768s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/set_roi__type_support.h
+[1.768s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/start_svo_rec__functions.h
+[1.769s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/start_svo_rec__struct.h
+[1.769s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/start_svo_rec__type_support.h
+[1.769s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/set_pose.h
+[1.769s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/set_roi.h
+[1.769s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/start_svo_rec.h
+[1.770s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/environment/library_path.sh
+[1.770s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/environment/library_path.dsv
+[1.772s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box2_df__rosidl_typesupport_fastrtps_c.h
+[1.772s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box2_di__rosidl_typesupport_fastrtps_c.h
+[1.772s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box3_d__rosidl_typesupport_fastrtps_c.h
+[1.773s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/depth_info_stamped__rosidl_typesupport_fastrtps_c.h
+[1.773s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/heartbeat__rosidl_typesupport_fastrtps_c.h
+[1.773s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint2_df__rosidl_typesupport_fastrtps_c.h
+[1.773s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint2_di__rosidl_typesupport_fastrtps_c.h
+[1.774s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint3_d__rosidl_typesupport_fastrtps_c.h
+[1.774s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/object__rosidl_typesupport_fastrtps_c.h
+[1.774s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/objects_stamped__rosidl_typesupport_fastrtps_c.h
+[1.774s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/plane_stamped__rosidl_typesupport_fastrtps_c.h
+[1.775s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/pos_track_status__rosidl_typesupport_fastrtps_c.h
+[1.775s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/skeleton2_d__rosidl_typesupport_fastrtps_c.h
+[1.775s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/skeleton3_d__rosidl_typesupport_fastrtps_c.h
+[1.775s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[1.776s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/set_pose__rosidl_typesupport_fastrtps_c.h
+[1.776s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/set_roi__rosidl_typesupport_fastrtps_c.h
+[1.776s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/start_svo_rec__rosidl_typesupport_fastrtps_c.h
+[1.778s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/bounding_box2_df.hpp
+[1.778s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/bounding_box2_di.hpp
+[1.778s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/bounding_box3_d.hpp
+[1.778s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/depth_info_stamped.hpp
+[1.778s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box2_df__builder.hpp
+[1.779s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box2_df__struct.hpp
+[1.779s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box2_df__traits.hpp
+[1.779s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box2_di__builder.hpp
+[1.780s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box2_di__struct.hpp
+[1.780s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box2_di__traits.hpp
+[1.780s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box3_d__builder.hpp
+[1.780s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box3_d__struct.hpp
+[1.781s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box3_d__traits.hpp
+[1.781s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/depth_info_stamped__builder.hpp
+[1.781s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/depth_info_stamped__struct.hpp
+[1.781s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/depth_info_stamped__traits.hpp
+[1.781s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/heartbeat__builder.hpp
+[1.782s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/heartbeat__struct.hpp
+[1.782s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/heartbeat__traits.hpp
+[1.782s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint2_df__builder.hpp
+[1.782s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint2_df__struct.hpp
+[1.782s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint2_df__traits.hpp
+[1.783s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint2_di__builder.hpp
+[1.783s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint2_di__struct.hpp
+[1.783s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint2_di__traits.hpp
+[1.783s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint3_d__builder.hpp
+[1.784s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint3_d__struct.hpp
+[1.784s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint3_d__traits.hpp
+[1.784s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/object__builder.hpp
+[1.784s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/object__struct.hpp
+[1.784s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/object__traits.hpp
+[1.785s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/objects_stamped__builder.hpp
+[1.785s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/objects_stamped__struct.hpp
+[1.785s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/objects_stamped__traits.hpp
+[1.785s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/plane_stamped__builder.hpp
+[1.785s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/plane_stamped__struct.hpp
+[1.786s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/plane_stamped__traits.hpp
+[1.786s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/pos_track_status__builder.hpp
+[1.786s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/pos_track_status__struct.hpp
+[1.786s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/pos_track_status__traits.hpp
+[1.786s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/skeleton2_d__builder.hpp
+[1.787s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/skeleton2_d__struct.hpp
+[1.787s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/skeleton2_d__traits.hpp
+[1.787s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/skeleton3_d__builder.hpp
+[1.787s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/skeleton3_d__struct.hpp
+[1.788s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/skeleton3_d__traits.hpp
+[1.788s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/heartbeat.hpp
+[1.788s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/keypoint2_df.hpp
+[1.788s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/keypoint2_di.hpp
+[1.788s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/keypoint3_d.hpp
+[1.789s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/object.hpp
+[1.789s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/objects_stamped.hpp
+[1.789s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/plane_stamped.hpp
+[1.789s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/pos_track_status.hpp
+[1.789s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/skeleton2_d.hpp
+[1.790s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/skeleton3_d.hpp
+[1.790s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/set_pose__builder.hpp
+[1.790s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/set_pose__struct.hpp
+[1.790s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/set_pose__traits.hpp
+[1.790s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/set_roi__builder.hpp
+[1.791s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/set_roi__struct.hpp
+[1.791s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/set_roi__traits.hpp
+[1.791s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/start_svo_rec__builder.hpp
+[1.792s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/start_svo_rec__struct.hpp
+[1.792s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/start_svo_rec__traits.hpp
+[1.792s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/set_pose.hpp
+[1.792s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/set_roi.hpp
+[1.792s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/start_svo_rec.hpp
+[1.794s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box2_df__rosidl_typesupport_fastrtps_cpp.hpp
+[1.794s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box2_di__rosidl_typesupport_fastrtps_cpp.hpp
+[1.794s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box3_d__rosidl_typesupport_fastrtps_cpp.hpp
+[1.795s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/depth_info_stamped__rosidl_typesupport_fastrtps_cpp.hpp
+[1.795s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/heartbeat__rosidl_typesupport_fastrtps_cpp.hpp
+[1.795s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint2_df__rosidl_typesupport_fastrtps_cpp.hpp
+[1.795s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint2_di__rosidl_typesupport_fastrtps_cpp.hpp
+[1.796s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint3_d__rosidl_typesupport_fastrtps_cpp.hpp
+[1.796s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/object__rosidl_typesupport_fastrtps_cpp.hpp
+[1.796s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/objects_stamped__rosidl_typesupport_fastrtps_cpp.hpp
+[1.796s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/plane_stamped__rosidl_typesupport_fastrtps_cpp.hpp
+[1.797s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/pos_track_status__rosidl_typesupport_fastrtps_cpp.hpp
+[1.797s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/skeleton2_d__rosidl_typesupport_fastrtps_cpp.hpp
+[1.797s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/skeleton3_d__rosidl_typesupport_fastrtps_cpp.hpp
+[1.797s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[1.797s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/set_pose__rosidl_typesupport_fastrtps_cpp.hpp
+[1.798s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/set_roi__rosidl_typesupport_fastrtps_cpp.hpp
+[1.798s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/start_svo_rec__rosidl_typesupport_fastrtps_cpp.hpp
+[1.799s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box2_df__rosidl_typesupport_introspection_c.h
+[1.799s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box2_di__rosidl_typesupport_introspection_c.h
+[1.799s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box3_d__rosidl_typesupport_introspection_c.h
+[1.800s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/depth_info_stamped__rosidl_typesupport_introspection_c.h
+[1.800s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/heartbeat__rosidl_typesupport_introspection_c.h
+[1.800s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint2_df__rosidl_typesupport_introspection_c.h
+[1.800s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint2_di__rosidl_typesupport_introspection_c.h
+[1.801s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint3_d__rosidl_typesupport_introspection_c.h
+[1.801s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/object__rosidl_typesupport_introspection_c.h
+[1.801s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/objects_stamped__rosidl_typesupport_introspection_c.h
+[1.801s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/plane_stamped__rosidl_typesupport_introspection_c.h
+[1.802s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/pos_track_status__rosidl_typesupport_introspection_c.h
+[1.802s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/skeleton2_d__rosidl_typesupport_introspection_c.h
+[1.802s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/skeleton3_d__rosidl_typesupport_introspection_c.h
+[1.802s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[1.802s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/set_pose__rosidl_typesupport_introspection_c.h
+[1.803s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/set_roi__rosidl_typesupport_introspection_c.h
+[1.803s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/start_svo_rec__rosidl_typesupport_introspection_c.h
+[1.803s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box2_df__rosidl_typesupport_introspection_cpp.hpp
+[1.804s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box2_di__rosidl_typesupport_introspection_cpp.hpp
+[1.804s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/bounding_box3_d__rosidl_typesupport_introspection_cpp.hpp
+[1.804s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/depth_info_stamped__rosidl_typesupport_introspection_cpp.hpp
+[1.805s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/heartbeat__rosidl_typesupport_introspection_cpp.hpp
+[1.805s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint2_df__rosidl_typesupport_introspection_cpp.hpp
+[1.805s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint2_di__rosidl_typesupport_introspection_cpp.hpp
+[1.805s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/keypoint3_d__rosidl_typesupport_introspection_cpp.hpp
+[1.806s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/object__rosidl_typesupport_introspection_cpp.hpp
+[1.806s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/objects_stamped__rosidl_typesupport_introspection_cpp.hpp
+[1.806s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/plane_stamped__rosidl_typesupport_introspection_cpp.hpp
+[1.806s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/pos_track_status__rosidl_typesupport_introspection_cpp.hpp
+[1.807s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/skeleton2_d__rosidl_typesupport_introspection_cpp.hpp
+[1.807s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/msg/detail/skeleton3_d__rosidl_typesupport_introspection_cpp.hpp
+[1.807s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/set_pose__rosidl_typesupport_introspection_cpp.hpp
+[1.808s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/set_roi__rosidl_typesupport_introspection_cpp.hpp
+[1.808s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/include/zed_interfaces/zed_interfaces/srv/detail/start_svo_rec__rosidl_typesupport_introspection_cpp.hpp
+[1.808s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/environment/pythonpath.sh
+[1.809s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/environment/pythonpath.dsv
+[1.809s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces-4.0.0-py3.10.egg-info/PKG-INFO
+[1.810s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces-4.0.0-py3.10.egg-info/SOURCES.txt
+[1.810s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces-4.0.0-py3.10.egg-info/dependency_links.txt
+[1.810s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces-4.0.0-py3.10.egg-info/top_level.txt
+[1.812s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/__init__.py
+[1.813s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/_zed_interfaces_s.ep.rosidl_typesupport_c.c
+[1.813s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/_zed_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[1.813s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/_zed_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[1.813s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/libzed_interfaces__rosidl_generator_py.so
+[1.814s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/__init__.py
+[1.814s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_bounding_box2_df.py
+[1.814s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_bounding_box2_df_s.c
+[1.814s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_bounding_box2_di.py
+[1.815s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_bounding_box2_di_s.c
+[1.815s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_bounding_box3_d.py
+[1.815s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_bounding_box3_d_s.c
+[1.816s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_depth_info_stamped.py
+[1.816s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_depth_info_stamped_s.c
+[1.816s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_heartbeat.py
+[1.816s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_heartbeat_s.c
+[1.817s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_keypoint2_df.py
+[1.817s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_keypoint2_df_s.c
+[1.817s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_keypoint2_di.py
+[1.818s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_keypoint2_di_s.c
+[1.818s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_keypoint3_d.py
+[1.818s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_keypoint3_d_s.c
+[1.818s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_object.py
+[1.819s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_object_s.c
+[1.819s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_objects_stamped.py
+[1.819s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_objects_stamped_s.c
+[1.819s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_plane_stamped.py
+[1.820s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_plane_stamped_s.c
+[1.820s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_pos_track_status.py
+[1.820s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_pos_track_status_s.c
+[1.821s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_skeleton2_d.py
+[1.821s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_skeleton2_d_s.c
+[1.821s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_skeleton3_d.py
+[1.821s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg/_skeleton3_d_s.c
+[1.822s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/srv/__init__.py
+[1.822s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/srv/_set_pose.py
+[1.822s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/srv/_set_pose_s.c
+[1.822s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/srv/_set_roi.py
+[1.823s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/srv/_set_roi_s.c
+[1.823s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/srv/_start_svo_rec.py
+[1.823s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/srv/_start_svo_rec_s.c
+[1.824s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/zed_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[1.824s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/zed_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[1.824s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/zed_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[1.825s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/zed_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[1.825s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/zed_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[1.826s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/zed_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[1.826s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/msg/Object.idl
+[1.827s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/msg/ObjectsStamped.idl
+[1.827s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/msg/Keypoint2Di.idl
+[1.827s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/msg/Keypoint2Df.idl
+[1.828s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/msg/Keypoint3D.idl
+[1.828s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/msg/BoundingBox2Di.idl
+[1.828s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/msg/BoundingBox2Df.idl
+[1.829s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/msg/BoundingBox3D.idl
+[1.829s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/msg/Skeleton2D.idl
+[1.830s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/msg/Skeleton3D.idl
+[1.830s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/msg/DepthInfoStamped.idl
+[1.830s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/msg/PlaneStamped.idl
+[1.831s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/msg/PosTrackStatus.idl
+[1.831s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/msg/Heartbeat.idl
+[1.831s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/srv/SetPose.idl
+[1.832s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/srv/StartSvoRec.idl
+[1.832s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/srv/SetROI.idl
+[1.832s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/msg/Object.msg
+[1.833s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/msg/ObjectsStamped.msg
+[1.833s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/msg/Keypoint2Di.msg
+[1.833s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/msg/Keypoint2Df.msg
+[1.833s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/msg/Keypoint3D.msg
+[1.834s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/msg/BoundingBox2Di.msg
+[1.834s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/msg/BoundingBox2Df.msg
+[1.834s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/msg/BoundingBox3D.msg
+[1.835s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/msg/Skeleton2D.msg
+[1.835s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/msg/Skeleton3D.msg
+[1.835s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/msg/DepthInfoStamped.msg
+[1.836s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/msg/PlaneStamped.msg
+[1.836s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/msg/PosTrackStatus.msg
+[1.836s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/msg/Heartbeat.msg
+[1.837s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/srv/SetPose.srv
+[1.837s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/srv/SetPose_Request.msg
+[1.837s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/srv/SetPose_Response.msg
+[1.838s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/srv/StartSvoRec.srv
+[1.838s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/srv/StartSvoRec_Request.msg
+[1.838s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/srv/StartSvoRec_Response.msg
+[1.839s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/srv/SetROI.srv
+[1.839s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/srv/SetROI_Request.msg
+[1.839s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/srv/SetROI_Response.msg
+[1.840s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/meshes/zed.stl
+[1.841s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/meshes/zed2.stl
+[1.841s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/meshes/zed2i.stl
+[1.842s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/meshes/zedm.stl
+[1.842s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/meshes/zedx.stl
+[1.842s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/meshes/zedxm.stl
+[1.842s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/share/ament_index/resource_index/package_run_dependencies/zed_interfaces
+[1.843s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/share/ament_index/resource_index/parent_prefix_path/zed_interfaces
+[1.843s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/environment/ament_prefix_path.sh
+[1.843s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/environment/ament_prefix_path.dsv
+[1.843s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/environment/path.sh
+[1.844s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/environment/path.dsv
+[1.844s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/local_setup.bash
+[1.844s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/local_setup.sh
+[1.845s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/local_setup.zsh
+[1.845s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/local_setup.dsv
+[1.845s] -- Symlinking: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/package.dsv
+[1.859s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/share/ament_index/resource_index/packages/zed_interfaces
+[1.859s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/cmake/rosidl_cmake-extras.cmake
+[1.859s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.860s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.860s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[1.860s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[1.861s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[1.861s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[1.861s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/cmake/zed_interfacesConfig.cmake
+[1.862s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/cmake/zed_interfacesConfig-version.cmake
+[1.862s] -- Up-to-date symlink: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/package.xml
+[1.863s] -- Up-to-date: /home/floks/ros2_ws/install/zed_interfaces/lib/libzed_interfaces__rosidl_generator_c.so
+[1.864s] -- Up-to-date: /home/floks/ros2_ws/install/zed_interfaces/lib/libzed_interfaces__rosidl_typesupport_fastrtps_c.so
+[1.865s] -- Up-to-date: /home/floks/ros2_ws/install/zed_interfaces/lib/libzed_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[1.865s] -- Up-to-date: /home/floks/ros2_ws/install/zed_interfaces/lib/libzed_interfaces__rosidl_typesupport_introspection_c.so
+[1.866s] -- Up-to-date: /home/floks/ros2_ws/install/zed_interfaces/lib/libzed_interfaces__rosidl_typesupport_c.so
+[1.867s] -- Up-to-date: /home/floks/ros2_ws/install/zed_interfaces/lib/libzed_interfaces__rosidl_typesupport_introspection_cpp.so
+[1.868s] -- Up-to-date: /home/floks/ros2_ws/install/zed_interfaces/lib/libzed_interfaces__rosidl_typesupport_cpp.so
+[1.912s] Listing '/home/floks/ros2_ws/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces'...
+[1.912s] Listing '/home/floks/ros2_ws/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/msg'...
+[1.913s] Listing '/home/floks/ros2_ws/install/zed_interfaces/local/lib/python3.10/dist-packages/zed_interfaces/srv'...
+[1.918s] -- Up-to-date: /home/floks/ros2_ws/install/zed_interfaces/lib/libzed_interfaces__rosidl_generator_py.so
+[1.919s] -- Up-to-date: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/cmake/export_zed_interfaces__rosidl_generator_cExport.cmake
+[1.919s] -- Up-to-date: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/cmake/export_zed_interfaces__rosidl_generator_cExport-release.cmake
+[1.920s] -- Up-to-date: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/cmake/export_zed_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[1.920s] -- Up-to-date: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/cmake/export_zed_interfaces__rosidl_typesupport_fastrtps_cExport-release.cmake
+[1.920s] -- Up-to-date: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/cmake/export_zed_interfaces__rosidl_generator_cppExport.cmake
+[1.920s] -- Up-to-date: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/cmake/export_zed_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[1.920s] -- Up-to-date: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/cmake/export_zed_interfaces__rosidl_typesupport_fastrtps_cppExport-release.cmake
+[1.920s] -- Up-to-date: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/cmake/zed_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[1.921s] -- Up-to-date: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/cmake/zed_interfaces__rosidl_typesupport_introspection_cExport-release.cmake
+[1.921s] -- Up-to-date: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/cmake/zed_interfaces__rosidl_typesupport_cExport.cmake
+[1.921s] -- Up-to-date: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/cmake/zed_interfaces__rosidl_typesupport_cExport-release.cmake
+[1.921s] -- Up-to-date: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/cmake/zed_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[1.921s] -- Up-to-date: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/cmake/zed_interfaces__rosidl_typesupport_introspection_cppExport-release.cmake
+[1.922s] -- Up-to-date: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/cmake/zed_interfaces__rosidl_typesupport_cppExport.cmake
+[1.922s] -- Up-to-date: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/cmake/zed_interfaces__rosidl_typesupport_cppExport-release.cmake
+[1.922s] -- Up-to-date: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/cmake/export_zed_interfaces__rosidl_generator_pyExport.cmake
+[1.922s] -- Up-to-date: /home/floks/ros2_ws/install/zed_interfaces/share/zed_interfaces/cmake/export_zed_interfaces__rosidl_generator_pyExport-release.cmake
+[1.925s] Invoked command in '/home/floks/ros2_ws/build/zed_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/floks/ros2_ws/build/zed_interfaces

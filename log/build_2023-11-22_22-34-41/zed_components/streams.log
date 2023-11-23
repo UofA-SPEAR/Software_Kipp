@@ -1,0 +1,87 @@
+[0.107s] Invoking command in '/home/floks/ros2_ws/build/zed_components': AMENT_PREFIX_PATH=/home/floks/ros2_ws/install/zed_interfaces:/home/floks/ros2_ws/install/robot_localization:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/floks/ros2_ws/install/zed_interfaces:/home/floks/ros2_ws/install/robot_localization:/home/floks/zed:/opt/ros/humble LD_LIBRARY_PATH=/home/floks/ros2_ws/install/zed_interfaces/lib:/home/floks/ros2_ws/install/robot_localization/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/floks/ros2_ws/install/zed_interfaces/local/lib/python3.10/dist-packages:/home/floks/ros2_ws/install/robot_localization/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/floks/ros2_ws/src/zed-ros2-wrapper/zed_components -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/floks/ros2_ws/install/zed_components
+[0.130s] -- Looking for sgemm_
+[0.356s] -- Looking for sgemm_ - not found
+[0.358s] -- Looking for pthread.h
+[0.471s] -- Looking for pthread.h - found
+[0.472s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.566s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.567s] -- Found Threads: TRUE  
+[0.605s] -- Looking for sgemm_
+[0.735s] -- Looking for sgemm_ - found
+[0.736s] -- Found BLAS: /usr/lib/x86_64-linux-gnu/libopenblas.so  
+[0.790s] -- Found CUDA: /usr/local/cuda (found suitable version "12.3", minimum required is "12") 
+[1.044s] -- Found CUDA: /usr/local/cuda (found version "12.3") 
+[1.049s] -- Found ament_cmake_auto: 1.3.6 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[1.267s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[1.342s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.491s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.497s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.509s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.526s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.549s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.910s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.914s] -- Found rmw_fastrtps_cpp: 6.2.5 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.028s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[2.055s] -- Found FastRTPS: /opt/ros/humble/include  
+[2.112s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.284s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[3.285s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[3.286s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[3.771s] -- Found ament_lint_auto: 0.12.9 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[3.806s] -- Added test 'copyright' to check source files copyright and LICENSE
+[3.808s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[3.809s] -- Configured cppcheck include dirs: /home/floks/ros2_ws/src/zed-ros2-wrapper/zed_components/src/include;/home/floks/ros2_ws/src/zed-ros2-wrapper/zed_components/src/zed_camera/include;/home/floks/ros2_ws/src/zed-ros2-wrapper/zed_components/src/tools/include
+[3.809s] -- Configured cppcheck exclude dirs and/or files: 
+[3.810s] -- Added test 'lint_cmake' to check CMake code style
+[3.812s] -- Added test 'uncrustify' to check C / C++ code style
+[3.812s] -- Configured uncrustify additional arguments: 
+[3.813s] -- Added test 'xmllint' to check XML markup files
+[3.818s] -- Configuring done
+[3.845s] -- Generating done
+[3.847s] -- Build files have been written to: /home/floks/ros2_ws/build/zed_components
+[3.860s] Invoked command in '/home/floks/ros2_ws/build/zed_components' returned '0': AMENT_PREFIX_PATH=/home/floks/ros2_ws/install/zed_interfaces:/home/floks/ros2_ws/install/robot_localization:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/floks/ros2_ws/install/zed_interfaces:/home/floks/ros2_ws/install/robot_localization:/home/floks/zed:/opt/ros/humble LD_LIBRARY_PATH=/home/floks/ros2_ws/install/zed_interfaces/lib:/home/floks/ros2_ws/install/robot_localization/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/floks/ros2_ws/install/zed_interfaces/local/lib/python3.10/dist-packages:/home/floks/ros2_ws/install/robot_localization/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/floks/ros2_ws/src/zed-ros2-wrapper/zed_components -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/floks/ros2_ws/install/zed_components
+[3.862s] Invoking command in '/home/floks/ros2_ws/build/zed_components': AMENT_PREFIX_PATH=/home/floks/ros2_ws/install/zed_interfaces:/home/floks/ros2_ws/install/robot_localization:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/floks/ros2_ws/install/zed_interfaces:/home/floks/ros2_ws/install/robot_localization:/home/floks/zed:/opt/ros/humble LD_LIBRARY_PATH=/home/floks/ros2_ws/install/zed_interfaces/lib:/home/floks/ros2_ws/install/robot_localization/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/floks/ros2_ws/install/zed_interfaces/local/lib/python3.10/dist-packages:/home/floks/ros2_ws/install/robot_localization/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/floks/ros2_ws/build/zed_components -- -j8 -l8
+[3.931s] [ 75%] [32mBuilding CXX object CMakeFiles/zed_camera_component.dir/src/tools/src/sl_win_avg.cpp.o[0m
+[3.931s] [ 75%] [32mBuilding CXX object CMakeFiles/zed_camera_component.dir/src/tools/src/sl_tools.cpp.o[0m
+[3.931s] [ 75%] [32mBuilding CXX object CMakeFiles/zed_camera_component.dir/src/zed_camera/src/zed_camera_component.cpp.o[0m
+[5.515s] In file included from [01m[K/home/floks/ros2_ws/src/zed-ros2-wrapper/zed_components/src/zed_camera/include/zed_camera_component.hpp:19[m[K,
+[5.515s]                  from [01m[K/home/floks/ros2_ws/src/zed-ros2-wrapper/zed_components/src/zed_camera/src/zed_camera_component.cpp:21[m[K:
+[5.515s] [01m[K/usr/local/zed/include/sl/Fusion.hpp:68:64:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: ~ FUSION SDK is distributed in Early Access ~[m[K’
+[5.515s]    68 | #pragma message("~ FUSION SDK is distributed in Early Access ~"[01;36m[K)[m[K
+[5.515s]       |                                                                [01;36m[K^[m[K
+[74.581s] [100%] [32m[1mLinking CXX shared library libzed_camera_component.so[0m
+[75.344s] [100%] Built target zed_camera_component
+[75.359s] Invoked command in '/home/floks/ros2_ws/build/zed_components' returned '0': AMENT_PREFIX_PATH=/home/floks/ros2_ws/install/zed_interfaces:/home/floks/ros2_ws/install/robot_localization:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/floks/ros2_ws/install/zed_interfaces:/home/floks/ros2_ws/install/robot_localization:/home/floks/zed:/opt/ros/humble LD_LIBRARY_PATH=/home/floks/ros2_ws/install/zed_interfaces/lib:/home/floks/ros2_ws/install/robot_localization/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/floks/ros2_ws/install/zed_interfaces/local/lib/python3.10/dist-packages:/home/floks/ros2_ws/install/robot_localization/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/floks/ros2_ws/build/zed_components -- -j8 -l8
+[75.398s] Invoking command in '/home/floks/ros2_ws/build/zed_components': AMENT_PREFIX_PATH=/home/floks/ros2_ws/install/zed_interfaces:/home/floks/ros2_ws/install/robot_localization:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/floks/ros2_ws/install/zed_interfaces:/home/floks/ros2_ws/install/robot_localization:/home/floks/zed:/opt/ros/humble LD_LIBRARY_PATH=/home/floks/ros2_ws/install/zed_interfaces/lib:/home/floks/ros2_ws/install/robot_localization/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/floks/ros2_ws/install/zed_interfaces/local/lib/python3.10/dist-packages:/home/floks/ros2_ws/install/robot_localization/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/floks/ros2_ws/build/zed_components
+[75.407s] -- Install configuration: "Release"
+[75.408s] -- Execute custom install script
+[75.408s] -- Symlinking: /home/floks/ros2_ws/install/zed_components/lib/libzed_camera_component.so
+[75.422s] -- Symlinking: /home/floks/ros2_ws/install/zed_components/include/zed_components//cost_traversability.hpp
+[75.433s] -- Symlinking: /home/floks/ros2_ws/install/zed_components/include/zed_components//sl_types.hpp
+[75.444s] -- Symlinking: /home/floks/ros2_ws/install/zed_components/include/zed_components//zed_camera_component.hpp
+[75.456s] -- Symlinking: /home/floks/ros2_ws/install/zed_components/include/zed_components//sl_logging.hpp
+[75.467s] -- Symlinking: /home/floks/ros2_ws/install/zed_components/include/zed_components//sl_tools.hpp
+[75.479s] -- Symlinking: /home/floks/ros2_ws/install/zed_components/include/zed_components//sl_win_avg.hpp
+[75.490s] -- Symlinking: /home/floks/ros2_ws/install/zed_components/include/zed_components//visibility_control.hpp
+[75.510s] -- Symlinking: /home/floks/ros2_ws/install/zed_components/share/zed_components/environment/library_path.sh
+[75.523s] -- Symlinking: /home/floks/ros2_ws/install/zed_components/share/zed_components/environment/library_path.dsv
+[75.536s] -- Symlinking: /home/floks/ros2_ws/install/zed_components/share/ament_index/resource_index/package_run_dependencies/zed_components
+[75.548s] -- Symlinking: /home/floks/ros2_ws/install/zed_components/share/ament_index/resource_index/parent_prefix_path/zed_components
+[75.560s] -- Symlinking: /home/floks/ros2_ws/install/zed_components/share/zed_components/environment/ament_prefix_path.sh
+[75.571s] -- Symlinking: /home/floks/ros2_ws/install/zed_components/share/zed_components/environment/ament_prefix_path.dsv
+[75.583s] -- Symlinking: /home/floks/ros2_ws/install/zed_components/share/zed_components/environment/path.sh
+[75.594s] -- Symlinking: /home/floks/ros2_ws/install/zed_components/share/zed_components/environment/path.dsv
+[75.605s] -- Symlinking: /home/floks/ros2_ws/install/zed_components/share/zed_components/local_setup.bash
+[75.619s] -- Symlinking: /home/floks/ros2_ws/install/zed_components/share/zed_components/local_setup.sh
+[75.631s] -- Symlinking: /home/floks/ros2_ws/install/zed_components/share/zed_components/local_setup.zsh
+[75.643s] -- Symlinking: /home/floks/ros2_ws/install/zed_components/share/zed_components/local_setup.dsv
+[75.655s] -- Symlinking: /home/floks/ros2_ws/install/zed_components/share/zed_components/package.dsv
+[75.668s] -- Symlinking: /home/floks/ros2_ws/install/zed_components/share/ament_index/resource_index/packages/zed_components
+[75.681s] -- Symlinking: /home/floks/ros2_ws/install/zed_components/share/ament_index/resource_index/rclcpp_components/zed_components
+[75.693s] -- Symlinking: /home/floks/ros2_ws/install/zed_components/share/zed_components/cmake/ament_cmake_export_include_directories-extras.cmake
+[75.705s] -- Symlinking: /home/floks/ros2_ws/install/zed_components/share/zed_components/cmake/ament_cmake_export_libraries-extras.cmake
+[75.718s] -- Symlinking: /home/floks/ros2_ws/install/zed_components/share/zed_components/cmake/ament_cmake_export_dependencies-extras.cmake
+[75.731s] -- Symlinking: /home/floks/ros2_ws/install/zed_components/share/zed_components/cmake/zed_componentsConfig.cmake
+[75.744s] -- Symlinking: /home/floks/ros2_ws/install/zed_components/share/zed_components/cmake/zed_componentsConfig-version.cmake
+[75.756s] -- Symlinking: /home/floks/ros2_ws/install/zed_components/share/zed_components/package.xml
+[75.772s] Invoked command in '/home/floks/ros2_ws/build/zed_components' returned '0': AMENT_PREFIX_PATH=/home/floks/ros2_ws/install/zed_interfaces:/home/floks/ros2_ws/install/robot_localization:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/floks/ros2_ws/install/zed_interfaces:/home/floks/ros2_ws/install/robot_localization:/home/floks/zed:/opt/ros/humble LD_LIBRARY_PATH=/home/floks/ros2_ws/install/zed_interfaces/lib:/home/floks/ros2_ws/install/robot_localization/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/floks/ros2_ws/install/zed_interfaces/local/lib/python3.10/dist-packages:/home/floks/ros2_ws/install/robot_localization/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/floks/ros2_ws/build/zed_components

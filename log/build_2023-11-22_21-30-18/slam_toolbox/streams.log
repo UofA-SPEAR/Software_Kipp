@@ -1,0 +1,392 @@
+[0.108s] Invoking command in '/home/floks/ros2_ws/build/slam_toolbox': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/floks/ros2_ws/build/slam_toolbox -- -j8 -l8
+[0.208s] [35m[1mConsolidate compiler generated dependencies of target kartoSlamToolbox[0m
+[0.233s] [  1%] Built target slam_toolbox__cpp
+[0.236s] [  1%] Built target ament_cmake_python_symlink_slam_toolbox
+[0.259s] [ 10%] Built target slam_toolbox__rosidl_generator_c
+[0.321s] [ 12%] Built target kartoSlamToolbox
+[0.349s] [ 20%] Built target slam_toolbox__rosidl_typesupport_cpp
+[0.373s] [ 28%] Built target slam_toolbox__rosidl_typesupport_introspection_cpp
+[0.396s] [ 37%] Built target slam_toolbox__rosidl_typesupport_fastrtps_cpp
+[0.415s] [ 46%] Built target slam_toolbox__rosidl_typesupport_fastrtps_c
+[0.425s] [35m[1mConsolidate compiler generated dependencies of target SlamToolboxPlugin[0m
+[0.446s] [ 54%] Built target slam_toolbox__rosidl_typesupport_introspection_c
+[0.462s] [ 62%] Built target slam_toolbox__rosidl_typesupport_c
+[0.475s] [35m[1mConsolidate compiler generated dependencies of target ceres_solver_plugin[0m
+[0.495s] [35m[1mConsolidate compiler generated dependencies of target toolbox_common[0m
+[0.515s] [ 64%] Built target SlamToolboxPlugin
+[0.544s] [ 64%] Built target slam_toolbox
+[0.554s] [ 66%] Built target ceres_solver_plugin
+[0.598s] [ 66%] Built target slam_toolbox__py
+[0.646s] [ 71%] Built target toolbox_common
+[0.665s] [35m[1mConsolidate compiler generated dependencies of target slam_toolbox__rosidl_generator_py[0m
+[0.687s] [35m[1mConsolidate compiler generated dependencies of target localization_slam_toolbox[0m
+[0.690s] [35m[1mConsolidate compiler generated dependencies of target async_slam_toolbox[0m
+[0.690s] [35m[1mConsolidate compiler generated dependencies of target sync_slam_toolbox[0m
+[0.697s] [35m[1mConsolidate compiler generated dependencies of target lifelong_slam_toolbox[0m
+[0.733s] [35m[1mConsolidate compiler generated dependencies of target merge_maps_kinematic[0m
+[0.742s] [ 79%] Built target slam_toolbox__rosidl_generator_py
+[0.805s] [ 81%] Built target async_slam_toolbox
+[0.844s] [ 83%] Built target sync_slam_toolbox
+[0.846s] [ 85%] Built target merge_maps_kinematic
+[0.861s] [ 86%] Built target localization_slam_toolbox
+[0.862s] [35m[1mConsolidate compiler generated dependencies of target slam_toolbox__rosidl_typesupport_fastrtps_c__pyext[0m
+[0.873s] [ 87%] Built target lifelong_slam_toolbox
+[0.899s] [35m[1mConsolidate compiler generated dependencies of target async_slam_toolbox_node[0m
+[0.913s] [ 88%] Built target slam_toolbox__rosidl_typesupport_fastrtps_c__pyext
+[0.916s] [35m[1mConsolidate compiler generated dependencies of target slam_toolbox__rosidl_typesupport_introspection_c__pyext[0m
+[0.921s] [35m[1mConsolidate compiler generated dependencies of target slam_toolbox__rosidl_typesupport_c__pyext[0m
+[0.925s] [35m[1mConsolidate compiler generated dependencies of target localization_slam_toolbox_node[0m
+[0.927s] [35m[1mConsolidate compiler generated dependencies of target sync_slam_toolbox_node[0m
+[0.950s] [35m[1mConsolidate compiler generated dependencies of target lifelong_slam_toolbox_node[0m
+[0.958s] [35m[1mConsolidate compiler generated dependencies of target map_and_localization_slam_toolbox[0m
+[1.006s] running egg_info
+[1.007s] writing slam_toolbox.egg-info/PKG-INFO
+[1.008s] writing dependency_links to slam_toolbox.egg-info/dependency_links.txt
+[1.008s] writing top-level names to slam_toolbox.egg-info/top_level.txt
+[1.016s] reading manifest file 'slam_toolbox.egg-info/SOURCES.txt'
+[1.017s] writing manifest file 'slam_toolbox.egg-info/SOURCES.txt'
+[1.018s] [ 90%] Built target slam_toolbox__rosidl_typesupport_introspection_c__pyext
+[1.039s] [ 92%] Built target slam_toolbox__rosidl_typesupport_c__pyext
+[1.050s] [ 93%] Built target async_slam_toolbox_node
+[1.060s] [ 94%] Built target sync_slam_toolbox_node
+[1.070s] [ 96%] Built target lifelong_slam_toolbox_node
+[1.072s] [ 97%] Built target map_and_localization_slam_toolbox
+[1.076s] [ 99%] Built target localization_slam_toolbox_node
+[1.097s] [ 99%] Built target ament_cmake_python_build_slam_toolbox_egg
+[1.097s] [35m[1mConsolidate compiler generated dependencies of target map_and_localization_slam_toolbox_node[0m
+[1.151s] [100%] Built target map_and_localization_slam_toolbox_node
+[1.170s] Invoked command in '/home/floks/ros2_ws/build/slam_toolbox' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/floks/ros2_ws/build/slam_toolbox -- -j8 -l8
+[1.506s] Invoking command in '/home/floks/ros2_ws/build/slam_toolbox': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/floks/ros2_ws/build/slam_toolbox
+[1.525s] -- Install configuration: "Release"
+[1.532s] -- Execute custom install script
+[1.540s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include//karto_sdk/Karto.h
+[1.547s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include//karto_sdk/Macros.h
+[1.547s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include//karto_sdk/Mapper.h
+[1.558s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include//karto_sdk/Math.h
+[1.569s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include//karto_sdk/Types.h
+[1.581s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include//karto_sdk/nanoflann.hpp
+[1.592s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include//karto_sdk/nanoflann_adaptors.h
+[1.603s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/ament_index/resource_index/rosidl_interfaces/slam_toolbox
+[1.615s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/msg/rosidl_generator_c__visibility_control.h
+[1.625s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/add_submap.h
+[1.636s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/clear.h
+[1.647s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/clear_queue.h
+[1.659s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/deserialize_pose_graph.h
+[1.672s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/add_submap__functions.h
+[1.685s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/add_submap__struct.h
+[1.697s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/add_submap__type_support.h
+[1.708s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear__functions.h
+[1.722s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear__struct.h
+[1.733s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear__type_support.h
+[1.745s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear_queue__functions.h
+[1.759s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear_queue__struct.h
+[1.774s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear_queue__type_support.h
+[1.785s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/deserialize_pose_graph__functions.h
+[1.796s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/deserialize_pose_graph__struct.h
+[1.807s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/deserialize_pose_graph__type_support.h
+[1.818s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/loop_closure__functions.h
+[1.829s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/loop_closure__struct.h
+[1.840s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/loop_closure__type_support.h
+[1.851s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/merge_maps__functions.h
+[1.865s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/merge_maps__struct.h
+[1.878s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/merge_maps__type_support.h
+[1.889s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/pause__functions.h
+[1.900s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/pause__struct.h
+[1.911s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/pause__type_support.h
+[1.922s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/save_map__functions.h
+[1.933s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/save_map__struct.h
+[1.944s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/save_map__type_support.h
+[1.955s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/serialize_pose_graph__functions.h
+[1.968s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/serialize_pose_graph__struct.h
+[1.981s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/serialize_pose_graph__type_support.h
+[1.994s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/toggle_interactive__functions.h
+[2.004s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/toggle_interactive__struct.h
+[2.015s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/toggle_interactive__type_support.h
+[2.026s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/loop_closure.h
+[2.037s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/merge_maps.h
+[2.048s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/pause.h
+[2.061s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/save_map.h
+[2.076s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/serialize_pose_graph.h
+[2.085s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/toggle_interactive.h
+[2.097s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/environment/library_path.sh
+[2.110s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/environment/library_path.dsv
+[2.123s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[2.135s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/add_submap__rosidl_typesupport_fastrtps_c.h
+[2.147s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear__rosidl_typesupport_fastrtps_c.h
+[2.162s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear_queue__rosidl_typesupport_fastrtps_c.h
+[2.175s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/deserialize_pose_graph__rosidl_typesupport_fastrtps_c.h
+[2.187s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/loop_closure__rosidl_typesupport_fastrtps_c.h
+[2.200s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/merge_maps__rosidl_typesupport_fastrtps_c.h
+[2.212s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/pause__rosidl_typesupport_fastrtps_c.h
+[2.223s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/save_map__rosidl_typesupport_fastrtps_c.h
+[2.235s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/serialize_pose_graph__rosidl_typesupport_fastrtps_c.h
+[2.246s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/toggle_interactive__rosidl_typesupport_fastrtps_c.h
+[2.259s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/add_submap.hpp
+[2.272s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/clear.hpp
+[2.284s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/clear_queue.hpp
+[2.296s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/deserialize_pose_graph.hpp
+[2.308s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/add_submap__builder.hpp
+[2.320s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/add_submap__struct.hpp
+[2.331s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/add_submap__traits.hpp
+[2.343s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear__builder.hpp
+[2.354s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear__struct.hpp
+[2.370s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear__traits.hpp
+[2.382s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear_queue__builder.hpp
+[2.393s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear_queue__struct.hpp
+[2.406s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear_queue__traits.hpp
+[2.418s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/deserialize_pose_graph__builder.hpp
+[2.431s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/deserialize_pose_graph__struct.hpp
+[2.442s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/deserialize_pose_graph__traits.hpp
+[2.453s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/loop_closure__builder.hpp
+[2.465s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/loop_closure__struct.hpp
+[2.478s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/loop_closure__traits.hpp
+[2.488s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/merge_maps__builder.hpp
+[2.499s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/merge_maps__struct.hpp
+[2.510s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/merge_maps__traits.hpp
+[2.521s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/pause__builder.hpp
+[2.532s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/pause__struct.hpp
+[2.542s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/pause__traits.hpp
+[2.553s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/save_map__builder.hpp
+[2.568s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/save_map__struct.hpp
+[2.581s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/save_map__traits.hpp
+[2.593s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/serialize_pose_graph__builder.hpp
+[2.604s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/serialize_pose_graph__struct.hpp
+[2.615s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/serialize_pose_graph__traits.hpp
+[2.626s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/toggle_interactive__builder.hpp
+[2.636s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/toggle_interactive__struct.hpp
+[2.647s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/toggle_interactive__traits.hpp
+[2.659s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/loop_closure.hpp
+[2.671s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/merge_maps.hpp
+[2.684s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/pause.hpp
+[2.696s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/save_map.hpp
+[2.707s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/serialize_pose_graph.hpp
+[2.719s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/toggle_interactive.hpp
+[2.733s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[2.744s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/add_submap__rosidl_typesupport_fastrtps_cpp.hpp
+[2.754s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear__rosidl_typesupport_fastrtps_cpp.hpp
+[2.766s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear_queue__rosidl_typesupport_fastrtps_cpp.hpp
+[2.779s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/deserialize_pose_graph__rosidl_typesupport_fastrtps_cpp.hpp
+[2.790s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/loop_closure__rosidl_typesupport_fastrtps_cpp.hpp
+[2.802s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/merge_maps__rosidl_typesupport_fastrtps_cpp.hpp
+[2.813s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/pause__rosidl_typesupport_fastrtps_cpp.hpp
+[2.824s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/save_map__rosidl_typesupport_fastrtps_cpp.hpp
+[2.835s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/serialize_pose_graph__rosidl_typesupport_fastrtps_cpp.hpp
+[2.845s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/toggle_interactive__rosidl_typesupport_fastrtps_cpp.hpp
+[2.860s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[2.874s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/add_submap__rosidl_typesupport_introspection_c.h
+[2.887s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear__rosidl_typesupport_introspection_c.h
+[2.899s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear_queue__rosidl_typesupport_introspection_c.h
+[2.911s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/deserialize_pose_graph__rosidl_typesupport_introspection_c.h
+[2.923s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/loop_closure__rosidl_typesupport_introspection_c.h
+[2.934s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/merge_maps__rosidl_typesupport_introspection_c.h
+[2.945s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/pause__rosidl_typesupport_introspection_c.h
+[2.955s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/save_map__rosidl_typesupport_introspection_c.h
+[2.968s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/serialize_pose_graph__rosidl_typesupport_introspection_c.h
+[2.980s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/toggle_interactive__rosidl_typesupport_introspection_c.h
+[2.993s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/add_submap__rosidl_typesupport_introspection_cpp.hpp
+[3.004s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear__rosidl_typesupport_introspection_cpp.hpp
+[3.016s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear_queue__rosidl_typesupport_introspection_cpp.hpp
+[3.026s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/deserialize_pose_graph__rosidl_typesupport_introspection_cpp.hpp
+[3.037s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/loop_closure__rosidl_typesupport_introspection_cpp.hpp
+[3.048s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/merge_maps__rosidl_typesupport_introspection_cpp.hpp
+[3.058s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/pause__rosidl_typesupport_introspection_cpp.hpp
+[3.070s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/save_map__rosidl_typesupport_introspection_cpp.hpp
+[3.083s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/serialize_pose_graph__rosidl_typesupport_introspection_cpp.hpp
+[3.095s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/toggle_interactive__rosidl_typesupport_introspection_cpp.hpp
+[3.106s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/environment/pythonpath.sh
+[3.117s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/environment/pythonpath.dsv
+[3.128s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox-2.6.6-py3.10.egg-info/PKG-INFO
+[3.139s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox-2.6.6-py3.10.egg-info/SOURCES.txt
+[3.149s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox-2.6.6-py3.10.egg-info/dependency_links.txt
+[3.162s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox-2.6.6-py3.10.egg-info/top_level.txt
+[3.183s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/__init__.py
+[3.187s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/_slam_toolbox_s.ep.rosidl_typesupport_c.c
+[3.198s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/_slam_toolbox_s.ep.rosidl_typesupport_fastrtps_c.c
+[3.209s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/_slam_toolbox_s.ep.rosidl_typesupport_introspection_c.c
+[3.220s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/libslam_toolbox__rosidl_generator_py.so
+[3.231s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/slam_toolbox_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[3.241s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/slam_toolbox_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[3.252s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/slam_toolbox_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[3.265s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/__init__.py
+[3.278s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_add_submap.py
+[3.289s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_add_submap_s.c
+[3.301s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_clear.py
+[3.313s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_clear_queue.py
+[3.326s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_clear_queue_s.c
+[3.337s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_clear_s.c
+[3.349s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_deserialize_pose_graph.py
+[3.362s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_deserialize_pose_graph_s.c
+[3.375s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_loop_closure.py
+[3.387s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_loop_closure_s.c
+[3.399s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_merge_maps.py
+[3.411s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_merge_maps_s.c
+[3.422s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_pause.py
+[3.432s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_pause_s.c
+[3.443s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_save_map.py
+[3.454s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_save_map_s.c
+[3.467s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_serialize_pose_graph.py
+[3.479s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_serialize_pose_graph_s.c
+[3.491s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_toggle_interactive.py
+[3.502s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_toggle_interactive_s.c
+[3.513s] -- Up-to-date symlink: /home/floks/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/slam_toolbox_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[3.514s] -- Up-to-date symlink: /home/floks/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/slam_toolbox_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[3.515s] -- Up-to-date symlink: /home/floks/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/slam_toolbox_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[3.515s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/srv/Pause.idl
+[3.526s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/srv/ClearQueue.idl
+[3.537s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/srv/ToggleInteractive.idl
+[3.548s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/srv/Clear.idl
+[3.558s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/srv/SaveMap.idl
+[3.570s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/srv/LoopClosure.idl
+[3.583s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/srv/MergeMaps.idl
+[3.594s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/srv/AddSubmap.idl
+[3.605s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/srv/DeserializePoseGraph.idl
+[3.616s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/srv/SerializePoseGraph.idl
+[3.627s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/Pause.srv
+[3.637s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/Pause_Request.msg
+[3.648s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/Pause_Response.msg
+[3.659s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/ClearQueue.srv
+[3.671s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/ClearQueue_Request.msg
+[3.683s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/ClearQueue_Response.msg
+[3.694s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/ToggleInteractive.srv
+[3.705s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/ToggleInteractive_Request.msg
+[3.716s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/ToggleInteractive_Response.msg
+[3.727s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/Clear.srv
+[3.738s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/Clear_Request.msg
+[3.749s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/Clear_Response.msg
+[3.760s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/SaveMap.srv
+[3.772s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/SaveMap_Request.msg
+[3.785s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/SaveMap_Response.msg
+[3.797s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/LoopClosure.srv
+[3.809s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/LoopClosure_Request.msg
+[3.821s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/LoopClosure_Response.msg
+[3.833s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/MergeMaps.srv
+[3.845s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/MergeMaps_Request.msg
+[3.857s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/MergeMaps_Response.msg
+[3.869s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/AddSubmap.srv
+[3.882s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/AddSubmap_Request.msg
+[3.893s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/AddSubmap_Response.msg
+[3.905s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/DeserializePoseGraph.srv
+[3.917s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/DeserializePoseGraph_Request.msg
+[3.931s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/DeserializePoseGraph_Response.msg
+[3.942s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/SerializePoseGraph.srv
+[3.954s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/SerializePoseGraph_Request.msg
+[3.968s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/SerializePoseGraph_Response.msg
+[3.980s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox//rviz_plugins.xml
+[3.992s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox//solver_plugins.xml
+[4.005s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/lib/slam_toolbox/async_slam_toolbox_node
+[4.017s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/lib/slam_toolbox/sync_slam_toolbox_node
+[4.029s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/lib/slam_toolbox/localization_slam_toolbox_node
+[4.041s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/lib/slam_toolbox/map_and_localization_slam_toolbox_node
+[4.053s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/lib/slam_toolbox/merge_maps_kinematic
+[4.066s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/lib/libtoolbox_common.so
+[4.079s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/lib/libSlamToolboxPlugin.so
+[4.090s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/lib/libceres_solver_plugin.so
+[4.102s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/lib/libasync_slam_toolbox.so
+[4.113s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/lib/libsync_slam_toolbox.so
+[4.124s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/lib/liblocalization_slam_toolbox.so
+[4.135s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/lib/liblifelong_slam_toolbox.so
+[4.146s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/lib/libmap_and_localization_slam_toolbox.so
+[4.157s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/lib/libkartoSlamToolbox.so
+[4.170s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/experimental/slam_toolbox_lifelong.hpp
+[4.182s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/experimental/slam_toolbox_map_and_localization.hpp
+[4.193s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/get_pose_helper.hpp
+[4.206s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/laser_utils.hpp
+[4.218s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/loop_closure_assistant.hpp
+[4.230s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/map_saver.hpp
+[4.241s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/merge_maps_kinematic.hpp
+[4.252s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/serialization.hpp
+[4.265s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_mapper.hpp
+[4.277s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox_async.hpp
+[4.291s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox_common.hpp
+[4.303s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox_localization.hpp
+[4.315s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox_sync.hpp
+[4.327s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/snap_utils.hpp
+[4.338s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/toolbox_msgs.hpp
+[4.350s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/toolbox_types.hpp
+[4.362s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/include/slam_toolbox/visualization_utils.hpp
+[4.383s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/launch/localization_launch.py
+[4.396s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/launch/merge_maps_kinematic_launch.py
+[4.408s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/launch/offline_launch.py
+[4.420s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/launch/online_async_launch.py
+[4.432s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/launch/online_sync_launch.py
+[4.444s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/config/mapper_params_lifelong.yaml
+[4.456s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/config/mapper_params_localization.yaml
+[4.471s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/config/mapper_params_offline.yaml
+[4.483s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/config/mapper_params_online_async.yaml
+[4.495s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/config/mapper_params_online_sync.yaml
+[4.507s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/config/slam_toolbox_default.rviz
+[4.519s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/solver_plugins.xml
+[4.531s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/rviz_plugins.xml
+[4.544s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/ament_index/resource_index/package_run_dependencies/slam_toolbox
+[4.557s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/ament_index/resource_index/parent_prefix_path/slam_toolbox
+[4.570s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/environment/ament_prefix_path.sh
+[4.584s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/environment/ament_prefix_path.dsv
+[4.596s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/environment/path.sh
+[4.608s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/environment/path.dsv
+[4.620s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/local_setup.bash
+[4.631s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/local_setup.sh
+[4.644s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/local_setup.zsh
+[4.656s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/local_setup.dsv
+[4.669s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/package.dsv
+[4.680s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/ament_index/resource_index/packages/slam_toolbox
+[4.694s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/ament_index/resource_index/rviz_common__pluginlib__plugin/slam_toolbox
+[4.705s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/ament_index/resource_index/slam_toolbox__pluginlib__plugin/slam_toolbox
+[4.717s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/cmake/rosidl_cmake-extras.cmake
+[4.729s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/cmake/ament_cmake_export_dependencies-extras.cmake
+[4.740s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/cmake/ament_cmake_export_include_directories-extras.cmake
+[4.751s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/cmake/ament_cmake_export_libraries-extras.cmake
+[4.762s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/cmake/ament_cmake_export_targets-extras.cmake
+[4.775s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[4.787s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[4.799s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/cmake/slam_toolboxConfig.cmake
+[4.810s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/cmake/slam_toolboxConfig-version.cmake
+[4.821s] -- Symlinking: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/package.xml
+[4.831s] -- Installing: /home/floks/ros2_ws/install/slam_toolbox/lib/libslam_toolbox__rosidl_generator_c.so
+[4.840s] -- Set runtime path of "/home/floks/ros2_ws/install/slam_toolbox/lib/libslam_toolbox__rosidl_generator_c.so" to ""
+[4.841s] -- Installing: /home/floks/ros2_ws/install/slam_toolbox/lib/libslam_toolbox__rosidl_typesupport_fastrtps_c.so
+[4.841s] -- Set runtime path of "/home/floks/ros2_ws/install/slam_toolbox/lib/libslam_toolbox__rosidl_typesupport_fastrtps_c.so" to ""
+[4.841s] -- Installing: /home/floks/ros2_ws/install/slam_toolbox/lib/libslam_toolbox__rosidl_typesupport_fastrtps_cpp.so
+[4.842s] -- Set runtime path of "/home/floks/ros2_ws/install/slam_toolbox/lib/libslam_toolbox__rosidl_typesupport_fastrtps_cpp.so" to ""
+[4.843s] -- Installing: /home/floks/ros2_ws/install/slam_toolbox/lib/libslam_toolbox__rosidl_typesupport_introspection_c.so
+[4.843s] -- Set runtime path of "/home/floks/ros2_ws/install/slam_toolbox/lib/libslam_toolbox__rosidl_typesupport_introspection_c.so" to ""
+[4.843s] -- Installing: /home/floks/ros2_ws/install/slam_toolbox/lib/libslam_toolbox__rosidl_typesupport_c.so
+[4.844s] -- Set runtime path of "/home/floks/ros2_ws/install/slam_toolbox/lib/libslam_toolbox__rosidl_typesupport_c.so" to ""
+[4.844s] -- Installing: /home/floks/ros2_ws/install/slam_toolbox/lib/libslam_toolbox__rosidl_typesupport_introspection_cpp.so
+[4.845s] -- Set runtime path of "/home/floks/ros2_ws/install/slam_toolbox/lib/libslam_toolbox__rosidl_typesupport_introspection_cpp.so" to ""
+[4.845s] -- Installing: /home/floks/ros2_ws/install/slam_toolbox/lib/libslam_toolbox__rosidl_typesupport_cpp.so
+[4.846s] -- Set runtime path of "/home/floks/ros2_ws/install/slam_toolbox/lib/libslam_toolbox__rosidl_typesupport_cpp.so" to ""
+[4.902s] Listing '/home/floks/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox'...
+[4.902s] Compiling '/home/floks/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/__init__.py'...
+[4.902s] Listing '/home/floks/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv'...
+[4.903s] Compiling '/home/floks/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/__init__.py'...
+[4.903s] Compiling '/home/floks/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_add_submap.py'...
+[4.903s] Compiling '/home/floks/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_clear.py'...
+[4.903s] Compiling '/home/floks/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_clear_queue.py'...
+[4.903s] Compiling '/home/floks/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_deserialize_pose_graph.py'...
+[4.903s] Compiling '/home/floks/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_loop_closure.py'...
+[4.903s] Compiling '/home/floks/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_merge_maps.py'...
+[4.903s] Compiling '/home/floks/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_pause.py'...
+[4.903s] Compiling '/home/floks/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_save_map.py'...
+[4.903s] Compiling '/home/floks/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_serialize_pose_graph.py'...
+[4.903s] Compiling '/home/floks/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_toggle_interactive.py'...
+[4.908s] -- Installing: /home/floks/ros2_ws/install/slam_toolbox/lib/libslam_toolbox__rosidl_generator_py.so
+[4.908s] -- Set runtime path of "/home/floks/ros2_ws/install/slam_toolbox/lib/libslam_toolbox__rosidl_generator_py.so" to ""
+[4.909s] -- Installing: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/cmake/export_slam_toolbox__rosidl_generator_cExport.cmake
+[4.909s] -- Installing: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/cmake/export_slam_toolbox__rosidl_generator_cExport-release.cmake
+[4.910s] -- Installing: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/cmake/export_slam_toolbox__rosidl_typesupport_fastrtps_cExport.cmake
+[4.910s] -- Installing: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/cmake/export_slam_toolbox__rosidl_typesupport_fastrtps_cExport-release.cmake
+[4.910s] -- Installing: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/cmake/export_slam_toolbox__rosidl_generator_cppExport.cmake
+[4.910s] -- Installing: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/cmake/export_slam_toolbox__rosidl_typesupport_fastrtps_cppExport.cmake
+[4.911s] -- Installing: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/cmake/export_slam_toolbox__rosidl_typesupport_fastrtps_cppExport-release.cmake
+[4.911s] -- Installing: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/cmake/slam_toolbox__rosidl_typesupport_introspection_cExport.cmake
+[4.911s] -- Installing: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/cmake/slam_toolbox__rosidl_typesupport_introspection_cExport-release.cmake
+[4.912s] -- Installing: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/cmake/slam_toolbox__rosidl_typesupport_cExport.cmake
+[4.912s] -- Installing: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/cmake/slam_toolbox__rosidl_typesupport_cExport-release.cmake
+[4.912s] -- Installing: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/cmake/slam_toolbox__rosidl_typesupport_introspection_cppExport.cmake
+[4.912s] -- Installing: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/cmake/slam_toolbox__rosidl_typesupport_introspection_cppExport-release.cmake
+[4.913s] -- Installing: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/cmake/slam_toolbox__rosidl_typesupport_cppExport.cmake
+[4.913s] -- Installing: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/cmake/slam_toolbox__rosidl_typesupport_cppExport-release.cmake
+[4.913s] -- Installing: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/cmake/export_slam_toolbox__rosidl_generator_pyExport.cmake
+[4.913s] -- Installing: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/cmake/export_slam_toolbox__rosidl_generator_pyExport-release.cmake
+[4.914s] -- Installing: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/cmake/SlamToolboxPluginExport.cmake
+[4.914s] -- Installing: /home/floks/ros2_ws/install/slam_toolbox/share/slam_toolbox/cmake/SlamToolboxPluginExport-release.cmake

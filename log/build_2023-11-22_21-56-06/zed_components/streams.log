@@ -1,0 +1,20 @@
+[0.203s] Invoking command in '/home/floks/ros2_ws/build/zed_components': AMENT_PREFIX_PATH=/home/floks/ros2_ws/install/zed_interfaces:/home/floks/ros2_ws/install/robot_localization:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/floks/ros2_ws/install/zed_interfaces:/home/floks/ros2_ws/install/robot_localization:/home/floks/Downloads/ZED_SDK_Ubuntu22_cuda12.1_v4.0.8.zstd.run:/path/to/zed-sdk:/home/floks/Downloads:/home/floks/Downloads/ZED_SDK_Ubuntu22_cuda12.1_v4.0.8.zstd.run:/opt/ros/humble LD_LIBRARY_PATH=/home/floks/ros2_ws/install/zed_interfaces/lib:/home/floks/ros2_ws/install/robot_localization/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/floks/ros2_ws/install/zed_interfaces/local/lib/python3.10/dist-packages:/home/floks/ros2_ws/install/robot_localization/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/floks/ros2_ws/src/zed-ros2-wrapper/zed_components -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/floks/ros2_ws/install/zed_components
+[0.231s] [31mCMake Error at CMakeLists.txt:81 (find_package):
+[0.231s]   By not providing "FindZED.cmake" in CMAKE_MODULE_PATH this project has
+[0.231s]   asked CMake to find a package configuration file provided by "ZED", but
+[0.231s]   CMake did not find one.
+[0.232s] 
+[0.232s]   Could not find a package configuration file provided by "ZED" (requested
+[0.232s]   version 4) with any of the following names:
+[0.232s] 
+[0.232s]     ZEDConfig.cmake
+[0.232s]     zed-config.cmake
+[0.232s] 
+[0.232s]   Add the installation prefix of "ZED" to CMAKE_PREFIX_PATH or set "ZED_DIR"
+[0.232s]   to a directory containing one of the above files.  If "ZED" provides a
+[0.232s]   separate development package or SDK, be sure it has been installed.
+[0.232s] 
+[0.232s] [0m
+[0.232s] -- Configuring incomplete, errors occurred!
+[0.232s] See also "/home/floks/ros2_ws/build/zed_components/CMakeFiles/CMakeOutput.log".
+[0.235s] Invoked command in '/home/floks/ros2_ws/build/zed_components' returned '1': AMENT_PREFIX_PATH=/home/floks/ros2_ws/install/zed_interfaces:/home/floks/ros2_ws/install/robot_localization:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/floks/ros2_ws/install/zed_interfaces:/home/floks/ros2_ws/install/robot_localization:/home/floks/Downloads/ZED_SDK_Ubuntu22_cuda12.1_v4.0.8.zstd.run:/path/to/zed-sdk:/home/floks/Downloads:/home/floks/Downloads/ZED_SDK_Ubuntu22_cuda12.1_v4.0.8.zstd.run:/opt/ros/humble LD_LIBRARY_PATH=/home/floks/ros2_ws/install/zed_interfaces/lib:/home/floks/ros2_ws/install/robot_localization/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/floks/ros2_ws/install/zed_interfaces/local/lib/python3.10/dist-packages:/home/floks/ros2_ws/install/robot_localization/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/floks/ros2_ws/src/zed-ros2-wrapper/zed_components -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/floks/ros2_ws/install/zed_components

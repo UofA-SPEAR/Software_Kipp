@@ -1,0 +1,32 @@
+[0.111s] Invoking command in '/home/floks/ros2_ws/build/zed_components': AMENT_PREFIX_PATH=/home/floks/ros2_ws/install/zed_interfaces:/home/floks/ros2_ws/install/robot_localization:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/floks/ros2_ws/install/zed_interfaces:/home/floks/ros2_ws/install/robot_localization:/opt/ros/humble LD_LIBRARY_PATH=/home/floks/ros2_ws/install/zed_interfaces/lib:/home/floks/ros2_ws/install/robot_localization/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/floks/ros2_ws/install/zed_interfaces/local/lib/python3.10/dist-packages:/home/floks/ros2_ws/install/robot_localization/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/floks/ros2_ws/src/zed-ros2-wrapper/zed_components -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/floks/ros2_ws/install/zed_components
+[0.218s] -- The C compiler identification is GNU 11.4.0
+[0.298s] -- The CXX compiler identification is GNU 11.4.0
+[0.310s] -- Detecting C compiler ABI info
+[0.400s] -- Detecting C compiler ABI info - done
+[0.409s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.410s] -- Detecting C compile features
+[0.410s] -- Detecting C compile features - done
+[0.415s] -- Detecting CXX compiler ABI info
+[0.517s] -- Detecting CXX compiler ABI info - done
+[0.527s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.527s] -- Detecting CXX compile features
+[0.527s] -- Detecting CXX compile features - done
+[0.545s] -- Configuring incomplete, errors occurred!
+[0.545s] See also "/home/floks/ros2_ws/build/zed_components/CMakeFiles/CMakeOutput.log".
+[0.545s] [31mCMake Error at CMakeLists.txt:81 (find_package):
+[0.545s]   By not providing "FindZED.cmake" in CMAKE_MODULE_PATH this project has
+[0.546s]   asked CMake to find a package configuration file provided by "ZED", but
+[0.546s]   CMake did not find one.
+[0.546s] 
+[0.546s]   Could not find a package configuration file provided by "ZED" (requested
+[0.546s]   version 4) with any of the following names:
+[0.546s] 
+[0.546s]     ZEDConfig.cmake
+[0.546s]     zed-config.cmake
+[0.547s] 
+[0.547s]   Add the installation prefix of "ZED" to CMAKE_PREFIX_PATH or set "ZED_DIR"
+[0.547s]   to a directory containing one of the above files.  If "ZED" provides a
+[0.547s]   separate development package or SDK, be sure it has been installed.
+[0.547s] 
+[0.547s] [0m
+[0.551s] Invoked command in '/home/floks/ros2_ws/build/zed_components' returned '1': AMENT_PREFIX_PATH=/home/floks/ros2_ws/install/zed_interfaces:/home/floks/ros2_ws/install/robot_localization:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/floks/ros2_ws/install/zed_interfaces:/home/floks/ros2_ws/install/robot_localization:/opt/ros/humble LD_LIBRARY_PATH=/home/floks/ros2_ws/install/zed_interfaces/lib:/home/floks/ros2_ws/install/robot_localization/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/floks/ros2_ws/install/zed_interfaces/local/lib/python3.10/dist-packages:/home/floks/ros2_ws/install/robot_localization/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/floks/ros2_ws/src/zed-ros2-wrapper/zed_components -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/floks/ros2_ws/install/zed_components

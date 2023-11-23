@@ -1,0 +1,23 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from slam_toolbox/srvs/SaveMap.srv
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/String.idl"
+
+module slam_toolbox {
+  module srv {
+    struct SaveMap_Request {
+      std_msgs::msg::String name;
+    };
+    module SaveMap_Response_Constants {
+      const uint8 RESULT_SUCCESS = 0;
+      const uint8 RESULT_NO_MAP_RECEIEVD = 1;
+      const uint8 RESULT_UNDEFINED_FAILURE = 255;
+    };
+    @verbatim (language="comment", text=
+      "Result code defintions")
+    struct SaveMap_Response {
+      uint8 result;
+    };
+  };
+};

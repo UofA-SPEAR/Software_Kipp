@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/floks/ros2_ws/build/robot_localization/rosidl_generator_py/robot_localization/robot_localization_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" "TARGETS" "robot_localization__rosidl_typesupport_c__pyext" "DESTINATION" "local/lib/python3.10/dist-packages/robot_localization")

@@ -1,0 +1,12 @@
+-I/home/floks/ros2_ws/src/slam_toolbox/include
+-I/home/floks/ros2_ws/src/slam_toolbox/lib/karto_sdk/include
+-I/usr/include/eigen3
+-I/usr/include/suitesparse
+-I/usr/include
+-I/home/floks/ros2_ws/src/slam_toolbox
+-I/home/floks/ros2_ws/build/slam_toolbox
+-DQT_NO_KEYWORDS
+-DROS_PACKAGE_NAME="slam_toolbox"
+-o
+/home/floks/ros2_ws/build/slam_toolbox/rviz_plugin/moc_slam_toolbox_rviz_plugin.cpp
+/home/floks/ros2_ws/src/slam_toolbox/rviz_plugin/slam_toolbox_rviz_plugin.hpp
