@@ -6,7 +6,8 @@ from ament_index_python.packages import get_package_share_directory
 
 def generate_launch_description():
 
-    joy_params = os.path.join(get_package_share_directory('articubot_one'),'config','joystick.yaml')
+    joy_params = os.path.join(get_package_share_directory('Rover_Teleoperation'),'config','joystick.yaml') 
+    # getting parameters for the joystick from the .yaml file, just easier this way since you dont have to retype every param
 
     joy_node = Node(
         package='joy',
@@ -15,7 +16,7 @@ def generate_launch_description():
     )
 
     teleop_node = Node(
-        package='teleop_twist-joy',
+        package='teleop_twist_joy',
         executable='teleop_node', 
         name='teleop_node',
         parameters=[joy_params],
