@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-package_name = 'Rover_Description'
+package_name = 'rover_drive'
 
 setup(
     name=package_name,
