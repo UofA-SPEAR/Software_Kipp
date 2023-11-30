@@ -20,6 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'fake_imu_publisher = Sensor_Fusion_pkg.SensorFusionNode:main' ######## Testing 
         ],
     },
 )
