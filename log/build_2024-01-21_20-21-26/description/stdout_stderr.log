@@ -1,0 +1,27 @@
+running egg_info
+writing ../build/description/description.egg-info/PKG-INFO
+writing dependency_links to ../build/description/description.egg-info/dependency_links.txt
+writing requirements to ../build/description/description.egg-info/requires.txt
+writing top-level names to ../build/description/description.egg-info/top_level.txt
+reading manifest file '../build/description/description.egg-info/SOURCES.txt'
+writing manifest file '../build/description/description.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+creating /workspaces/isaac_ros-dev/ros_ws/Software_Kipp/install/description/share/description/URDF
+copying URDF/SPEAR_Arm.urdf -> /workspaces/isaac_ros-dev/ros_ws/Software_Kipp/install/description/share/description/URDF/
+creating /workspaces/isaac_ros-dev/ros_ws/Software_Kipp/install/description/share/description/meshes
+copying meshes/link_5.STL -> /workspaces/isaac_ros-dev/ros_ws/Software_Kipp/install/description/share/description/meshes/
+copying meshes/link_1.STL -> /workspaces/isaac_ros-dev/ros_ws/Software_Kipp/install/description/share/description/meshes/
+copying meshes/link_3.STL -> /workspaces/isaac_ros-dev/ros_ws/Software_Kipp/install/description/share/description/meshes/
+copying meshes/link_2.STL -> /workspaces/isaac_ros-dev/ros_ws/Software_Kipp/install/description/share/description/meshes/
+copying meshes/base_link.STL -> /workspaces/isaac_ros-dev/ros_ws/Software_Kipp/install/description/share/description/meshes/
+copying meshes/link_4.STL -> /workspaces/isaac_ros-dev/ros_ws/Software_Kipp/install/description/share/description/meshes/
+copying meshes/base_drum.STL -> /workspaces/isaac_ros-dev/ros_ws/Software_Kipp/install/description/share/description/meshes/
+running install_egg_info
+removing '/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/install/description/lib/python3.8/site-packages/description-0.0.0-py3.8.egg-info' (and everything under it)
+Copying ../build/description/description.egg-info to /workspaces/isaac_ros-dev/ros_ws/Software_Kipp/install/description/lib/python3.8/site-packages/description-0.0.0-py3.8.egg-info
+running install_scripts
+writing list of installed files to '/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/build/description/install.log'

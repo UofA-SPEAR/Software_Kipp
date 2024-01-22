@@ -1,0 +1,16 @@
+[1.893s] Invoking command in '/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/description': PYTHONPATH=/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/build/description/prefix_override:/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/install/description/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/description build --build-base /workspaces/isaac_ros-dev/ros_ws/Software_Kipp/build/description/build install --record /workspaces/isaac_ros-dev/ros_ws/Software_Kipp/build/description/install.log --single-version-externally-managed
+[2.497s] running egg_info
+[2.519s] writing ../build/description/description.egg-info/PKG-INFO
+[2.519s] writing dependency_links to ../build/description/description.egg-info/dependency_links.txt
+[2.520s] writing requirements to ../build/description/description.egg-info/requires.txt
+[2.522s] writing top-level names to ../build/description/description.egg-info/top_level.txt
+[2.573s] reading manifest file '../build/description/description.egg-info/SOURCES.txt'
+[2.574s] writing manifest file '../build/description/description.egg-info/SOURCES.txt'
+[2.574s] running build
+[2.575s] running build_py
+[2.576s] running install
+[2.584s] running install_lib
+[2.607s] running install_data
+[2.628s] copying package.xml -> /workspaces/isaac_ros-dev/ros_ws/Software_Kipp/install/description/share/description
+[2.628s] error: can't copy 'URDF': doesn't exist or not a regular file
+[2.714s] Invoked command in '/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/description' returned '1': PYTHONPATH=/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/build/description/prefix_override:/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/install/description/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/description build --build-base /workspaces/isaac_ros-dev/ros_ws/Software_Kipp/build/description/build install --record /workspaces/isaac_ros-dev/ros_ws/Software_Kipp/build/description/install.log --single-version-externally-managed

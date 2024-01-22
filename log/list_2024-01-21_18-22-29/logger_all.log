@@ -1,0 +1,26 @@
+[4.540s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'list', '-p', '--base-paths', '/home/spear/workspaces/isaac_ros-dev/ros_ws/Software_Kipp']
+[4.540s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], base_paths=['/home/spear/workspaces/isaac_ros-dev/ros_ws/Software_Kipp'], build_base='build', ignore_user_meta=False, log_base=None, log_level=None, main=<bound method ListVerb.main of <colcon_package_information.verb.list.ListVerb object at 0xffffa8ed6640>>, metas=['./colcon.meta'], mixin=None, mixin_files=None, mixin_verb=('list',), names_only=False, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, paths=None, paths_only=True, topological_graph=False, topological_graph_density=False, topological_graph_dot=False, topological_graph_dot_cluster=False, topological_graph_dot_include_skipped=False, topological_graph_legend=False, topological_order=False, verb_extension=<colcon_package_information.verb.list.ListVerb object at 0xffffa8ed6640>, verb_name='list', verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xffffa8b583d0>)
+[4.730s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[4.730s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[4.730s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[4.730s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[4.730s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[4.731s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/spear/workspaces/isaac_ros-dev/ros_ws/Software_Kipp'
+[4.731s] Level 1:colcon.colcon_core.package_identification:_identify(/home/spear/workspaces/isaac_ros-dev/ros_ws/Software_Kipp) by extensions ['ignore', 'ignore_ament_install']
+[4.731s] Level 1:colcon.colcon_core.package_identification:_identify(/home/spear/workspaces/isaac_ros-dev/ros_ws/Software_Kipp) by extension 'ignore'
+[4.731s] Level 1:colcon.colcon_core.package_identification:_identify(/home/spear/workspaces/isaac_ros-dev/ros_ws/Software_Kipp) by extension 'ignore_ament_install'
+[4.731s] Level 1:colcon.colcon_core.package_identification:_identify(/home/spear/workspaces/isaac_ros-dev/ros_ws/Software_Kipp) by extensions ['colcon_pkg']
+[4.731s] Level 1:colcon.colcon_core.package_identification:_identify(/home/spear/workspaces/isaac_ros-dev/ros_ws/Software_Kipp) by extension 'colcon_pkg'
+[4.731s] Level 1:colcon.colcon_core.package_identification:_identify(/home/spear/workspaces/isaac_ros-dev/ros_ws/Software_Kipp) by extensions ['colcon_meta']
+[4.731s] Level 1:colcon.colcon_core.package_identification:_identify(/home/spear/workspaces/isaac_ros-dev/ros_ws/Software_Kipp) by extension 'colcon_meta'
+[4.732s] Level 1:colcon.colcon_core.package_identification:_identify(/home/spear/workspaces/isaac_ros-dev/ros_ws/Software_Kipp) by extensions ['ros']
+[4.732s] Level 1:colcon.colcon_core.package_identification:_identify(/home/spear/workspaces/isaac_ros-dev/ros_ws/Software_Kipp) by extension 'ros'
+[4.748s] Level 1:colcon.colcon_core.package_identification:_identify(/home/spear/workspaces/isaac_ros-dev/ros_ws/Software_Kipp) by extensions ['cmake', 'python']
+[4.749s] Level 1:colcon.colcon_core.package_identification:_identify(/home/spear/workspaces/isaac_ros-dev/ros_ws/Software_Kipp) by extension 'cmake'
+[4.749s] Level 1:colcon.colcon_core.package_identification:_identify(/home/spear/workspaces/isaac_ros-dev/ros_ws/Software_Kipp) by extension 'python'
+[4.749s] Level 1:colcon.colcon_core.package_identification:_identify(/home/spear/workspaces/isaac_ros-dev/ros_ws/Software_Kipp) by extensions ['python_setup_py']
+[4.749s] Level 1:colcon.colcon_core.package_identification:_identify(/home/spear/workspaces/isaac_ros-dev/ros_ws/Software_Kipp) by extension 'python_setup_py'
+[4.749s] Level 1:colcon.colcon_core.package_identification:_identify(/home/spear/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/log) by extensions ['ignore', 'ignore_ament_install']
+[4.749s] Level 1:colcon.colcon_core.package_identification:_identify(/home/spear/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/log) by extension 'ignore'
+[4.750s] Level 1:colcon.colcon_core.package_identification:_identify(/home/spear/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/log) ignored
+[4.750s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults

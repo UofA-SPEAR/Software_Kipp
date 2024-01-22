@@ -1,0 +1,32 @@
+[1.929s] Invoking command in '/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/description': PYTHONPATH=/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/build/description/prefix_override:/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/install/description/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/description build --build-base /workspaces/isaac_ros-dev/ros_ws/Software_Kipp/build/description/build install --record /workspaces/isaac_ros-dev/ros_ws/Software_Kipp/build/description/install.log --single-version-externally-managed
+[2.544s] running egg_info
+[2.545s] creating ../build/description/description.egg-info
+[2.568s] writing ../build/description/description.egg-info/PKG-INFO
+[2.568s] writing dependency_links to ../build/description/description.egg-info/dependency_links.txt
+[2.569s] writing requirements to ../build/description/description.egg-info/requires.txt
+[2.569s] writing top-level names to ../build/description/description.egg-info/top_level.txt
+[2.569s] writing manifest file '../build/description/description.egg-info/SOURCES.txt'
+[2.614s] reading manifest file '../build/description/description.egg-info/SOURCES.txt'
+[2.615s] writing manifest file '../build/description/description.egg-info/SOURCES.txt'
+[2.615s] running build
+[2.616s] running build_py
+[2.616s] creating /workspaces/isaac_ros-dev/ros_ws/Software_Kipp/build/description/build
+[2.617s] creating /workspaces/isaac_ros-dev/ros_ws/Software_Kipp/build/description/build/lib
+[2.617s] creating /workspaces/isaac_ros-dev/ros_ws/Software_Kipp/build/description/build/lib/description
+[2.618s] copying description/__init__.py -> /workspaces/isaac_ros-dev/ros_ws/Software_Kipp/build/description/build/lib/description
+[2.618s] running install
+[2.628s] running install_lib
+[2.651s] creating /workspaces/isaac_ros-dev/ros_ws/Software_Kipp/install/description/lib/python3.8/site-packages/description
+[2.651s] copying /workspaces/isaac_ros-dev/ros_ws/Software_Kipp/build/description/build/lib/description/__init__.py -> /workspaces/isaac_ros-dev/ros_ws/Software_Kipp/install/description/lib/python3.8/site-packages/description
+[2.651s] byte-compiling /workspaces/isaac_ros-dev/ros_ws/Software_Kipp/install/description/lib/python3.8/site-packages/description/__init__.py to __init__.cpython-38.pyc
+[2.652s] running install_data
+[2.674s] creating /workspaces/isaac_ros-dev/ros_ws/Software_Kipp/install/description/share/ament_index
+[2.674s] creating /workspaces/isaac_ros-dev/ros_ws/Software_Kipp/install/description/share/ament_index/resource_index
+[2.674s] creating /workspaces/isaac_ros-dev/ros_ws/Software_Kipp/install/description/share/ament_index/resource_index/packages
+[2.675s] copying resource/description -> /workspaces/isaac_ros-dev/ros_ws/Software_Kipp/install/description/share/ament_index/resource_index/packages
+[2.675s] copying package.xml -> /workspaces/isaac_ros-dev/ros_ws/Software_Kipp/install/description/share/description
+[2.675s] running install_egg_info
+[2.697s] Copying ../build/description/description.egg-info to /workspaces/isaac_ros-dev/ros_ws/Software_Kipp/install/description/lib/python3.8/site-packages/description-0.0.0-py3.8.egg-info
+[2.699s] running install_scripts
+[2.814s] writing list of installed files to '/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/build/description/install.log'
+[2.926s] Invoked command in '/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/description' returned '0': PYTHONPATH=/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/build/description/prefix_override:/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/install/description/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/description build --build-base /workspaces/isaac_ros-dev/ros_ws/Software_Kipp/build/description/build install --record /workspaces/isaac_ros-dev/ros_ws/Software_Kipp/build/description/install.log --single-version-externally-managed

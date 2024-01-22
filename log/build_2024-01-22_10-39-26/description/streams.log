@@ -1,0 +1,19 @@
+[1.959s] Invoking command in '/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/description': PYTHONPATH=/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/build/description/prefix_override:/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/install/description/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/description build --build-base /workspaces/isaac_ros-dev/ros_ws/Software_Kipp/build/description/build install --record /workspaces/isaac_ros-dev/ros_ws/Software_Kipp/build/description/install.log --single-version-externally-managed
+[2.559s] running egg_info
+[2.581s] writing ../build/description/description.egg-info/PKG-INFO
+[2.581s] writing dependency_links to ../build/description/description.egg-info/dependency_links.txt
+[2.582s] writing requirements to ../build/description/description.egg-info/requires.txt
+[2.582s] writing top-level names to ../build/description/description.egg-info/top_level.txt
+[2.634s] reading manifest file '../build/description/description.egg-info/SOURCES.txt'
+[2.635s] writing manifest file '../build/description/description.egg-info/SOURCES.txt'
+[2.636s] running build
+[2.636s] running build_py
+[2.636s] running install
+[2.653s] running install_lib
+[2.675s] running install_data
+[2.696s] running install_egg_info
+[2.718s] removing '/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/install/description/lib/python3.8/site-packages/description-0.0.0-py3.8.egg-info' (and everything under it)
+[2.718s] Copying ../build/description/description.egg-info to /workspaces/isaac_ros-dev/ros_ws/Software_Kipp/install/description/lib/python3.8/site-packages/description-0.0.0-py3.8.egg-info
+[2.720s] running install_scripts
+[2.831s] writing list of installed files to '/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/build/description/install.log'
+[2.936s] Invoked command in '/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/description' returned '0': PYTHONPATH=/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/build/description/prefix_override:/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/install/description/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/description build --build-base /workspaces/isaac_ros-dev/ros_ws/Software_Kipp/build/description/build install --record /workspaces/isaac_ros-dev/ros_ws/Software_Kipp/build/description/install.log --single-version-externally-managed
