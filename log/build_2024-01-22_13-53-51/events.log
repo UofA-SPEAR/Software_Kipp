@@ -1,0 +1,58 @@
+[0.000000] (-) TimerEvent: {}
+[0.000744] (description) JobQueued: {'identifier': 'description', 'dependencies': OrderedDict()}
+[0.001421] (description) JobStarted: {'identifier': 'description'}
+[0.099227] (-) TimerEvent: {}
+[0.200129] (-) TimerEvent: {}
+[0.301022] (-) TimerEvent: {}
+[0.401706] (-) TimerEvent: {}
+[0.502373] (-) TimerEvent: {}
+[0.603045] (-) TimerEvent: {}
+[0.703606] (-) TimerEvent: {}
+[0.804227] (-) TimerEvent: {}
+[0.905594] (-) TimerEvent: {}
+[1.007126] (-) TimerEvent: {}
+[1.107834] (-) TimerEvent: {}
+[1.208610] (-) TimerEvent: {}
+[1.309360] (-) TimerEvent: {}
+[1.410139] (-) TimerEvent: {}
+[1.510927] (-) TimerEvent: {}
+[1.611736] (-) TimerEvent: {}
+[1.712543] (-) TimerEvent: {}
+[1.813352] (-) TimerEvent: {}
+[1.914157] (-) TimerEvent: {}
+[2.014998] (-) TimerEvent: {}
+[2.018412] (description) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../build/description', 'build', '--build-base', '/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/build/description/build', 'install', '--record', '/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/build/description/install.log', '--single-version-externally-managed'], 'cwd': '/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/description', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'PYTHONWARNINGS': 'ignore:::setuptools.command.install,ignore:::setuptools.command.easy_install,ignore:::pkg_resources', 'USER': 'spear', 'HOSTNAME': 'spear-desktop', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/lib/aarch64-linux-gnu/tegra/weston:/usr/lib/aarch64-linux-gnu/tegra-egl:/usr/local/cuda-11.4/targets/aarch64-linux/lib:/usr/lib/aarch64-linux-gnu/tegra:/opt/nvidia/vpi2/lib64::/usr/lib/aarch64-linux-gnu-host:/opt/tritonserver/lib', 'HOME': '/home/admin', 'OLDPWD': '/workspaces/isaac_ros-dev/ros_ws', 'ROS_PYTHON_VERSION': '3', 'USER_UID': '1000', 'COLCON_PREFIX_PATH': '/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/install', 'ROS_DISTRO': 'humble', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'NVIDIA_DRIVER_CAPABILITIES': 'all', 'USERNAME': 'admin', 'TERM': 'xterm', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/nvidia/tao:/usr/local/cuda/bin', 'FASTRTPS_DEFAULT_PROFILES_FILE': '/usr/local/share/middleware_profiles/rtps_udp_profile.xml', 'DISPLAY': ':0', 'LD_PRELOAD': '/usr/lib/aarch64-linux-gnu/libgomp.so.1', 'LANG': 'en_US.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_fastrtps_cpp', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'ROS_ROOT': '/opt/ros/humble', 'AMENT_PREFIX_PATH': '/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/install/description:/opt/ros/humble', 'DEBIAN_FRONTEND': 'noninteractive', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/build/description', 'PYTHONPATH': '/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/build/description/prefix_override:/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/install/description/lib/python3.8/site-packages:/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/install/description/lib/python3.8/site-packages:/opt/ros/humble/lib/python3.8/site-packages', 'NVIDIA_VISIBLE_DEVICES': 'all', 'USER_GID': '1000', 'COLCON': '1'}, 'shell': False}
+[2.115305] (-) TimerEvent: {}
+[2.216342] (-) TimerEvent: {}
+[2.317126] (-) TimerEvent: {}
+[2.417916] (-) TimerEvent: {}
+[2.518718] (-) TimerEvent: {}
+[2.619502] (-) TimerEvent: {}
+[2.637515] (description) StdoutLine: {'line': b'running egg_info\n'}
+[2.660543] (description) StdoutLine: {'line': b'writing ../build/description/description.egg-info/PKG-INFO\n'}
+[2.661069] (description) StdoutLine: {'line': b'writing dependency_links to ../build/description/description.egg-info/dependency_links.txt\n'}
+[2.663289] (description) StdoutLine: {'line': b'writing requirements to ../build/description/description.egg-info/requires.txt\n'}
+[2.663921] (description) StdoutLine: {'line': b'writing top-level names to ../build/description/description.egg-info/top_level.txt\n'}
+[2.707458] (description) StdoutLine: {'line': b"reading manifest file '../build/description/description.egg-info/SOURCES.txt'\n"}
+[2.708858] (description) StdoutLine: {'line': b"writing manifest file '../build/description/description.egg-info/SOURCES.txt'\n"}
+[2.709533] (description) StdoutLine: {'line': b'running build\n'}
+[2.709857] (description) StdoutLine: {'line': b'running build_py\n'}
+[2.710665] (description) StdoutLine: {'line': b'running install\n'}
+[2.718352] (description) StdoutLine: {'line': b'running install_lib\n'}
+[2.719534] (-) TimerEvent: {}
+[2.740659] (description) StdoutLine: {'line': b'running install_data\n'}
+[2.761943] (description) StdoutLine: {'line': b'copying meshes/link_5.STL -> /workspaces/isaac_ros-dev/ros_ws/Software_Kipp/install/description/share/description/meshes/\n'}
+[2.768804] (description) StdoutLine: {'line': b'copying meshes/link_3.STL -> /workspaces/isaac_ros-dev/ros_ws/Software_Kipp/install/description/share/description/meshes/\n'}
+[2.786606] (description) StdoutLine: {'line': b'copying meshes/link_4.STL -> /workspaces/isaac_ros-dev/ros_ws/Software_Kipp/install/description/share/description/meshes/\n'}
+[2.806640] (description) StdoutLine: {'line': b'running install_egg_info\n'}
+[2.819633] (-) TimerEvent: {}
+[2.830417] (description) StdoutLine: {'line': b"removing '/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/install/description/lib/python3.8/site-packages/description-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[2.831114] (description) StdoutLine: {'line': b'Copying ../build/description/description.egg-info to /workspaces/isaac_ros-dev/ros_ws/Software_Kipp/install/description/lib/python3.8/site-packages/description-0.0.0-py3.8.egg-info\n'}
+[2.832459] (description) StdoutLine: {'line': b'running install_scripts\n'}
+[2.919853] (-) TimerEvent: {}
+[2.947347] (description) StdoutLine: {'line': b"writing list of installed files to '/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/build/description/install.log'\n"}
+[3.020030] (-) TimerEvent: {}
+[3.045205] (description) CommandEnded: {'returncode': 0}
+[3.120156] (-) TimerEvent: {}
+[3.148328] (description) JobEnded: {'identifier': 'description', 'rc': 0}
+[3.149579] (-) EventReactorShutdown: {}

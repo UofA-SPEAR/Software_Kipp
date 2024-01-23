@@ -1,0 +1,115 @@
+[3.888s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[3.888s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffa00e5520>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=12, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffa00e5520>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffffa00ccbe0>)
+[4.087s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[4.088s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[4.088s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[4.088s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[4.088s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[4.088s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[4.088s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/workspaces/isaac_ros-dev/ros_ws/Software_Kipp'
+[4.088s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[4.088s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[4.089s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[4.089s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[4.089s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[4.089s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[4.089s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[4.089s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[4.089s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[4.110s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[4.110s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[4.110s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[4.110s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[4.110s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[4.110s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[4.111s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[4.111s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[4.111s] Level 1:colcon.colcon_core.package_identification:_identify(description) by extensions ['ignore', 'ignore_ament_install']
+[4.111s] Level 1:colcon.colcon_core.package_identification:_identify(description) by extension 'ignore'
+[4.111s] Level 1:colcon.colcon_core.package_identification:_identify(description) by extension 'ignore_ament_install'
+[4.111s] Level 1:colcon.colcon_core.package_identification:_identify(description) by extensions ['colcon_pkg']
+[4.111s] Level 1:colcon.colcon_core.package_identification:_identify(description) by extension 'colcon_pkg'
+[4.111s] Level 1:colcon.colcon_core.package_identification:_identify(description) by extensions ['colcon_meta']
+[4.111s] Level 1:colcon.colcon_core.package_identification:_identify(description) by extension 'colcon_meta'
+[4.112s] Level 1:colcon.colcon_core.package_identification:_identify(description) by extensions ['ros']
+[4.112s] Level 1:colcon.colcon_core.package_identification:_identify(description) by extension 'ros'
+[4.115s] DEBUG:colcon.colcon_core.package_identification:Package 'description' with type 'ros.ament_python' and name 'description'
+[4.116s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[4.116s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[4.116s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[4.116s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[4.116s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[4.116s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[4.116s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[4.116s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[4.116s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[4.116s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[4.117s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[4.238s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[4.238s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[4.277s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /workspaces/isaac_ros-dev/ros_ws/Software_Kipp/install
+[4.298s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 335 installed packages in /opt/ros/humble
+[4.300s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[4.466s] Level 5:colcon.colcon_core.verb:set package 'description' build argument 'cmake_args' from command line to 'None'
+[4.466s] Level 5:colcon.colcon_core.verb:set package 'description' build argument 'cmake_target' from command line to 'None'
+[4.466s] Level 5:colcon.colcon_core.verb:set package 'description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[4.466s] Level 5:colcon.colcon_core.verb:set package 'description' build argument 'cmake_clean_cache' from command line to 'False'
+[4.466s] Level 5:colcon.colcon_core.verb:set package 'description' build argument 'cmake_clean_first' from command line to 'False'
+[4.466s] Level 5:colcon.colcon_core.verb:set package 'description' build argument 'cmake_force_configure' from command line to 'False'
+[4.466s] Level 5:colcon.colcon_core.verb:set package 'description' build argument 'ament_cmake_args' from command line to 'None'
+[4.466s] Level 5:colcon.colcon_core.verb:set package 'description' build argument 'catkin_cmake_args' from command line to 'None'
+[4.466s] Level 5:colcon.colcon_core.verb:set package 'description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[4.466s] DEBUG:colcon.colcon_core.verb:Building package 'description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/build/description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/install/description', 'merge_install': False, 'path': '/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/description', 'symlink_install': False, 'test_result_base': None}
+[4.485s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[4.507s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[4.507s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/description' with build type 'ament_python'
+[4.507s] Level 1:colcon.colcon_core.shell:create_environment_hook('description', 'ament_prefix_path')
+[4.530s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[4.531s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/install/description/share/description/hook/ament_prefix_path.ps1'
+[4.544s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/install/description/share/description/hook/ament_prefix_path.dsv'
+[4.545s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/install/description/share/description/hook/ament_prefix_path.sh'
+[4.566s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.566s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.257s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/description'
+[5.278s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.279s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.444s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/description': PYTHONPATH=/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/build/description/prefix_override:/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/install/description/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/description build --build-base /workspaces/isaac_ros-dev/ros_ws/Software_Kipp/build/description/build install --record /workspaces/isaac_ros-dev/ros_ws/Software_Kipp/build/description/install.log --single-version-externally-managed
+[7.419s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/description' returned '0': PYTHONPATH=/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/build/description/prefix_override:/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/install/description/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/description build --build-base /workspaces/isaac_ros-dev/ros_ws/Software_Kipp/build/description/build install --record /workspaces/isaac_ros-dev/ros_ws/Software_Kipp/build/description/install.log --single-version-externally-managed
+[7.466s] Level 1:colcon.colcon_core.environment:checking '/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/install/description' for CMake module files
+[7.467s] Level 1:colcon.colcon_core.environment:checking '/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/install/description' for CMake config files
+[7.469s] Level 1:colcon.colcon_core.environment:checking '/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/install/description/lib'
+[7.469s] Level 1:colcon.colcon_core.environment:checking '/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/install/description/bin'
+[7.470s] Level 1:colcon.colcon_core.environment:checking '/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/install/description/lib/pkgconfig/description.pc'
+[7.470s] Level 1:colcon.colcon_core.environment:checking '/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/install/description/lib/python3.8/site-packages'
+[7.470s] Level 1:colcon.colcon_core.shell:create_environment_hook('description', 'pythonpath')
+[7.491s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/install/description/share/description/hook/pythonpath.ps1'
+[7.492s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/install/description/share/description/hook/pythonpath.dsv'
+[7.493s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/install/description/share/description/hook/pythonpath.sh'
+[7.495s] Level 1:colcon.colcon_core.environment:checking '/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/install/description/bin'
+[7.496s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(description)
+[7.522s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/install/description/share/description/package.ps1'
+[7.523s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/install/description/share/description/package.dsv'
+[7.524s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/install/description/share/description/package.sh'
+[7.525s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/install/description/share/description/package.bash'
+[7.527s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/install/description/share/description/package.zsh'
+[7.527s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/install/description/share/colcon-core/packages/description)
+[7.528s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[7.529s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[7.529s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[7.529s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[7.558s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[7.559s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[7.559s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[7.559s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[7.573s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[7.573s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[7.595s] INFO:colcon.colcon_core.shell:Creating prefix script '/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/install/local_setup.ps1'
+[7.596s] INFO:colcon.colcon_core.shell:Creating prefix util module '/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/install/_local_setup_util_ps1.py'
+[7.600s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/install/setup.ps1'
+[7.620s] INFO:colcon.colcon_core.shell:Creating prefix script '/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/install/local_setup.sh'
+[7.623s] INFO:colcon.colcon_core.shell:Creating prefix util module '/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/install/_local_setup_util_sh.py'
+[7.626s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/install/setup.sh'
+[7.646s] INFO:colcon.colcon_core.shell:Creating prefix script '/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/install/local_setup.bash'
+[7.648s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/install/setup.bash'
+[7.668s] INFO:colcon.colcon_core.shell:Creating prefix script '/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/install/local_setup.zsh'
+[7.671s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/install/setup.zsh'

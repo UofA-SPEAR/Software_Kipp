@@ -1,0 +1,20 @@
+[1.933s] Invoking command in '/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/description': PYTHONPATH=/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/build/description/prefix_override:/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/install/description/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/description build --build-base /workspaces/isaac_ros-dev/ros_ws/Software_Kipp/build/description/build install --record /workspaces/isaac_ros-dev/ros_ws/Software_Kipp/build/description/install.log --single-version-externally-managed
+[2.532s] running egg_info
+[2.554s] writing ../build/description/description.egg-info/PKG-INFO
+[2.554s] writing dependency_links to ../build/description/description.egg-info/dependency_links.txt
+[2.555s] writing requirements to ../build/description/description.egg-info/requires.txt
+[2.557s] writing top-level names to ../build/description/description.egg-info/top_level.txt
+[2.602s] reading manifest file '../build/description/description.egg-info/SOURCES.txt'
+[2.603s] writing manifest file '../build/description/description.egg-info/SOURCES.txt'
+[2.604s] running build
+[2.604s] running build_py
+[2.606s] running install
+[2.620s] running install_lib
+[2.643s] running install_data
+[2.664s] copying URDF/SPEAR_Arm.urdf -> /workspaces/isaac_ros-dev/ros_ws/Software_Kipp/install/description/share/description/URDF/
+[2.664s] running install_egg_info
+[2.687s] removing '/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/install/description/lib/python3.8/site-packages/description-0.0.0-py3.8.egg-info' (and everything under it)
+[2.688s] Copying ../build/description/description.egg-info to /workspaces/isaac_ros-dev/ros_ws/Software_Kipp/install/description/lib/python3.8/site-packages/description-0.0.0-py3.8.egg-info
+[2.689s] running install_scripts
+[2.802s] writing list of installed files to '/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/build/description/install.log'
+[2.911s] Invoked command in '/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/description' returned '0': PYTHONPATH=/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/build/description/prefix_override:/workspaces/isaac_ros-dev/ros_ws/Software_Kipp/install/description/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/description build --build-base /workspaces/isaac_ros-dev/ros_ws/Software_Kipp/build/description/build install --record /workspaces/isaac_ros-dev/ros_ws/Software_Kipp/build/description/install.log --single-version-externally-managed
