@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-package_name = 'kipp_nav'
+package_name = 'kipp_camera'
 
 setup(
     name=package_name,
