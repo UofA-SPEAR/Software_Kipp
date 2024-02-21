@@ -3,6 +3,7 @@ build/
 install/
 log/
 src/zed-ros2-wrapper
+src/zed-ros2-examples
 
 # Ignore package-specific build directories
 build_isolated/
