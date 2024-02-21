@@ -185,10 +185,10 @@
    <xacro:arg name="camera_model_1" default="zed2i" />
    <xacro:arg name="camera_model_2" default="zedm" />
 
-   <xacro:arg name="use_zed_localization" default="false" />
+   <xacro:arg name="use_zed_localization" default="true" />
 
      <!-- Add the first ZED Camera -->  
-  <xacro:zed_camera name="$(arg camera_name_1)" model="$(arg camera_model_1)" />
+  <xacro:zed_camera name="main_camera" model="zed2i" />
   <!-- Add the second ZED Camera -->
   <xacro:zed_camera name="$(arg camera_name_2)" model="$(arg camera_model_2)" />
         
