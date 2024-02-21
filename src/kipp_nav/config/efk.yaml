@@ -1,5 +1,5 @@
 ### ekf config file ###
-ekf_filter_node:
+ekf_filter_node_odom:
     ros__parameters:
 # The frequency, in Hz, at which the filter will output a position estimate. Note that the filter will not begin
 # computation until it receives at least one message from one of theinputs. It will then run continuously at the
@@ -10,7 +10,7 @@ ekf_filter_node:
 # set to true, no 3D information will be used in your state estimate. Use this if you are operating in a planar
 # environment and want to ignore the effect of small variations in the ground plane that might otherwise be detected
 # by, for example, an IMU. Defaults to false if unspecified.
-        two_d_mode: false
+        two_d_mode: true #this is because nav2’s costmap environment representation is 2-Dimensional,
 
 # Whether to publish the acceleration state. Defaults to false if unspecified.
         publish_acceleration: true
@@ -55,3 +55,18 @@ ekf_filter_node:
         odom1_differential: false
         odom1_relative: true
         odom1_queue_size: 2
+
+ekf_filter_node_map:
+  ros__parameters:
+    two_d_mode: true
+    publish_tf: true
+
+    base_link_frame: base_footprint
+    world_frame: map
+
+    odom2: odometry/gps
+    odom2_config: [true,  true,  false,
+                  false, false, false,
+                  false, false, false,
+                  false, false, false,
+                  false, false, false]
