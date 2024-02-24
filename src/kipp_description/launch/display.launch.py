@@ -5,7 +5,7 @@ import os
 
 def generate_launch_description():
     pkg_share = launch_ros.substitutions.FindPackageShare(package='kipp_description').find('kipp_description')
-    default_model_path = os.path.join(pkg_share, 'src/description/kipp.urdf')
+    default_model_path = os.path.join(pkg_share, 'src/kipp.urdf')
     default_rviz_config_path = os.path.join(pkg_share, 'rviz/urdf_config.rviz')
 
     robot_state_publisher_node = launch_ros.actions.Node(

@@ -19,7 +19,7 @@ def generate_launch_description():
         namespace='zed_main',  # Adjust the namespace as required
         parameters=[config_path],  # Path to your custom config file
         output='screen',
-        remappings=[('odom', 'kipp_camera_main_odom')]
+        #remappings=[('odom', 'kipp_camera_main_odom')]
     )
 
     zed_wrapper_node_back = Node(
@@ -32,9 +32,23 @@ def generate_launch_description():
         remappings=[('odom', 'kipp_camera_map_odom')]
     )
 
+    gps_node = Node(
+            package='kipp_control',
+            executable='gps_node',
+            name='gps_node',
+            output='screen',
+        )
+    
+    dummy_gps_node = Node(
+            package='kipp_control',
+            executable='dummy_gps',
+            name='dummy_gps_node',
+            output='screen',
+        )
+
 
     # Return the LaunchDescription object
     return LaunchDescription([
-        zed_wrapper_node_main,
-        zed_wrapper_node_back
+        dummy_gps_node,
+        zed_wrapper_node_main
     ])

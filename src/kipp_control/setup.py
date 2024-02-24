@@ -20,7 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'gps_node = kipp_control.kipp_gps:main'
+            'gps_node = kipp_control.kipp_gps:main',
+            'dummy_gps = kipp_control.dummy_gps:main'
         ],
     },
 )
