@@ -28,7 +28,7 @@ class GPSNode(Node):
         self.speed_publisher = self.create_publisher(Float64, '/gps/speed', 10)
         self.heading_publisher = self.create_publisher(Float64, '/gps/heading', 10)
 
-        self.timer = self.create_timer(0.1, self.read_and_publish)
+        self.timer = self.create_timer(0.02, self.read_and_publish)
     
     def find_serial_port(self, vendor_id, product_id):
         context = Context()
