@@ -2,7 +2,7 @@
 build/
 install/
 log/
-src/zed-ros2-examples
+
 
 
 # Ignore package-specific build directories
