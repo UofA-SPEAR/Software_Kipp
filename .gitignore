@@ -3,8 +3,6 @@ build/
 install/
 log/
 
-
-
 # Ignore package-specific build directories
 build_isolated/
 install_isolated/
