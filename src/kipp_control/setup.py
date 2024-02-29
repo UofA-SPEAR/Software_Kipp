@@ -21,7 +21,9 @@ setup(
     entry_points={
         'console_scripts': [
             'gps_node = kipp_control.kipp_gps:main',
-            'dummy_gps = kipp_control.dummy_gps:main'
+            'dummy_gps = kipp_control.dummy_gps:main',
+            'xbox_node = kipp_control.xbox_controller_node:main',
+            'can_node = kipp_control.kipp_can_drive:main'
         ],
     },
 )

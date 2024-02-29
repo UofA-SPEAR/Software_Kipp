@@ -14,7 +14,7 @@ class XboxControllerNode(Node):
         self.publisher = self.create_publisher(Twist, 'cmd_vel', 10, callback_group=self.callback_group)
         self.last_received_time = self.get_clock().now()
         self.connected = False
-        self.timer = self.create_timer(1.0, self.check_connection, callback_group=self.callback_group)  # Check connection every 1 second
+        #self.timer = self.create_timer(1.0, self.check_connection, callback_group=self.callback_group)  # Check connection every 1 second
 
         self.max_linear_speed = 1.0  # Adjust as needed
         self.max_angular_speed = 1.0  # Adjust as needed
@@ -24,11 +24,11 @@ class XboxControllerNode(Node):
         self.last_received_time = self.get_clock().now()
         
         twist = Twist()
-        left_trigger = msg.axes[2]
-        right_trigger = msg.axes[5]
+        left_trigger = 1 - msg.axes[2]  # Assuming axis 3 is the left trigger
+        right_trigger = 1 - msg.axes[5]  # Assuming axis 6 is the right trigger
         steering = msg.axes[0]
 
-        linear_speed = (right_trigger - left_trigger) * self.max_linear_speed
+        linear_speed = (right_trigger - left_trigger) /2  * self.max_linear_speed
         angular_speed = steering * self.max_angular_speed
 
         twist.linear.x = linear_speed
@@ -38,7 +38,7 @@ class XboxControllerNode(Node):
 
     def check_connection(self):
         current_time = self.get_clock().now()
-        if self.connected and (current_time - self.last_received_time).to_sec() > 5.0:  # No message for 5 seconds
+        if self.connected and (current_time - self.last_received_time).nanoseconds() > 5.0 / 1e9:  # No message for 5 seconds
             self.get_logger().warn('No controller input received recently. Is the controller connected?')
             self.connected = False
         elif not self.connected:

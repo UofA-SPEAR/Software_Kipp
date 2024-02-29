@@ -28,7 +28,7 @@ class Kipp_Can_Drive(Node):
         
         self.cmd_vel_sub = self.create_subscription(Twist, 'cmd_vel', self.cmd_vel_callback, 10)
         
-        self.bus = can.interface.Bus(channel='can0', bustype='socketcan')
+        self.bus = can.interface.Bus(interface='socketcan', channel='can0', bitrate=1000000)
 
         self.W = 1.0  # Width of the rover (meters)
         self.L = 1.5  # Length of the rover (meters)
@@ -90,17 +90,20 @@ class Kipp_Can_Drive(Node):
         """
         
         if omega == 0:
-            return {"front_left": 0, "front_right": 0, "back_left": 0, "back_right": 0}
+            return {"front_left": 1.2, "front_right": 1.2, "back_left": 1.2, "back_right": 1.2}
     
     # Radius of the turn
-        R = v / omega
-        
-        # Calculate the steering angle
-        # Using the bicycle model approximation for simplicity
-        angle = math.atan(self.L / R)
-        
-        # Convert to degrees
-        angle_deg = math.degrees(angle)
+        if v != 0: 
+            R = v / omega
+            
+            # Calculate the steering angle
+            # Using the bicycle model approximation for simplicity
+            angle = math.atan(self.L / R)
+            
+            # Convert to degrees
+            angle_deg = math.degrees(angle)
+        else:
+            angle_deg = math.degrees(math.pi/2) 
         
         # Assuming symmetric steering angles for simplicity
         angles = {
@@ -138,24 +141,32 @@ class Kipp_Can_Drive(Node):
         
         return velocities
     
-    def create_drive_command(actuator_id, velocity, priority=0, command_id=0x03, receiver_node_id=1, sender_node_id=1):
+    def create_drive_command(self, actuator_id, velocity = 0):
         # Construct arbitration ID
+        priority=0x0
+        command_id=0x03 
+        receiver_node_id=actuator_id+1
+        sender_node_id=1
         arbitration_id = priority << 24 | command_id << 16 | receiver_node_id << 8 | sender_node_id
         
         # Pack data (velocity)
-        data = struct.pack("f", velocity)  # 'f' for float32
+        data = struct.pack(">f", velocity)  # 'f' for float32
         
         # Create CAN message
         message = can.Message(arbitration_id=arbitration_id, data=data, is_extended_id=True)
         
         return message
 
-    def create_steering_command(actuator_id, angle, priority=0, command_id=0x02, receiver_node_id=1, sender_node_id=1):
+    def create_steering_command(self, actuator_id, angle = 0):
         # Construct arbitration ID
+        priority=0x0
+        command_id=0x02 
+        receiver_node_id=actuator_id+1
+        sender_node_id=1
         arbitration_id = priority << 24 | command_id << 16 | receiver_node_id << 8 | sender_node_id
-        
+        print(angle)
         # Pack data (angle)
-        data = struct.pack("f", angle)  # 'f' for float32
+        data = struct.pack(">f", angle)  # 'f' for float32
         
         # Create CAN message
         message = can.Message(arbitration_id=arbitration_id, data=data, is_extended_id=True)
@@ -167,14 +178,14 @@ def main(args=None):
 
     rclpy.init(args=args)
 
-    gps_node = GPSNode()
+    can_node = Kipp_Can_Drive()
 
-    rclpy.spin(gps_node)
+    rclpy.spin(can_node)
 
     # Destroy the node explicitly
     # (optional - otherwise it will be done automatically
     # when the garbage collector destroys the node object)
-    gps_node.destroy_node()
+    can_node.destroy_node()
     rclpy.shutdown()
 
 
