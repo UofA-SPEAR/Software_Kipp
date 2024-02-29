@@ -19,7 +19,7 @@ __pycache__/
 *.tmp
 
 # Ignore all text files that might be generated
-*.txt
+
 
 # Ignore IDE specific files
 .vscode/
