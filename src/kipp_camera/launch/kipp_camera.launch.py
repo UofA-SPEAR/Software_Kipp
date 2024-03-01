@@ -49,7 +49,7 @@ def generate_launch_description():
 
     # Return the LaunchDescription object
     return LaunchDescription([
-        gps_node,
-        #dummy_gps_node,
+        #gps_node,
+        dummy_gps_node,
         zed_wrapper_node_main
     ])
