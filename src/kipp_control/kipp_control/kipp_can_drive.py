@@ -27,6 +27,7 @@ class Kipp_Can_Drive(Node):
         super().__init__('kipp_can_drive')
         
         self.cmd_vel_sub = self.create_subscription(Twist, 'cmd_vel', self.cmd_vel_callback, 10)
+        self.timer = self.create_timer(1.0, self.paced_commands)
         
         self.bus = can.interface.Bus(interface='socketcan', channel='can0', bitrate=1000000)
 
@@ -35,26 +36,47 @@ class Kipp_Can_Drive(Node):
 
 
     def cmd_vel_callback(self, msg):
-        v = msg.linear.x  # Linear velocity (m/s)
-        omega = msg.angular.z  # Angular velocity (rad/s)
+        self.v = msg.linear.x  # Linear velocity (m/s)
+        self.omega = msg.angular.z  # Angular velocity (rad/s)
 
-        steering_angles = self.calculate_steering_angles(v, omega)
+        # steering_angles = self.calculate_steering_angles(v, omega)
 
-        wheel_velocities = self.calculate_wheel_velocities(v, omega)
+        # wheel_velocities = self.calculate_wheel_velocities(v, omega)
 
-        for actuator_id, angle in steering_angles.items():
-            # Convert actuator ID from your custom mapping to actual CAN ID
-            can_id = self.steering_actuator_id_to_can_id(actuator_id)
-            message = self.create_steering_command(can_id, angle)
-            self.bus.send(message)
+        # for actuator_id, angle in steering_angles.items():
+        #     # Convert actuator ID from your custom mapping to actual CAN ID
+        #     can_id = self.steering_actuator_id_to_can_id(actuator_id)
+        #     message = self.create_steering_command(can_id, angle)
+        #     self.bus.send(message)
     
-        # Send drive commands to wheel actuators
-        for actuator_id, velocity in wheel_velocities.items():
-            # Convert actuator ID from your custom mapping to actual CAN ID
-            can_id = self.drive_actuator_id_to_can_id(actuator_id)
-            message = self.create_drive_command(can_id, velocity)
-            self.bus.send(message)
+        # # Send drive commands to wheel actuators
+        # # for actuator_id, velocity in wheel_velocities.items():
+        # #     # Convert actuator ID from your custom mapping to actual CAN ID
+        # #     can_id = self.drive_actuator_id_to_can_id(actuator_id)
+        # #     message = self.create_drive_command(can_id, velocity)
+        # #     self.bus.send(message)
+            
+    def paced_commands(self):
         
+        steering_angles = self.calculate_steering_angles(self.v, self.omega)
+
+        wheel_velocities = self.calculate_wheel_velocities(self.v, self.omega)
+
+        # for actuator_id, angle in steering_angles.items():
+        #     # Convert actuator ID from your custom mapping to actual CAN ID
+        #     can_id = self.steering_actuator_id_to_can_id(actuator_id)
+        #     message = self.create_steering_command(can_id, angle)
+        #     self.bus.send(message)
+        message = self.create_steering_command(0x21, 3.14)
+        self.bus.send(message)
+        # Send drive commands to wheel actuators
+        # for actuator_id, velocity in wheel_velocities.items():
+        #     # Convert actuator ID from your custom mapping to actual CAN ID
+        #     can_id = self.drive_actuator_id_to_can_id(actuator_id)
+        #     message = self.create_drive_command(can_id, velocity)
+        #     self.bus.send(message)
+            
+
     def steering_actuator_id_to_can_id(self, actuator_id):
         # Map your actuator_id to its corresponding CAN ID for steering motors
         mapping = {
@@ -89,28 +111,31 @@ class Kipp_Can_Drive(Node):
         dict: Wheel velocities (m/s) for each wheel (fl, fr, ml, mr, bl, br)
         """
         
-        if omega == 0:
-            return {"front_left": 1.2, "front_right": 1.2, "back_left": 1.2, "back_right": 1.2}
+    #     if omega == 0:
+    #         return {"front_left": 1.2, "front_right": 1.2, "back_left": 1.2, "back_right": 1.2}
     
-    # Radius of the turn
-        if v != 0: 
-            R = v / omega
+    # # Radius of the turn
+    #     if v != 0: 
+    #         R = v / omega
             
-            # Calculate the steering angle
-            # Using the bicycle model approximation for simplicity
-            angle = math.atan(self.L / R)
+    #         # Calculate the steering angle
+    #         # Using the bicycle model approximation for simplicity
+    #         angle = math.atan(self.L / R)
             
-            # Convert to degrees
-            angle_deg = math.degrees(angle)
-        else:
-            angle_deg = math.degrees(math.pi/2) 
+    #         # Convert to degrees
+    #         angle_deg = math.degrees(angle)
+    #     else:
+    #         angle_deg = math.degrees(math.pi/2) 
         
-        # Assuming symmetric steering angles for simplicity
+    #     # Assuming symmetric steering angles for simplicity
+        angle_deg = omega * 3.14 *10
         angles = {
             "front_left": angle_deg, "front_right": angle_deg,
             "back_left": -angle_deg, "back_right": -angle_deg  # Negative for back wheels if they steer opposite to front
         }
-    
+        
+        
+        
         return angles
 
     def calculate_wheel_velocities(self, v, omega):
@@ -129,9 +154,11 @@ class Kipp_Can_Drive(Node):
         
         # Assuming the center of rotation is at the center of the rover
         # Calculate the velocity for each wheel
-        vr = v_center + (omega * self.W / 2)  # Velocity of right wheels
-        vl = v_center - (omega * self.W / 2)  # Velocity of left wheels
-        
+        # vr = v_center + (omega * self.W / 2)  # Velocity of right wheels
+        # vl = v_center - (omega * self.W / 2)
+          # Velocity of left wheels
+        vl = v
+        vr = v
         # Assuming same velocity for front, middle, and back wheels on each side
         velocities = {
             "fl": vl, "fr": vr,
@@ -148,7 +175,7 @@ class Kipp_Can_Drive(Node):
         receiver_node_id=actuator_id+1
         sender_node_id=1
         arbitration_id = priority << 24 | command_id << 16 | receiver_node_id << 8 | sender_node_id
-        
+        print(f" velocity {velocity}" )
         # Pack data (velocity)
         data = struct.pack(">f", velocity)  # 'f' for float32
         
@@ -161,10 +188,13 @@ class Kipp_Can_Drive(Node):
         # Construct arbitration ID
         priority=0x0
         command_id=0x02 
-        receiver_node_id=actuator_id+1
+        receiver_node_id=actuator_id
         sender_node_id=1
         arbitration_id = priority << 24 | command_id << 16 | receiver_node_id << 8 | sender_node_id
-        print(angle)
+        angle = 3.14
+        
+        print(f"angle {angle}")
+        
         # Pack data (angle)
         data = struct.pack(">f", angle)  # 'f' for float32
         
