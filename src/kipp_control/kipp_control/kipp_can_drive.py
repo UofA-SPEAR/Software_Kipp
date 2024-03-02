@@ -69,17 +69,25 @@ class Kipp_Can_Drive(Node):
         
         elif self.rotate == 1:
             rotate_angles = self.calculate_rotate_angle()
+            wheel_velocities = self.calculate_wheel_velocities(self.v, self.omega)
+            
             for actuator_id, angle in rotate_angles.items():
                 # Convert actuator ID from your custom mapping to actual CAN ID
                 can_id = self.steering_actuator_id_to_can_id(actuator_id)
                 message = self.create_steering_command(can_id, angle)
                 self.bus.send(message)
             
+            for actuator_id, velocity in wheel_velocities.items():
+                # Convert actuator ID from your custom mapping to actual CAN ID
+                can_id = self.drive_actuator_id_to_can_id(actuator_id)
+                message = self.create_drive_command(can_id, velocity)
+                self.bus.send(message)
             
     def calculate_rotate_angle(self):
 
         return {"front_left": -0.880, "front_right": 0.880, "back_left": 1.035, "back_right": -1.035}
-               
+
+           
 
     def steering_actuator_id_to_can_id(self, actuator_id):
         # Map your actuator_id to its corresponding CAN ID for steering motors
@@ -119,7 +127,8 @@ class Kipp_Can_Drive(Node):
             return {"front_left": 0, "front_right": 0, "back_left": 0, "back_right": 0}
 
         
-    # Radius of the turn
+
+        v = 1
         if omega != 0: 
             r = v / omega
             
@@ -152,6 +161,8 @@ class Kipp_Can_Drive(Node):
         velocity_limiter = 0.6
         if v > velocity_limiter:
             v = velocity_limiter
+        elif v < -velocity_limiter:
+            v = -velocity_limiter
 
         vl = v
         vr = v

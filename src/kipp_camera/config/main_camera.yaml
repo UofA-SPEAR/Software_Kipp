@@ -85,7 +85,7 @@
             path_pub_rate: 2.0 # [DYNAMIC] - Camera trajectory publishing frequency
             path_max_count: 30 # use '-1' for unlimited path size
             two_d_mode: True # Force navigation on a plane. If true the Z value will be fixed to 'fixed_z_value', roll and pitch to zero
-            fixed_z_value: 0.00 # Value to be used for Z coordinate if `two_d_mode` is true
+            fixed_z_value: 0.5 # Value to be used for Z coordinate if `two_d_mode` is true
             transform_time_offset: 0.0 # The value added to the timestamp of `map->odom` and `odom->camera_link` transform being generated
             qos_history: 1 # '1': KEEP_LAST - '2': KEEP_ALL
             qos_depth: 5 # Queue size if using KEEP_LAST
