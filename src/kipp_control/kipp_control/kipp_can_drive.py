@@ -92,9 +92,9 @@ class Kipp_Can_Drive(Node):
     def steering_actuator_id_to_can_id(self, actuator_id):
         # Map your actuator_id to its corresponding CAN ID for steering motors
         mapping = {
-            "front_left": 0x20,
+            "front_left": 0x24,
             "front_right": 0x21,
-            "back_left": 0x22,
+            "back_left": 0x26,
             "back_right": 0x23,
         }
         return mapping.get(actuator_id, None)
@@ -102,12 +102,12 @@ class Kipp_Can_Drive(Node):
     def drive_actuator_id_to_can_id(self, actuator_id):
         # Map your actuator_id to its corresponding CAN ID for drive motors
         mapping = {
-            "fl": 0x10,
+            "fl": 0x14,
             "fr": 0x11,
-            "ml": 0x12,
-            "mr": 0x13,
-            "bl": 0x14,
-            "br": 0x15,
+            "ml": 0x15,
+            "mr": 0x12,
+            "bl": 0x16,
+            "br": 0x13,
         }
         return mapping.get(actuator_id, None)
 
@@ -179,7 +179,7 @@ class Kipp_Can_Drive(Node):
         # Construct arbitration ID
         priority=0x0
         command_id=0x03 
-        receiver_node_id=actuator_id+1
+        receiver_node_id=actuator_id
         sender_node_id=1
         arbitration_id = priority << 24 | command_id << 16 | receiver_node_id << 8 | sender_node_id
         print(f"Velocity: {velocity} ID {actuator_id}")
