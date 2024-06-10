@@ -20,6 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'gps_node = kipp_sensors.gps_node:main',
+            'save_gps_node = kipp_sensors.save_gps_node:main',
         ],
     },
 )
