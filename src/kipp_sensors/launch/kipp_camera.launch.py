@@ -6,7 +6,7 @@ from launch_ros.actions import Node
 def generate_launch_description():
     # Define the path to your custom configuration file
     config_path = os.path.join(
-        get_package_share_directory('kipp_camera'),
+        get_package_share_directory('kipp_sensors'),
         'config',
         'main_camera.yaml'
     )
@@ -33,9 +33,16 @@ def generate_launch_description():
     )
 
     gps_node = Node(
-            package='kipp_control',
+            package='kipp_sensors',
             executable='gps_node',
             name='gps_node',
+            output='screen',
+        )
+    
+    save_gps_node = Node(
+            package='kipp_sensors',
+            executable='save_gps_node',
+            name='save_gps_node',
             output='screen',
         )
     
@@ -50,6 +57,7 @@ def generate_launch_description():
     # Return the LaunchDescription object
     return LaunchDescription([
         gps_node,
+        save_gps_node,
         #dummy_gps_node,
         zed_wrapper_node_main
     ])
