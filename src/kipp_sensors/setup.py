@@ -22,6 +22,7 @@ setup(
         'console_scripts': [
             'gps_node = kipp_sensors.gps_node:main',
             'save_gps_node = kipp_sensors.save_gps_node:main',
+            'random_gps_node = kipp_sensors.Random_gps:main', # remove this line when interfacing actually gps
         ],
     },
 )

@@ -29,4 +29,4 @@ __pycache__/
 .development/
 
 # Ignore gps_coordinates.txt file
-gps_coordinates.txt
+src/kipp_sensors/kipp_sensors/gps_coordinates.txt

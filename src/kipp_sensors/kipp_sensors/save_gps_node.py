@@ -10,9 +10,9 @@ class SaveGpsNode(Node):
         self.srv = self.create_service(SetBool, 'trigger_action', self.trigger_action_callback)
         self.subscription = self.create_subscription(NavSatFix, 'gps/fix', self.gps_callback, 10)
         self.gps_data = None
-        self.saved_positions = []
         self.saving_enabled = False
         self.timer = None
+        self.file_path = 'src/kipp_sensors/kipp_sensors/gps_coordinates.txt'  # File to save GPS coordinates
         self.get_logger().info('Service node has been started.')
 
     def gps_callback(self, msg):
@@ -26,10 +26,18 @@ class SaveGpsNode(Node):
                 'longitude': self.gps_data.longitude,
                 'altitude': self.gps_data.altitude
             }
-            self.saved_positions.append(position)
             self.get_logger().info(f'Saved GPS position: {position}')
+            self.write_to_file(position)
         else:
             self.get_logger().warn('No GPS data available to save.')
+
+    def write_to_file(self, position):
+        try:
+            with open(self.file_path, 'a') as file:
+                file.write(f"{position['latitude']}, {position['longitude']}, {position['altitude']}\n")
+            self.get_logger().info('GPS position written to file.')
+        except Exception as e:
+            self.get_logger().error(f'Failed to write to file: {e}')
 
     def trigger_action_callback(self, request, response):
         if request.data:
@@ -68,4 +76,3 @@ def main(args=None):
 
 if __name__ == '__main__':
     main()
-
