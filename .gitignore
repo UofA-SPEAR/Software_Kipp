@@ -27,3 +27,6 @@ __pycache__/
 
 # Ignore other common directories that should not be part of the repository
 .development/
+
+# Ignore gps_coordinates.txt file
+gps_coordinates.txt
