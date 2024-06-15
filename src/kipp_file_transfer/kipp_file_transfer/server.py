@@ -28,26 +28,26 @@ class FileReceiverNode(Node):
             # Bind the socket to the IP and port
             server_socket.bind((self.server_ip, self.port))
             # Listen for incoming connections
-            server_socket.listen(1)
+            server_socket.listen(5)  # Increase the backlog to allow multiple connections
+
             self.get_logger().info(f"Listening for connections on {self.server_ip}:{self.port}...")
 
-            # Accept the incoming connection
-            conn, addr = server_socket.accept()
-            self.get_logger().info(f"Connection from {addr} has been established.")
+            while True:
+                # Accept the incoming connection
+                conn, addr = server_socket.accept()
+                self.get_logger().info(f"Connection from {addr} has been established.")
 
-            with open(self.output_file, 'wb') as file:
-                while True:
-                    # Receive data from the client
-                    data = conn.recv(1024)
-                    if not data:
-                        break
-                    # Write the data to the file
-                    file.write(data)
-            
-            self.get_logger().info(f"File received and saved as {self.output_file}.")
-            conn.close()
-            server_socket.close()
-        
+                with open(self.output_file, 'wb') as file:
+                    while True:
+                        # Receive data from the client
+                        data = conn.recv(1024)
+                        if not data:
+                            break
+                        # Write the data to the file
+                        file.write(data)
+                
+                self.get_logger().info(f"File received and saved as {self.output_file}.")
+
         except Exception as e:
             self.get_logger().error(f"Error receiving file: {e}")
 

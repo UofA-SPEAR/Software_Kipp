@@ -46,12 +46,17 @@ class FileTransferNode(Node):
             if send_file(self.server_ip, self.port, self.file_path):
                 self.file_sent = True
                 self.get_logger().info('File transfer complete. Terminating node.')
-                self.destroy_node()  # Terminate the node after file is sent
+                raise SystemExit
 
 def main(args=None):
     rclpy.init(args=args)
     node = FileTransferNode()
-    rclpy.spin(node)
+    try:
+        rclpy.spin(node)
+    except SystemExit:
+        rclpy.logging.get_logger("Quitting").info('Done')
+    
+    node.destroy_node()
     rclpy.shutdown()
 
 if __name__ == '__main__':
