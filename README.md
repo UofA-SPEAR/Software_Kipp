@@ -19,9 +19,9 @@ to recieve a file:
 
 ```ros2 run kipp_file_transfer file_receive --ros-args -p server_ip:=IPADRESS -p port:=PORT# -p output_file:=name_of_file.txt```
 
-#  Algorithims
+#  Algorithms
 
-These are various algorithims in work that either:
+These are various algorithms in work that either:
     - need to be intergrated into a ros2 node
     OR:
     - need to be interfaced with GUI, running on the base station

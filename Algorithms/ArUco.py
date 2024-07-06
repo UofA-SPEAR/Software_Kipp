@@ -3,9 +3,6 @@ import cv2 as cv
 # Initialize the webcam
 cap = cv.VideoCapture(0)
 
-# Counter to track consecutive frames with marker detection
-consecutive_detected_frames = 0
-
 while True:
     # Load the ArUco dictionary
     dictionary = cv.aruco.getPredefinedDictionary(cv.aruco.DICT_4X4_100)
