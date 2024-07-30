@@ -1,7 +1,7 @@
 #!/bin/bash
 
 while true; do
-  gst-launch-1.0 zedsrc camera-sn=camera-sn=31826195 ! timeoverlay ! tee name=split has-chain=true ! \
+  gst-launch-1.0 zedsrc camera-sn=31826195 ! timeoverlay ! tee name=split has-chain=true ! \
   queue ! autovideoconvert ! fpsdisplaysink \
   split. ! queue max-size-time=0 max-size-bytes=0 max-size-buffers=0 ! autovideoconvert ! \
   x264enc byte-stream=true tune=zerolatency speed-preset=ultrafast bitrate=3000 ! \
