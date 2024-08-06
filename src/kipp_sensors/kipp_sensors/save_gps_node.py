@@ -41,7 +41,7 @@ class SaveGpsNode(Node):
             self.get_logger().error(f'Failed to write to file: {e}')
 
         file_path = "/home/ayden/Software_Kipp/src/kipp_sensors/kipp_sensors/gps_coordinates.txt" # change
-        server_ip = "10.0.0.171" # change as needed
+        server_ip = "127.0.0.1" # change as needed
         port = 12345
 
         command = f"ros2 run kipp_file_transfer file_send --ros-args -p file_path:={file_path} -p server_ip:={server_ip} -p port:={port}"
