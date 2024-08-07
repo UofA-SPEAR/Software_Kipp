@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-package_name = 'kipp_hardware'
+package_name = 'kipp_gps'
 
 setup(
     name=package_name,
@@ -20,9 +20,9 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'can_node = kipp_hardware.kipp_can_drive:main',
-            'xbox_node = kipp_hardware.xbox_controller_node:main',
-            'gps_node = kipp_hardware.gps_serial:main'
+            'gps_record = kipp_gps.save_gps_node:main',
+            'gps_nav = kipp_gps.gps_navigation:main',
+            'dummy_gps = kipp_gps.dummy_gps:main'
         ],
     },
 )
