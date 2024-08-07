@@ -1,6 +1,9 @@
 from setuptools import find_packages, setup
+from glob import glob
+from setup import setup
+import os
 
-package_name = 'kipp_hardware'
+package_name = 'kipp_bringup'
 
 setup(
     name=package_name,
@@ -10,19 +13,17 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
+        (os.path.join('share', package_name, 'launch'), glob(os.path.join('launch', '*.launch.py')))
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='spearua',
+    maintainer='Induwara Kandapahala',
     maintainer_email='kandapah@ualberta.ca',
-    description='TODO: Package description',
+    description='Star up launch files',
     license='TODO: License declaration',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'can_node = kipp_hardware.kipp_can_drive:main',
-            'xbox_node = kipp_hardware.xbox_controller_node:main',
-            'gps_node = kipp_hardware.gps_serial:main'
         ],
     },
 )
