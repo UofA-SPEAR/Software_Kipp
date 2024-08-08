@@ -12,4 +12,5 @@
 # done
 
 
-gst-launch-1.0 v4l2src device=/dev/video4 ! videoconvert ! autovideosink
+
+gst-launch-1.0 v4l2src device=/dev/video4 ! videoconvert ! rtpvrawpay ! udpsink host=192.168.1.10 port=5010
