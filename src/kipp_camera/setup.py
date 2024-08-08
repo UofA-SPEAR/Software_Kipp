@@ -25,6 +25,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'aruco_node = kipp_camera.aruco:main',
         ],
     },
 )
