@@ -28,7 +28,7 @@ class Kipp_Can_Drive(Node):
 
         super().__init__('kipp_can_drive')
         
-        self.cmd_vel_sub = self.create_subscription(Twist, 'cmd_vel', self.cmd_vel_callback, 10)
+        self.cmd_vel_sub = self.create_subscription(Twist, '/manual/cmd_vel', self.cmd_vel_callback, 10)
         self.rotate_sub = self.create_subscription(Joy, '/manual/joy', self.rotate_rover, 10)
         self.timer = self.create_timer(0.25, self.paced_commands)
         self.rotate = 0 
