@@ -9,7 +9,7 @@ class FileReceiverNode(Node):
         super().__init__('file_receiver_node')
 
         # Declare parameters for server IP, port, and output file
-        self.declare_parameter('server_ip', '10.0.0.171')
+        self.declare_parameter('server_ip', '127.0.0.1')
         self.declare_parameter('port', 12345)
         self.declare_parameter('output_file', 'received_file.txt')
 
