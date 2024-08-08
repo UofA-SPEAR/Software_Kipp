@@ -11,7 +11,7 @@ def generate_launch_description():
     #---------------------CAMERA NODES ------------------------
     # Path to the configuration file
     config_path_main = os.path.join(
-        get_package_share_directory('kipp_hardware'),
+        get_package_share_directory('kipp_camera'),
         'config',
         'main_camera.yaml'
     )
@@ -96,11 +96,11 @@ def generate_launch_description():
 
     return launch.LaunchDescription([
         SetEnvironmentVariable(name='RCUTILS_COLORIZED_OUTPUT', value='1'),
-        zedmain_node,
-        container,
-        kipp_can_node,
+        #zedmain_node,
+        #container,
         xbox_contol_node,
-        gps_node
+        kipp_can_node,
+        #gps_node
     ])
 
 if __name__ == '__main__':

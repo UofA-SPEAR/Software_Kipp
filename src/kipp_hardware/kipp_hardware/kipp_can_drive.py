@@ -32,7 +32,7 @@ class Kipp_Can_Drive(Node):
         self.rotate_sub = self.create_subscription(Joy, '/manual/joy', self.rotate_rover, 10)
         self.timer = self.create_timer(1.0, self.paced_commands)
         self.rotate = 0 
-        self.bus = can.interface.Bus(interface='socketcan', channel='vcan0', bitrate=500000)
+        self.bus = can.interface.Bus(interface='socketcan', channel='can0', bitrate=1000000)
 
         self.T= 0.513  # Width of the rover (meters)
         self.L1 = 0.311 # front wheels to middle wheels
