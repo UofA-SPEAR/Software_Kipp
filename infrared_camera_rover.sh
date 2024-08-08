@@ -13,8 +13,9 @@
 
 
 
-gst-launch-1.0 v4l2src device=/dev/video4 ! videoconvert ! tee name=t \
-t. ! queue ! autovideosink \
-t. ! queue ! rtpvrawpay ! udpsink host=192.168.1.10 port=5010
+# gst-launch-1.0 v4l2src device=/dev/video4 ! videoconvert ! tee name=t \
+# t. ! queue ! autovideosink \
+# t. ! queue ! rtpvrawpay ! udpsink host=192.168.1.10 port=5010
 
 
+gst-launch-1.0 v4l2src device=/dev/video4 ! video/x-raw, format=GRAY8, width=340, height=340, framerate=30/1 ! videoconvert ! x264enc tune=zerolatency ! h264parse ! rtph264pay pt=127 config-interval=4 ! udpsink host=192.168.1.10 port=5000
