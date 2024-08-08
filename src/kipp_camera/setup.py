@@ -26,6 +26,7 @@ setup(
     entry_points={
         'console_scripts': [
             'aruco_node = kipp_camera.aruco:main',
+            'photographer_node = kipp_camera.photographer:main',
         ],
     },
 )

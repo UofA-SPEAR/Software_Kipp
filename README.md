@@ -10,6 +10,14 @@ Then there is another node ```save_gps_node.py``` that saves the gps coordinates
 
 Or the opposite ```ros2 service call /trigger_action std_srvs/srv/SetBool "{data: false}"```
 
+## kipp_camera
+
+### photographer.py
+run ```ros2 service call /capture_image std_srvs/srv/Trigger``` to take image. It is saved on the jetson.
+
+### Aruco.py
+Publish aruco ID onto a topic. run ```ros2 topic echo /aruco_marker_ids```
+
 ## kipp_file_transfer
 to send a file:
 
