@@ -1,7 +1,6 @@
 import os
 
 from ament_index_python.packages import get_package_share_directory
-
 import launch
 from launch.actions import SetEnvironmentVariable
 from launch_ros.actions import Node, ComposableNodeContainer
@@ -10,25 +9,27 @@ from launch_ros.descriptions import ComposableNode
 def generate_launch_description():
     #---------------------CAMERA NODES ------------------------
     
-    decoder_node = ComposableNode(
-        name='decoder',
-        package='isaac_ros_h264_decoder',
-        plugin='nvidia::isaac_ros::h264_decoder::DecoderNode',
+    h264_msgs_packet_node = Node(
+        name='h264_converter_node',
+        package='isaac_ros_to_h264_msgs_packet',
+        executable='ToH264MsgsPacket',
         remappings=[
-            ('image_compressed', 'left/image_compressed')
-        ])
-    
-
-    container = ComposableNodeContainer(
-        name='decoder_container',
-        namespace='',
-        package='rclcpp_components',
-        executable='component_container_mt',
-        composable_node_descriptions=[decoder_node],
-        output='screen',
-        arguments=['--ros-args', '--log-level', 'info']
+            ('image_compressed', 'left/image_compressed'),
+            ('image_raw/compressed', 'image_raw/h264')
+        ],
+        output='screen'
     )
 
+    republish_node = Node(
+        name='republish_node',
+        package='image_transport', 
+        executable='republish',  
+        arguments=['h264',  'raw'], 
+        remappings=[                
+            ('in/h264', 'image_raw/h264'),
+        ],
+        output='screen'
+    )
     #--------------------Drive Nodes ---------------------------
 
     joy_node = Node(
@@ -45,7 +46,8 @@ def generate_launch_description():
 
     return launch.LaunchDescription([
         SetEnvironmentVariable(name='RCUTILS_COLORIZED_OUTPUT', value='1'),
-        container,
+        #h264_msgs_packet_node,
+        #republish_node,
         joy_node
         
     ])

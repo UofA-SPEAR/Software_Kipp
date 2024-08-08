@@ -25,45 +25,6 @@ def generate_launch_description():
         output='screen',
     )
 
-    # Define the left format converter node
-    zedmain_format_converter_node = ComposableNode(
-        package='isaac_ros_image_proc',
-        plugin='nvidia::isaac_ros::image_proc::ImageFormatConverterNode',
-        name='image_format_node_left',
-        parameters=[{
-            'encoding_desired': 'rgb8',
-        }],
-        remappings=[
-            ('image_raw', '/zed_main/zed_node/left/image_rect_color'),
-            ('image', 'left/image_rect_raw')
-        ]
-    )
-
-    # Define the encoder node
-    zedmain_encoder_node = ComposableNode(
-        package='isaac_ros_h264_encoder',
-        plugin='nvidia::isaac_ros::h264_encoder::EncoderNode',
-        name='left_encoder_node',
-        parameters=[{
-            'input_width': 1280,
-            'input_height': 720,
-        }],
-        remappings=[
-            ('image_raw', 'left/image_rect_raw'),
-            ('image_compressed', 'left/image_compressed')
-        ]
-    )
-
-    # Container to hold the composable nodes
-    container = ComposableNodeContainer(
-        name='encoder_container',
-        namespace='encoder',
-        package='rclcpp_components',
-        executable='component_container_mt',
-        composable_node_descriptions=[zedmain_format_converter_node, zedmain_encoder_node],
-        output='screen'
-    )
-
     #--------------------Drive Nodes ---------------------------
 
     kipp_can_node = Node(
@@ -95,10 +56,9 @@ def generate_launch_description():
 
     return launch.LaunchDescription([
         SetEnvironmentVariable(name='RCUTILS_COLORIZED_OUTPUT', value='1'),
-        zedmain_node,
-        container,
-        #xbox_contol_node,
-        #kipp_can_node,
+        #zedmain_node,
+        xbox_contol_node,
+        kipp_can_node,
         #gps_node
     ])
 
