@@ -95,10 +95,10 @@ def generate_launch_description():
 
     return launch.LaunchDescription([
         SetEnvironmentVariable(name='RCUTILS_COLORIZED_OUTPUT', value='1'),
-        #zedmain_node,
-        #container,
-        xbox_contol_node,
-        kipp_can_node,
+        zedmain_node,
+        container,
+        #xbox_contol_node,
+        #kipp_can_node,
         #gps_node
     ])
 
