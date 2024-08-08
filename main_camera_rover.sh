@@ -1,5 +1,7 @@
 #!/bin/bash
 
+mkdir -p /tmp/gst_frames
+
 while true; do
   gst-launch-1.0 zedsrc camera-sn=31826195 ! timeoverlay ! tee name=split has-chain=true ! \
   queue ! autovideoconvert ! fpsdisplaysink \
