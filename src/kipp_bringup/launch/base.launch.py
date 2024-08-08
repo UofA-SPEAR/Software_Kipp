@@ -46,9 +46,9 @@ def generate_launch_description():
 
     return launch.LaunchDescription([
         SetEnvironmentVariable(name='RCUTILS_COLORIZED_OUTPUT', value='1'),
-        h264_msgs_packet_node,
-        republish_node,
-        #joy_node
+        #h264_msgs_packet_node,
+        #republish_node,
+        joy_node
         
     ])
 
