@@ -10,4 +10,4 @@
 #   sleep 5
 # done
 
-gst-launch-1.0 udpsrc port=5010 ! application/x-rtp, encoding-name=RAW ! rtpvrawdepay ! videoconvert ! autovideosink
+gst-launch-1.0 udpsrc port=5050 ! application/x-rtp, encoding-name=RAW ! rtpvrawdepay ! videoconvert ! autovideosink
