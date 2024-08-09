@@ -13,6 +13,10 @@ class ImageCaptureNode(Node):
         
         # Initialize image counter
         self.image_counter = 0
+        
+        # Ensure the 'photo' directory exists
+        if not os.path.exists('photo'):
+            os.makedirs('photo')
 
     def get_device_path_by_serial_or_bus(self, serial_number=None, bus_info=None):
         try:
@@ -67,7 +71,8 @@ class ImageCaptureNode(Node):
             # Generate a unique file name
             self.image_counter += 1
             file_name = f'captured_image{self.image_counter}.png'
-            cv.imwrite(file_name, frame)
+            file_path = os.path.join('photo', file_name)  # Correctly create the file path
+            cv.imwrite(file_path, frame)
             self.get_logger().info(f'Image saved as {file_name}.')
             
             # Release resources
