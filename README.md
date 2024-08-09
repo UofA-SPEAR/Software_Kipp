@@ -32,6 +32,12 @@ to recieve a file:
 
 ```ros2 run kipp_file_transfer file_receive --ros-args -p server_ip:=IPADRESS -p port:=PORT# -p output_file:=name_of_file.txt```
 
+## Debugging GStreamer
+- Is ethernet/wired connection good?
+- Is camera device accesed on senders end?
+- Can a simple data message or Ping be sent between computers?
+- Is the reciever end recieving but not visualizing the stream?
+
 #  Algorithms
 
 These are various algorithms in work that either:
