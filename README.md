@@ -1,5 +1,10 @@
 # Software_Kipp
 
+
+#Infared 
+v4l2-ctl --all --device=/dev/video2
+
+
 ## kipp_sensors
 To publish gps coordinates, you can run either ```gps_node.py``` which uses data from the actual gps hardware, or ```random_gps_node.py``` which generates random gps coordinates formatted in the traditional NavSatFix format.
 To run either:

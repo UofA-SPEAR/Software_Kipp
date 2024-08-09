@@ -10,4 +10,7 @@
 
 # # Run gst-launch-1.0 with the infrared camera device path
 # gst-launch-1.0 v4l2src device=$DEVICE_PATH ! video/x-raw, format=GRAY8, width=340, height=340, framerate=30/1 ! videoconvert ! x264enc tune=zerolatency ! h264parse ! rtph264pay pt=127 config-interval=4 ! udpsink host=192.168.1.10 port=5010
-gst-launch-1.0 v4l2src device=/dev/video4 ! video/x-raw, format=GRAY8, width=340, height=340, framerate=30/1 ! videoconvert ! x264enc tune=zerolatency ! h264parse ! rtph264pay pt=127 config-interval=4 ! udpsink host=192.168.1.10 port=5010
+gst-launch-1.0 v4l2src device=/dev/video2 ! video/x-raw, format=GRAY8, width=340, height=340, framerate=30/1 ! videoconvert ! x264enc tune=zerolatency ! h264parse ! rtph264pay pt=127 config-interval=4 ! udpsink host=192.168.1.10 port=5080
+
+
+# gst-launch-1.0 -vv -e v4l2src device=/dev/video2  ! "video/x-raw,width=340,height=340" ! queue ! x264enc  ! h264parse ! rtph264pay ! udpsink host=192.168.1.10 port=5020
