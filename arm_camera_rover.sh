@@ -14,5 +14,5 @@ fi
 
 # Use the device path in the GStreamer pipeline to stream over UDP on port 5100
 echo "Using camera at: $DEVICE_PATH"
-gst-launch-1.0 v4l2src device="$DEVICE_PATH" ! videoconvert ! x264enc tune=zerolatency ! rtph264pay config-interval=1 pt=96 ! udpsink host=127.0.0.1 port=5100
+gst-launch-1.0 v4l2src device="$DEVICE_PATH" ! videoconvert ! x264enc tune=zerolatency ! rtph264pay config-interval=1 pt=96 ! udpsink host=192.168.1.10  port=5040
 
