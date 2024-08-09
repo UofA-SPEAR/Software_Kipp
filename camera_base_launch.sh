@@ -1,5 +1,16 @@
 #!/bin/bash
 
+# Function to handle cleanup when the script is interrupted
+cleanup() {
+    echo "Terminating all running scripts..."
+    # Kill all background processes started by this script
+    pkill -P $$
+    exit 1
+}
+
+# Set up a trap to catch SIGINT (Ctrl+C) and call the cleanup function
+trap cleanup SIGINT
+
 # Function to check if a script exists and is executable, then run it in the background
 run_script() {
     if [ -x "$1" ]; then
