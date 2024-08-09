@@ -1,17 +1,12 @@
 #!/bin/bash
 
-# Replace with the actual serial number of your webcam
-SERIAL_NUMBER="66255C60"
+# Use the symlink for the infrared camera
+DEVICE_PATH="/dev/v4l/by-id/usb-046d_Logitech_BRIO_734C0A89-video-index2"
 
-# Find the device path based on the serial number
-DEVICE_PATH=$(sudo udevadm info --query=all --name=/dev/video* | grep 'ID_SERIAL_SHORT' | grep "$SERIAL_NUMBER" | awk -F= '{print $2}')
+# Alternatively, you can use the by-path symlink
+# DEVICE_PATH="/dev/v4l/by-path/platform-3610000.usb-usb-0:3.3:1.0-video-index2"
 
-if [ -z "$DEVICE_PATH" ]; then
-    echo "Error: Device with serial number $SERIAL_NUMBER not found."
-    exit 1
-fi
+echo "Using infrared camera at: $DEVICE_PATH"
 
-echo "Using device path: $DEVICE_PATH"
-
-# Run gst-launch-1.0 with the found device path
-gst-launch-1.0 v4l2src device=$DEVICE_PATH ! video/x-raw, format=GRAY8, width=340, height=340, framerate=30/1 ! videoconvert ! x264enc tune=zerolatency ! h264parse ! rtph264pay pt=127 config-interval=4 ! udpsink host=192.168.1.10 port=5000
+# Run gst-launch-1.0 with the infrared camera device path
+gst-launch-1.0 v4l2src device=$DEVICE_PATH ! video/x-raw, format=GRAY8, width=340, height=340, framerate=30/1 ! videoconvert ! x264enc tune=zerolatency ! h264parse ! rtph264pay pt=127 config-interval=4 ! udpsink host=192.168.1.10 port=5010
