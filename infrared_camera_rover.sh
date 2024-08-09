@@ -1,21 +1,17 @@
-# #!/bin/bash
+#!/bin/bash
 
-# while true; do
-#   gst-launch-1.0 v4l2src device=/dev/video4 ! video/x-raw,format=GRAY8,width=340,height=340,framerate=30/1 ! \
-#   tee name=t ! queue ! videoconvert ! autovideosink \
-#   t. ! queue ! videoconvert ! x264enc byte-stream=true tune=zerolatency speed-preset=ultrafast bitrate=3000 ! \
-#   h264parse ! rtph264pay config-interval=-1 pt=96 ! queue ! \
-#   udpsink host=192.168.1.10 port=5010 max-bitrate=3000000 sync=false async=false
+# Replace with the actual serial number of your webcam
+SERIAL_NUMBER="66255C60"
 
-#   echo "Pipeline exited. Restarting in 5 seconds..."
-#   sleep 5
-# done
+# Find the device path based on the serial number
+DEVICE_PATH=$(sudo udevadm info --query=all --name=/dev/video* | grep 'ID_SERIAL_SHORT' | grep "$SERIAL_NUMBER" | awk -F= '{print $2}')
 
+if [ -z "$DEVICE_PATH" ]; then
+    echo "Error: Device with serial number $SERIAL_NUMBER not found."
+    exit 1
+fi
 
+echo "Using device path: $DEVICE_PATH"
 
-# gst-launch-1.0 v4l2src device=/dev/video4 ! videoconvert ! tee name=t \
-# t. ! queue ! autovideosink \
-# t. ! queue ! rtpvrawpay ! udpsink host=192.168.1.10 port=5010
-
-
-gst-launch-1.0 v4l2src device=/dev/video4 ! video/x-raw, format=GRAY8, width=340, height=340, framerate=30/1 ! videoconvert ! x264enc tune=zerolatency ! h264parse ! rtph264pay pt=127 config-interval=4 ! udpsink host=192.168.1.10 port=5000
+# Run gst-launch-1.0 with the found device path
+gst-launch-1.0 v4l2src device=$DEVICE_PATH ! video/x-raw, format=GRAY8, width=340, height=340, framerate=30/1 ! videoconvert ! x264enc tune=zerolatency ! h264parse ! rtph264pay pt=127 config-interval=4 ! udpsink host=192.168.1.10 port=5000
