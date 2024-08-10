@@ -40,23 +40,23 @@ class SaveGpsNode(Node):
         except Exception as e:
             self.get_logger().error(f'Failed to write to file: {e}')
 
-        file_path = "/home/ayden/Software_Kipp/src/kipp_sensors/kipp_sensors/gps_coordinates.txt" # change
-        server_ip = "10.0.0.171" # change as needed
-        port = 12345
+        # file_path = "/home/ayden/Software_Kipp/src/kipp_sensors/kipp_sensors/gps_coordinates.txt" # change
+        # server_ip = "10.0.0.171" # change as needed
+        # port = 12345
 
-        command = f"ros2 run kipp_file_transfer file_send --ros-args -p file_path:={file_path} -p server_ip:={server_ip} -p port:={port}"
+        # # command = f"ros2 run kipp_file_transfer file_send --ros-args -p file_path:={file_path} -p server_ip:={server_ip} -p port:={port}"
 
-        try:
-            result = subprocess.run(command, shell=True, check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
-            print("Output:")
-            print(result.stdout)
-            if result.stderr:
-                print("Errors:")
-                print(result.stderr)
-        except subprocess.CalledProcessError as e:
-            print(f"Command '{command}' failed with return code {e.returncode}.")
-            print("Error output:")
-            print(e.stderr)
+        # try:
+        #     result = subprocess.run(command, shell=True, check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+        #     print("Output:")
+        #     print(result.stdout)
+        #     if result.stderr:
+        #         print("Errors:")
+        #         print(result.stderr)
+        # except subprocess.CalledProcessError as e:
+        #     print(f"Command '{command}' failed with return code {e.returncode}.")
+        #     print("Error output:")
+        #     print(e.stderr)
 
 
     def trigger_action_callback(self, request, response):
