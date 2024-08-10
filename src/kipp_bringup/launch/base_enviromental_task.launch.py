@@ -45,7 +45,7 @@ def generate_launch_description():
         SetEnvironmentVariable(name='RCUTILS_COLORIZED_OUTPUT', value='1'),
         gps_record,
         joy_node,
-        arm_node
+        #arm_node
 
     ])
 
