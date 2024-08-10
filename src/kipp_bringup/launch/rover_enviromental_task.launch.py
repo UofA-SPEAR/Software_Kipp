@@ -61,7 +61,7 @@ def generate_launch_description():
         kipp_arm_can,
         xbox_contol_node,
         gps_node,
-        kipp_photgraph
+        #kipp_photgraph
     ])
 
 if __name__ == '__main__':
