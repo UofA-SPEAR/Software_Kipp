@@ -55,6 +55,14 @@ def generate_launch_description():
             emulate_tty=True,
     )
 
+    kipp_arm_can = Node(
+            package='kipp_arm_encoder',
+            executable='kipp_arm_gripper',
+            name='kipp_arm_can',
+            output='screen',
+            emulate_tty=True,
+    )
+
     return launch.LaunchDescription([
         SetEnvironmentVariable(name='RCUTILS_COLORIZED_OUTPUT', value='1'),
         kipp_can_node,
