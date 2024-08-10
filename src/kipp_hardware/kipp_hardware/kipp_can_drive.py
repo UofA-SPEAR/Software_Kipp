@@ -34,9 +34,9 @@ class Kipp_Can_Drive(Node):
         self.rotate = 0 
         self.bus = can.interface.Bus(interface='socketcan', channel='can0', bitrate=1000000)
 
-        self.T= 0.420  # Width of the rover (meters)
-        self.L1 = 0.311 # front wheels to middle wheels
-        self.L2 = 0.432 # back wheels to middle wheels 
+        self.T= 0.455  # Width of the rover (meters)
+        self.L1 = 0.325 # front wheels to middle wheels
+        self.L2 = 0.425 # back wheels to middle wheels 
         self.v = 0.0
         self.omega = 0.0
         
