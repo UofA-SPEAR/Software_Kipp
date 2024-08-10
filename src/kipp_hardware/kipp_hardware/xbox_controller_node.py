@@ -18,6 +18,8 @@ class XboxControllerNode(Node):
 
         self.max_linear_speed = 1.0  # Adjust as needed
         self.max_angular_speed = 1.0  # Adjust as needed
+        self.current_linear_speed = 0.0  # Track current linear speed
+        self.ramp_rate = 0.1
 
     def joy_callback(self, msg):
         self.connected = True
@@ -28,9 +30,19 @@ class XboxControllerNode(Node):
         right_trigger = 1 - msg.axes[5]  # Assuming axis 6 is the right trigger
         steering = msg.axes[0]
 
-        linear_speed = (right_trigger - left_trigger) /2  * self.max_linear_speed
-        angular_speed = steering
-        twist.linear.x = linear_speed
+        # Calculate target linear speed based on trigger values
+        target_linear_speed = (right_trigger - left_trigger) / 2 * self.max_linear_speed
+        
+        # Ramp up/down the current linear speed towards the target speed
+        if self.current_linear_speed < target_linear_speed:
+            self.current_linear_speed = min(self.current_linear_speed + self.ramp_rate, target_linear_speed)
+        elif self.current_linear_speed > target_linear_speed:
+            self.current_linear_speed = max(self.current_linear_speed - self.ramp_rate, target_linear_speed)
+
+        # Explicitly set angular speed
+        angular_speed = steering * self.max_angular_speed
+
+        twist.linear.x = self.current_linear_speed
         twist.angular.z = angular_speed
 
         self.publisher.publish(twist)
