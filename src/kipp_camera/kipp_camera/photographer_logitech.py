@@ -27,8 +27,8 @@ class ImageCaptureNode(Node):
             for device in devices:
                 if serial_number:
                     cmd = f"udevadm info --query=all --name={device} | grep '{serial_number}'"
-                # elif bus_info:
-                #     cmd = f"udevadm info --query=all --name={device} | grep '{bus_info}'"
+                elif bus_info:
+                    cmd = f"udevadm info --query=all --name={device} | grep '{bus_info}'"
                 else:
                     continue
                 
@@ -48,7 +48,7 @@ class ImageCaptureNode(Node):
         self.get_logger().info('Service call received to capture image.')
         
         # Set up the camera
-        serial_number = "734C0A89" # Or use bus_info = "usb-0000:00:14.0-3"
+        serial_number = "66255C60"  # Or use bus_info = "usb-0000:00:14.0-3"
         device_path = self.get_device_path_by_serial_or_bus(serial_number=serial_number)
 
         if device_path:

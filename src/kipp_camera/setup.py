@@ -27,6 +27,7 @@ setup(
         'console_scripts': [
             'aruco_node = kipp_camera.aruco:main',
             'photographer_node = kipp_camera.photographer:main',
+            'photographer_logitech_node = kipp_camera.photographer_logitech:main'
         ],
     },
 )
