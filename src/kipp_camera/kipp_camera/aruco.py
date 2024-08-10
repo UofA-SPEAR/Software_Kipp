@@ -25,8 +25,8 @@ def get_device_path_by_serial_or_bus(serial_number=None, bus_info=None):
         for device in devices:
             if serial_number:
                 cmd = f"udevadm info --query=all --name={device} | grep '{serial_number}'"
-            elif bus_info:
-                cmd = f"udevadm info --query=all --name={device} | grep '{bus_info}'"
+            # elif bus_info:
+            #     cmd = f"udevadm info --query=all --name={device} | grep '{bus_info}'"
             else:
                 continue
             
@@ -47,7 +47,8 @@ def main(args=None):
     aruco_publisher = ArucoPublisher()
 
     # Example usage
-    serial_number = "66255C60"  # Or use bus_info = "usb-0000:00:14.0-3"
+    # serial_number = "66255C60"  # Or use bus_info = "usb-0000:00:14.0-3"
+    serial_number = "734C0A89"
     device_path = get_device_path_by_serial_or_bus(serial_number=serial_number)
 
     if device_path:
