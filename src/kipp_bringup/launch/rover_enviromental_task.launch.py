@@ -31,18 +31,37 @@ def generate_launch_description():
     gps_node = Node(
             package='kipp_hardware',
             executable='gps_node',
-            name='can_node',
+            name='gps_node_rover',
             output='screen',
             emulate_tty=True,
         )
+    #------------------Camera----------------------------------
 
+    kipp_photgraph = Node(
+            package='kipp_camera',
+            executable='photographer_node',
+            name='photo_node',
+            output='screen',
+            emulate_tty=True,
+    )
+
+    #--------------Arm Node------------------------
+
+    kipp_arm_can = Node(
+            package='kipp_arm_encoder',
+            executable='kipp_arm_can',
+            name='kipp_arm_can',
+            output='screen',
+            emulate_tty=True,
+    )
 
     return launch.LaunchDescription([
         SetEnvironmentVariable(name='RCUTILS_COLORIZED_OUTPUT', value='1'),
-        #zedmain_node,
-        xbox_contol_node,
         kipp_can_node,
-        #gps_node
+        kipp_arm_can,
+        xbox_contol_node,
+        gps_node,
+        kipp_photgraph
     ])
 
 if __name__ == '__main__':
