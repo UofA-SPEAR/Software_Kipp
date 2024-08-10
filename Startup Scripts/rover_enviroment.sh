@@ -20,8 +20,8 @@ tmux send-keys -t $SESSION_NAME:3 "/home/spearua/Desktop/Software_Kipp/main_came
 
 
 #Arm Camera
-tmux new-window -t $SESSION_NAME:3 -n "ArmCamera"
-tmux send-keys -t $SESSION_NAME:3 "/home/spearua/Desktop/Software_Kipp/arm_camera_rover.sh" C-m
+tmux new-window -t $SESSION_NAME:4 -n "ArmCamera"
+tmux send-keys -t $SESSION_NAME:4 "/home/spearua/Desktop/Software_Kipp/arm_camera_rover.sh" C-m
 
 # Optional: Attach to the tmux session to view the windows
 tmux attach-session -t $SESSION_NAME

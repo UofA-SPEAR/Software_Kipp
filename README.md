@@ -61,3 +61,7 @@ Needs to be converted to a node. Is given a directory to index for all image fil
 
 ### Photographer.py
 This code wont actually be used, but its a siple script that takes photos by clicking the space bar which makes testing/debuging algorithis a lot easier.
+
+
+source /home/prjadmin/Desktop/Software_Kipp/install/setup.bash
+ros2 run kipp_navigation gps_map_node
