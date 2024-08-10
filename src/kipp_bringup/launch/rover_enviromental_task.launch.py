@@ -55,7 +55,7 @@ def generate_launch_description():
             emulate_tty=True,
     )
 
-    kipp_arm_can = Node(
+    kipp_gripper_can = Node(
             package='kipp_arm_encoder',
             executable='kipp_arm_gripper',
             name='kipp_arm_can',
@@ -68,7 +68,8 @@ def generate_launch_description():
         kipp_can_node,
         kipp_arm_can,
         xbox_contol_node,
-        gps_node,
+        kipp_gripper_can
+        #gps_node,
         #kipp_photgraph
     ])
 

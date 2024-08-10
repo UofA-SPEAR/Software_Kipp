@@ -43,7 +43,7 @@ def generate_launch_description():
 
     return launch.LaunchDescription([
         SetEnvironmentVariable(name='RCUTILS_COLORIZED_OUTPUT', value='1'),
-        gps_record,
+        #gps_record,
         joy_node,
         #arm_node
 
