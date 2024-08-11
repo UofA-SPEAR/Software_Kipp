@@ -66,9 +66,9 @@ def generate_launch_description():
     return launch.LaunchDescription([
         SetEnvironmentVariable(name='RCUTILS_COLORIZED_OUTPUT', value='1'),
         kipp_can_node,
-        kipp_arm_can,
+        # kipp_arm_can,
         xbox_contol_node,
-        kipp_gripper_can,
+        # kipp_gripper_can,
         gps_node,
         #kipp_photgraph
     ])
