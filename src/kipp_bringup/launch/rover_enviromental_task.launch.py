@@ -68,8 +68,8 @@ def generate_launch_description():
         kipp_can_node,
         kipp_arm_can,
         xbox_contol_node,
-        kipp_gripper_can
-        #gps_node,
+        kipp_gripper_can,
+        gps_node,
         #kipp_photgraph
     ])
 
