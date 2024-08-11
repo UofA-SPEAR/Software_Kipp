@@ -16,12 +16,10 @@ class XboxControllerNode(Node):
         self.connected = False
         #self.timer = self.create_timer(1.0, self.check_connection, callback_group=self.callback_group)  # Check connection every 1 second
 
-        self.max_linear_speed = 0.4  # Adjust as needed
+        self.max_linear_speed = 0.45  # Adjust as needed
         self.max_angular_speed = 1.0  # Adjust as needed
         self.current_linear_speed = 0.0  # Track current linear speed
         self.ramp_rate = 0.05
-        self.acceleration_rate = 0.04  # Rate of speed increase
-        self.deceleration_rate = 0.1   # Rate of speed decrease (faster than acceleration)
 
     def joy_callback(self, msg):
         self.connected = True
@@ -30,37 +28,14 @@ class XboxControllerNode(Node):
         twist = Twist()
         left_trigger = 1 - msg.axes[2]  # Assuming axis 3 is the left trigger
         right_trigger = 1 - msg.axes[5]  # Assuming axis 6 is the right trigger
-        steering = -(msg.axes[0])
+        steering = msg.axes[0]
 
-        # Calculate target linear speed based on trigger values
-        target_linear_speed = (right_trigger - left_trigger) / 2 * self.max_linear_speed
-
-        # Define a small deadband to avoid oscillations
-        deadband = 0.01
-
-        # Ramp up/down the current linear speed towards the target speed
-        if abs(self.current_linear_speed - target_linear_speed) > deadband:
-            if self.current_linear_speed < target_linear_speed:
-                # Acceleration or reverse direction
-                self.current_linear_speed = min(self.current_linear_speed + self.acceleration_rate, target_linear_speed)
-            elif self.current_linear_speed > target_linear_speed:
-                if target_linear_speed < 0 and self.current_linear_speed > 0:
-                    # Special case: switching to reverse direction is considered acceleration
-                    self.current_linear_speed = max(self.current_linear_speed - self.acceleration_rate, target_linear_speed)
-                else:
-                    # Deceleration
-                    self.current_linear_speed = max(self.current_linear_speed - self.deceleration_rate, target_linear_speed)
-        else:
-            self.current_linear_speed = target_linear_speed
-
-        # Explicitly set angular speed
-        angular_speed = steering * self.max_angular_speed
-
-        twist.linear.x = self.current_linear_speed
-        twist.angular.z = -angular_speed
+        linear_speed = (right_trigger - left_trigger) /2  * self.max_linear_speed
+        angular_speed = steering
+        twist.linear.x = linear_speed
+        twist.angular.z = angular_speed
 
         self.publisher.publish(twist)
-
 
     def check_connection(self):
         current_time = self.get_clock().now()
