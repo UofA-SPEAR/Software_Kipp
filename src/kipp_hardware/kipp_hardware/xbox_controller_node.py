@@ -35,9 +35,9 @@ class XboxControllerNode(Node):
         
         # Ramp up/down the current linear speed towards the target speed
         if self.current_linear_speed < target_linear_speed:
-            self.current_linear_speed = min(self.current_linear_speed + 0.04, target_linear_speed)
+            self.current_linear_speed = min(self.current_linear_speed + 0.06, target_linear_speed)
         elif self.current_linear_speed > target_linear_speed:
-            self.current_linear_speed = max(self.current_linear_speed - 0.1, target_linear_speed)
+            self.current_linear_speed = max(self.current_linear_speed - 0.06, target_linear_speed)
 
         # Explicitly set angular speed
         angular_speed = steering * self.max_angular_speed
