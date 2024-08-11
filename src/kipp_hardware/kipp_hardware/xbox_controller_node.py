@@ -34,18 +34,24 @@ class XboxControllerNode(Node):
 
         # Calculate target linear speed based on trigger values
         target_linear_speed = (right_trigger - left_trigger) / 2 * self.max_linear_speed
-        
+
+        # Define a small deadband to avoid oscillations
+        deadband = 0.01
+
         # Ramp up/down the current linear speed towards the target speed
-        if self.current_linear_speed < target_linear_speed:
-            # Acceleration or reverse direction
-            self.current_linear_speed = min(self.current_linear_speed + self.acceleration_rate, target_linear_speed)
-        elif self.current_linear_speed > target_linear_speed:
-            if target_linear_speed < 0 and self.current_linear_speed > 0:
-                # Special case: switching to reverse direction is considered acceleration
-                self.current_linear_speed = max(self.current_linear_speed - self.acceleration_rate, target_linear_speed)
-            else:
-                # Deceleration
-                self.current_linear_speed = max(self.current_linear_speed - self.deceleration_rate, target_linear_speed)
+        if abs(self.current_linear_speed - target_linear_speed) > deadband:
+            if self.current_linear_speed < target_linear_speed:
+                # Acceleration or reverse direction
+                self.current_linear_speed = min(self.current_linear_speed + self.acceleration_rate, target_linear_speed)
+            elif self.current_linear_speed > target_linear_speed:
+                if target_linear_speed < 0 and self.current_linear_speed > 0:
+                    # Special case: switching to reverse direction is considered acceleration
+                    self.current_linear_speed = max(self.current_linear_speed - self.acceleration_rate, target_linear_speed)
+                else:
+                    # Deceleration
+                    self.current_linear_speed = max(self.current_linear_speed - self.deceleration_rate, target_linear_speed)
+        else:
+            self.current_linear_speed = target_linear_speed
 
         # Explicitly set angular speed
         angular_speed = steering * self.max_angular_speed
