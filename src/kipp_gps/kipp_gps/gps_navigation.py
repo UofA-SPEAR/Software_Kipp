@@ -49,6 +49,7 @@ class GpsNavigator(Node):
     def timer_callback(self):
         if self.current_lat is not None and self.current_lon is not None and self.destination_lat is not None and self.destination_lon is not None:
             distance, turn_angle, turn_direction = self.calculate_distance_and_turn(self.current_lat, self.current_lon, self.destination_lat, self.destination_lon)
+            self.get_logger().info(f'Current Lat : {self.current_lat}, Current Lon: {self.current_lon}')
             self.get_logger().info(f'Distance to destination: {distance:.2f} meters')
             self.get_logger().info(f'Turn {turn_direction} by {turn_angle:.2f} degrees')
 

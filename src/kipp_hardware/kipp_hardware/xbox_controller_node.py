@@ -28,22 +28,12 @@ class XboxControllerNode(Node):
         twist = Twist()
         left_trigger = 1 - msg.axes[2]  # Assuming axis 3 is the left trigger
         right_trigger = 1 - msg.axes[5]  # Assuming axis 6 is the right trigger
-        steering = -(msg.axes[0])
+        steering = msg.axes[0]
 
-        # Calculate target linear speed based on trigger values
-        target_linear_speed = (right_trigger - left_trigger) / 2 * self.max_linear_speed
-        
-        # Ramp up/down the current linear speed towards the target speed
-        if self.current_linear_speed < target_linear_speed:
-            self.current_linear_speed = min(self.current_linear_speed + 0.06, target_linear_speed)
-        elif self.current_linear_speed > target_linear_speed:
-            self.current_linear_speed = max(self.current_linear_speed - 0.06, target_linear_speed)
-
-        # Explicitly set angular speed
-        angular_speed = steering * self.max_angular_speed
-
-        twist.linear.x = self.current_linear_speed
-        twist.angular.z = -angular_speed
+        linear_speed = (right_trigger - left_trigger) /2  * self.max_linear_speed
+        angular_speed = steering
+        twist.linear.x = linear_speed
+        twist.angular.z = angular_speed
 
         self.publisher.publish(twist)
 

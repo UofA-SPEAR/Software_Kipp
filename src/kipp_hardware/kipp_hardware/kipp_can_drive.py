@@ -161,7 +161,7 @@ class Kipp_Can_Drive(Node):
         Returns:
         dict: Wheel velocities (m/s) for each wheel (fl, fr, ml, mr, bl, br)
         """
-        velocity_limiter = 1.0
+        velocity_limiter = 0.5
         if v > velocity_limiter:
             v = velocity_limiter
         elif v < -velocity_limiter:
