@@ -10,12 +10,11 @@ class GpsNavigator(Node):
     def __init__(self):
         super().__init__('gps_navigator')
         self.navsat_subscriber = self.create_subscription(NavSatFix, '/gps/fix', self.navsat_callback, 10)
+        self.heading_subscriber = self.create_subscription(Float64, '/gps/heading', self.heading_callback, 10)
+        
         self.current_lat = None
         self.current_lon = None
         self.current_heading = None
-
-        self.distance_publisher = self.create_publisher(Float64, '/gps/distance_to_destination', 10)
-        self.turn_publisher = self.create_publisher(Float64, '/gps/turn_to_destination', 10)
 
         self.timer = self.create_timer(2.0, self.timer_callback)  # Periodic callback every 2 seconds
 
@@ -46,21 +45,14 @@ class GpsNavigator(Node):
         self.current_lat = msg.latitude
         self.current_lon = msg.longitude
 
+    def heading_callback(self, msg):
+        self.current_heading = msg.data
+
     def timer_callback(self):
         if self.current_lat is not None and self.current_lon is not None and self.destination_lat is not None and self.destination_lon is not None:
-            distance, turn_angle, turn_direction = self.calculate_distance_and_turn(self.current_lat, self.current_lon, self.destination_lat, self.destination_lon)
-            self.get_logger().info(f'Current Lat : {self.current_lat}, Current Lon: {self.current_lon}')
-            self.get_logger().info(f'Distance to destination: {distance:.2f} meters')
-            self.get_logger().info(f'Turn {turn_direction} by {turn_angle:.2f} degrees')
-
-            # Publish distance and turn angle
-            distance_msg = Float64()
-            distance_msg.data = distance
-            self.distance_publisher.publish(distance_msg)
-
-            turn_msg = Float64()
-            turn_msg.data = turn_angle if turn_direction == 'right' else -turn_angle
-            self.turn_publisher.publish(turn_msg)
+            distance, turn_angle = self.calculate_distance_and_turn(self.current_lat, self.current_lon, self.destination_lat, self.destination_lon)
+            # Format the output as required
+            self.get_logger().info(f"Distance to destination: {distance:.2f} meters | Adjust heading by: {turn_angle:.2f} degrees")
 
     def get_user_input(self):
         while True:
@@ -104,15 +96,11 @@ class GpsNavigator(Node):
         if self.current_heading is not None:
             turn_angle = (destination_heading - self.current_heading + 360) % 360
             if turn_angle > 180:
-                turn_angle = 360 - turn_angle
-                turn_direction = 'left'
-            else:
-                turn_direction = 'right'
+                turn_angle -= 360  # Normalize to range [-180, 180]
         else:
             turn_angle = destination_heading
-            turn_direction = 'right'
 
-        return distance, turn_angle, turn_direction
+        return distance, turn_angle
 
 def main(args=None):
     rclpy.init(args=args)
