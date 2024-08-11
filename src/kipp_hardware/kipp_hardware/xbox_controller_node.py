@@ -43,7 +43,7 @@ class XboxControllerNode(Node):
         angular_speed = steering * self.max_angular_speed
 
         twist.linear.x = self.current_linear_speed
-        twist.angular.z = angular_speed
+        twist.angular.z = -angular_speed
 
         self.publisher.publish(twist)
 
