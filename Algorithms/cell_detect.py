@@ -26,7 +26,7 @@ def identify_failed_cells(file_path):
 
 def main():
     # Replace 'events.log' with the path to your event log file
-    file_path = 'Algorithms/test.log'
+    file_path = '/media/ayden/B0FA5BF1FA5BB278/lander.log'
 
     failed_cells = identify_failed_cells(file_path)
 

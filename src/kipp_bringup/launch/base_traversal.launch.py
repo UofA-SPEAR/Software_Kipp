@@ -22,30 +22,18 @@ def generate_launch_description():
 
     #--------------------GPS Node------------------------------
 
-    gps_record = Node(
-            package='kipp_gps',
-            executable='gps_record',
-            name='gps_record',
-            output='screen',
-            emulate_tty=True,
-        )
-    
-    #--------------------ARM Node--------------------------------
-
-    arm_node = Node(
-        package='kipp_arm_encoder',
-        executable='kipp_arm_calibrate',
-        name='kipp_arm_calibrate',
+    gps_nav = Node(
+        package='kipp_navigation',
+        executable='gps_map_node',
+        name='gps_map_node',
         output='screen',
     )
 
-
-
     return launch.LaunchDescription([
         SetEnvironmentVariable(name='RCUTILS_COLORIZED_OUTPUT', value='1'),
-        #gps_record,
+        # gps_nav,
         joy_node,
-        # arm_node
+
 
     ])
 

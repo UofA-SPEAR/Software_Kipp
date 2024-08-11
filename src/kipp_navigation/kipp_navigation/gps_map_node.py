@@ -2,107 +2,92 @@ import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import NavSatFix
 from std_msgs.msg import Float64
-from geopy.distance import geodesic
-import matplotlib.pyplot as plt
-import numpy as np
+import math
 
-class GPSDisplayNode(Node):
+class GPSDistanceCalculator(Node):
     def __init__(self):
-        super().__init__('gps_display_node')
-        self.current_lat = None
-        self.current_lon = None
-        self.orientation = None
+        super().__init__('gps_distance_calculator')
         
-# -----------------------------------------------------------------------
-        self.dest_lat = 53.556 # Edit for task
-        self.dest_lon = -113.4938 # Edit for Task
-# -----------------------------------------------------------------------
-
-        self.create_subscription(NavSatFix, 'gps/fix', self.pose_callback, 10)
-        self.create_subscription(Float64, 'gps/heading', self.orientation_callback, 10)
+        self.create_subscription(NavSatFix, '/gps/fix', self.gps_callback, 10)
+        self.create_subscription(Float64, '/gps/heading', self.heading_callback, 10)
         
-        self.arrow_needed = None
-        self.arrow_current = None
-        self.init_plot()
-
-    def pose_callback(self, msg):
-        self.current_lat = msg.latitude
-        self.current_lon = msg.longitude
-        self.update_plot()
-
-    def orientation_callback(self, msg):
-        self.orientation = msg.data
-        self.update_plot()
-
-    def calculate_bearing(self, lat1, lon1, lat2, lon2):
-        diff_lon = np.radians(lon2 - lon1)
-        lat1 = np.radians(lat1)
-        lat2 = np.radians(lat2)
-        x = np.sin(diff_lon) * np.cos(lat2)
-        y = np.cos(lat1) * np.sin(lat2) - (np.sin(lat1) * np.cos(lat2) * np.cos(diff_lon))
-        initial_bearing = np.degrees(np.arctan2(x, y))
-        compass_bearing = (initial_bearing + 360) % 360
-        return compass_bearing
-
-    def init_plot(self):
-        plt.ion()
-        self.fig, self.ax = plt.subplots()
-        self.text = self.ax.text(0.5, 0.8, '', transform=self.ax.transAxes, ha='center', va='center', fontsize=12)
-        self.ax.axis('off')
-
-        # Adding legend
-        self.red_arrow = plt.Line2D([0], [0], color='red', lw=2, label='Needed Orientation')
-        self.blue_arrow = plt.Line2D([0], [0], color='blue', lw=2, label='Current Orientation')
-        self.ax.legend(handles=[self.red_arrow, self.blue_arrow], loc='upper right')
-
-        plt.show()
-
-    def update_plot(self):
-        if self.current_lat is not None and self.current_lon is not None:
-            distance = geodesic((self.current_lat, self.current_lon), (self.dest_lat, self.dest_lon)).meters
-            needed_orientation = self.calculate_bearing(self.current_lat, self.current_lon, self.dest_lat, self.dest_lon)
-            text_content = f"Distance: {distance:.2f} meters\nNeeded Orientation: {needed_orientation:.2f}°"
-        else:
-            text_content = "Distance: Calculating...\nNeeded Orientation: Calculating..."
+        # Input destination GPS coordinates
+        self.dest_lat = None
+        self.dest_lon = None
         
-        if self.orientation is not None:
-            text_content += f"\nCurrent Orientation: {self.orientation:.2f}°"
-        else:
-            text_content += "\nCurrent Orientation: Calculating..."
-
-        # Remove old arrows if they exist
-        if self.arrow_needed:
-            self.arrow_needed.remove()
-        if self.arrow_current:
-            self.arrow_current.remove()
+        self.current_heading = 0.0
         
-        if self.current_lat is not None and self.current_lon is not None:
-            needed_orientation = self.calculate_bearing(self.current_lat, self.current_lon, self.dest_lat, self.dest_lon)
-            needed_dx = 0.1 * np.cos(np.radians(needed_orientation))
-            needed_dy = 0.1 * np.sin(np.radians(needed_orientation))
-            self.arrow_needed = self.ax.arrow(0.5, 0.5, needed_dx, needed_dy, head_width=0.05, head_length=0.1, fc='red', ec='red', transform=self.ax.transAxes)
+        self.get_logger().info("Enter destination GPS coordinates in the format: lat lon")
+        
+        self.get_user_input()
+    
+    def get_user_input(self):
+        try:
+            # User input for destination
+            input_str = input("Enter destination GPS coordinates (latitude longitude): ")
+            lat_str, lon_str = input_str.split()
+            self.dest_lat = float(lat_str)
+            self.dest_lon = float(lon_str)
+            self.get_logger().info(f"Destination set to lat: {self.dest_lat}, lon: {self.dest_lon}")
+        except ValueError:
+            self.get_logger().error("Invalid input. Please enter valid latitude and longitude.")
+            return
+    
+    def gps_callback(self, msg):
+        if self.dest_lat is not None and self.dest_lon is not None:
+            current_lat = msg.latitude
+            current_lon = msg.longitude
+            
+            distance = self.calculate_distance(current_lat, current_lon, self.dest_lat, self.dest_lon)
+            heading_change = self.calculate_heading_change(current_lat, current_lon, self.dest_lat, self.dest_lon)
+            
+            self.get_logger().info(f"Distance to destination: {distance:.2f} meters | Adjust heading by: {heading_change:.2f} degrees")
 
-        if self.orientation is not None:
-            current_dx = 0.1 * np.cos(np.radians(self.orientation))
-            current_dy = 0.1 * np.sin(np.radians(self.orientation))
-            self.arrow_current = self.ax.arrow(0.5, 0.5, current_dx, current_dy, head_width=0.05, head_length=0.1, fc='blue', ec='blue', transform=self.ax.transAxes)
+    def heading_callback(self, msg):
+        self.current_heading = msg.data
+    
+    def calculate_distance(self, lat1, lon1, lat2, lon2):
+        # Convert latitude and longitude from degrees to radians
+        lat1, lon1, lat2, lon2 = map(math.radians, [lat1, lon1, lat2, lon2])
+        
+        # Haversine formula
+        dlon = lon2 - lon1
+        dlat = lat2 - lat1
+        a = math.sin(dlat / 2)**2 + math.cos(lat1) * math.cos(lat2) * math.sin(dlon / 2)**2
+        c = 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
+        r = 6371000  # Radius of Earth in meters
+        distance = r * c
+        return distance
 
-        self.text.set_text(text_content)
-        self.fig.canvas.draw()
-        self.fig.canvas.flush_events()
+    def calculate_heading_change(self, lat1, lon1, lat2, lon2):
+        # Calculate the initial heading from (lat1, lon1) to (lat2, lon2)
+        dlon = lon2 - lon1
+        y = math.sin(dlon) * math.cos(lat2)
+        x = math.cos(lat1) * math.sin(lat2) - math.sin(lat1) * math.cos(lat2) * math.cos(dlon)
+        initial_heading = math.atan2(y, x)
+        
+        # Convert from radians to degrees
+        initial_heading = math.degrees(initial_heading)
+        
+        # Normalize the heading to be in the range [0, 360)
+        initial_heading = (initial_heading + 360) % 360
+        
+        # Calculate the required change in heading
+        heading_change = initial_heading - self.current_heading
+        if heading_change > 180:
+            heading_change -= 360
+        elif heading_change < -180:
+            heading_change += 360
+        
+        return heading_change
 
 def main(args=None):
     rclpy.init(args=args)
-    gps_display_node = GPSDisplayNode()
-    try:
-        rclpy.spin(gps_display_node)
-    except KeyboardInterrupt:
-        pass
-    finally:
-        gps_display_node.destroy_node()
-        rclpy.shutdown()
+    gps_distance_calculator_node = GPSDistanceCalculator()
+    rclpy.spin(gps_distance_calculator_node)
+    
+    gps_distance_calculator_node.destroy_node()
+    rclpy.shutdown()
 
 if __name__ == '__main__':
     main()
-
-
