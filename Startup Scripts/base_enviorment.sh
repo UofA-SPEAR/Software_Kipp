@@ -10,3 +10,5 @@ gnome-terminal -- bash -c "/home/prjadmin/Desktop/Software_Kipp/backup_camera_ba
 gnome-terminal -- bash -c "/home/prjadmin/Desktop/Software_Kipp/main_camera_base.sh"
 
 gnome-terminal -- bash -c "/home/prjadmin/Desktop/Software_Kipp/arm_camera_base.sh"
+
+gnome-terminal -- bash -c "source /home/prjadmin/Desktop/kipp_circ_arm/install/setup.bash; ros2 run kipp_gps gps_nav"

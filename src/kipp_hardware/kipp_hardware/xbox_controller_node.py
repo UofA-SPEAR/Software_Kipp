@@ -31,7 +31,7 @@ class XboxControllerNode(Node):
         steering = msg.axes[0]
 
         linear_speed = (right_trigger - left_trigger) /2  * self.max_linear_speed
-        angular_speed = steering
+        angular_speed = -steering
         twist.linear.x = linear_speed
         twist.angular.z = angular_speed
 
