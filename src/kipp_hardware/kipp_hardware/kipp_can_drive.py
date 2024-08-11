@@ -171,7 +171,7 @@ class Kipp_Can_Drive(Node):
         vr = v
         
         velocities = {
-            "fl": -vl, "fr": -vr,
+            "fl": vl, "fr": vr,
             "ml": vl, "mr": vr,
             "bl": vl, "br": vr
         }
