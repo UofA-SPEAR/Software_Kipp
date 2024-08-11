@@ -16,7 +16,7 @@ class XboxControllerNode(Node):
         self.connected = False
         #self.timer = self.create_timer(1.0, self.check_connection, callback_group=self.callback_group)  # Check connection every 1 second
 
-        self.max_linear_speed = 0.45  # Adjust as needed
+        self.max_linear_speed = 1.0  # Adjust as needed
         self.max_angular_speed = 1.0  # Adjust as needed
         self.current_linear_speed = 0.0  # Track current linear speed
         self.ramp_rate = 0.05
