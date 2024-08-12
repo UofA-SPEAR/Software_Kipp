@@ -9,4 +9,4 @@ gnome-terminal -- bash -c "/home/prjadmin/Desktop/Software_Kipp/backup_camera_ba
 
 gnome-terminal -- bash -c "/home/prjadmin/Desktop/Software_Kipp/main_camera_base.sh"
 
-gnome-termianl -- bash -c "/home/prjadmin/Desktop/Software_Kipp/infrared_camera_base.sh"
+gnome-terminal -- bash -c "/home/prjadmin/Desktop/Software_Kipp/infrared_camera_base.sh"
