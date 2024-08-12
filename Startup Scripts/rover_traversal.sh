@@ -22,7 +22,6 @@ tmux send-keys -t $SESSION_NAME:3 "/home/spearua/Desktop/Software_Kipp/main_came
 # tmux new-window -t $SESSION_NAME:4 -n "ArmCamera"
 # tmux send-keys -t $SESSION_NAME:4 "/home/spearua/Desktop/Software_Kipp/arm_camera_rover.sh" C-m
 
-
 #Infrared Camera
 tmux new-window -t $SESSION_NAME:5 -n "Infrared Camera"
 tmux send-keys -t $SESSION_NAME:5 "/home/spearua/Desktop/Software_Kipp/infrared_camera_rover.sh" C-m
