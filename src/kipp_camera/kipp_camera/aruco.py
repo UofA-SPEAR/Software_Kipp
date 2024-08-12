@@ -48,7 +48,7 @@ def main(args=None):
 
     # Example usage
     # serial_number = "66255C60"  # Or use bus_info = "usb-0000:00:14.0-3"
-    serial_number = "734C0A89"
+    serial_number = "66255C60"
     device_path = get_device_path_by_serial_or_bus(serial_number=serial_number)
 
     if device_path:

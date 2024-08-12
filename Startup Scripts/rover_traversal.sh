@@ -18,10 +18,9 @@ tmux send-keys -t $SESSION_NAME:2 "/home/spearua/Desktop/Software_Kipp/backup_ca
 tmux new-window -t $SESSION_NAME:3 -n "MainCamera"
 tmux send-keys -t $SESSION_NAME:3 "/home/spearua/Desktop/Software_Kipp/main_camera_rover.sh" C-m
 
-#Arm Camera
-tmux new-window -t $SESSION_NAME:4 -n "ArmCamera"
-tmux send-keys -t $SESSION_NAME:4 "/home/spearua/Desktop/Software_Kipp/arm_camera_rover.sh" C-m
-
+# #Arm Camera
+# tmux new-window -t $SESSION_NAME:4 -n "ArmCamera"
+# tmux send-keys -t $SESSION_NAME:4 "/home/spearua/Desktop/Software_Kipp/arm_camera_rover.sh" C-m
 
 #Infrared Camera
 tmux new-window -t $SESSION_NAME:5 -n "Infrared Camera"
@@ -31,5 +30,5 @@ tmux send-keys -t $SESSION_NAME:5 "/home/spearua/Desktop/Software_Kipp/infrared_
 tmux new-window -t $SESSION_NAME:6 -n "ArucoCamera"
 tmux send-keys -t $SESSION_NAME:6 "source /home/spearua/Desktop/Software_Kipp/install/setup.bash; source /home/spearua/Desktop/kipp_circ_arm/install/setup.bash; ros2 run kipp_camera aruco_node" C-m
 
-# Optional: Attach to the tmux session to view the windows
+# # Optional: Attach to the tmux session to view the windows
 tmux attach-session -t $SESSION_NAME
