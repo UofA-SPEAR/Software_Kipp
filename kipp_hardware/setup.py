@@ -3,7 +3,7 @@ from glob import glob
 from setup import setup
 import os
 
-package_name = 'kipp_camera'
+package_name = 'kipp_hardware'
 
 setup(
     name=package_name,
@@ -18,16 +18,15 @@ setup(
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='Induwara Kandpahala',
+    maintainer='Induwara Kandapahala',
     maintainer_email='kandapah@ualberta.ca',
-    description='Contains launch files for encoding and transporting Zed Camera using issac ros compression and issac ros image pipeline',
+    description='Hardware Interface for our Rover. Currently includes both Zed Cameras, GPS Module and Can communication',
     license='TODO: License declaration',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'aruco_node = kipp_camera.aruco:main',
-            'photographer_node = kipp_camera.photographer:main',
-            'photographer_logitech_node = kipp_camera.photographer_logitech:main'
+            'can_node = kipp_hardware.kipp_can_drive:main'
+            'xbox_node = kipp_hardware.xbox_controller_node:main'
         ],
     },
 )

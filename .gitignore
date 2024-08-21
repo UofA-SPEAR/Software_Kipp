@@ -19,7 +19,7 @@ __pycache__/
 *.tmp
 
 # Ignore all text files that might be generated
-
+*.txt
 
 # Ignore IDE specific files
 .vscode/
@@ -27,3 +27,6 @@ __pycache__/
 
 # Ignore other common directories that should not be part of the repository
 .development/
+
+# Ignore gps_coordinates.txt file
+src/kipp_sensors/kipp_sensors/gps_coordinates.txt

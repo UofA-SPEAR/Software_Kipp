@@ -1,16 +1,26 @@
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
-  <name>kipp_description</name>
+  <name>kipp_sensors</name>
   <version>0.0.0</version>
   <description>TODO: Package description</description>
-  <maintainer email="kandapah@ualberta.ca">spearua</maintainer>
+  <maintainer email="ayden@todo.todo">ayden</maintainer>
   <license>TODO: License declaration</license>
+
+  <depend>rclpy</depend>
+  <buildtool_depend>ament_cmake</buildtool_depend>
 
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>
   <test_depend>ament_pep257</test_depend>
   <test_depend>python3-pytest</test_depend>
+  <build_depend>rosidl_default_generators</build_depend>
+  <exec_depend>rosidl_default_runtime</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>std_srvs</exec_depend>
+  <exec_depend>serial</exec_depend>
+  <exec_depend>pynmea2</exec_depend>
+  <exec_depend>pyudev</exec_depend>
 
   <export>
     <build_type>ament_python</build_type>
